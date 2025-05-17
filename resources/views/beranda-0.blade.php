@@ -3,21 +3,18 @@
 @section('title', 'Beranda')
 @section('content')
 
-
 {{-- hero --}}
-<section class="z-10" id="satu">
+<section>
     <div class="w-full bg-center bg-cover h-[34rem] md:h-[38rem] relative overflow-hidden test-video">
         <!-- <div class="absolute -z-10"> -->
             <video src="{{ asset('assets/file.mp4') }}" autoplay loop muted playsinline loading="lazy"></video>
         <!-- </div> -->
-        <div class="flex items-center w-full h-full bg-gray-900/70">
-            <div class="ml-20">
-                <h1 class="text-3xl font-bold lg:text-7xl mb-6 text-white text-zoom">Newborn New Hope</h1>
-                <p class="mb-6 text-base md:text-2xl text-gray-300 text-zoom-1">SID is committed to improving maternal and child health in <br> Indonesia through participatory, evidence-based <br> solutions rooted in real-world impact</p>
+        <div class="flex items-center justify-center w-full h-full bg-gray-900/40">
+            <div class="text-center">
+                <h1 class="text-3xl font-semibold text-white lg:text-6xl mb-4">Improvement through <span class="text-blue-500">Health Research</span><br> and <br><span class="text-blue-500">Human Development</span></h1>
 
                 <!-- From Uiverse.io by elijahgummer --> 
-                <button class="group relative button-with-icon border border-blue-500 rounded-lg px-10 py-2.5">
-                    <div class="absolute w-full h-full bg-blue-500 transition- duration-300 -translate-x-[100%] group-hover:-translate-x-[0%]"></div>
+                <button class="button-with-icon bg-blue-600 rounded-lg px-10 py-2.5">
                     <svg
                     class="icon"
                     id="Play"
@@ -37,95 +34,92 @@
     </div>
 </section>
 
-
-<section class="relative z-20" id="tiga">
-    <!-- mitra -->
-    <section class="overflow-hidden" id="dua">
-        <div class="logos whitespace-nowrap bg-white flex py-7">
-            <div class="logo-slide flex">
-                <img src="{{asset('assets/partners/healthy-mother-healthy-babies.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-                <img src="{{asset('/assets/partners/bill-melinda-gates.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-                <img src="{{asset('/assets/partners/Kementerian Kesehatan.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-                <!-- <img src="/assets/partners/lobar.jpeg" alt="" class="object-contain h-16 w-full"> -->
-                <!-- <img src="/assets/partners/loteng.jpg" alt="" class="object-contain h-16 w-full"> -->
-                <!-- <img src="/assets/partners/ntb.png" alt="" class="object-contain h-16 w-full"> -->
-                <img src="{{asset('/assets/partners/opensrp.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-                <img src="{{asset('/assets/partners/politeknik-semarang.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-                <img src="{{asset('/assets/partners/qualcomm.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-                <img src="{{asset('/assets/partners/the-lancet.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-                <img src="{{asset('/assets/partners/ucdavis.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-                <!-- <img src="/assets/partners/unicef.png" alt="" class="object-contain h-16 w-full"> -->
-                <img src="{{asset('/assets/partners/unram.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-                <img src="{{asset('/assets/partners/who.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-            </div>
-            <!-- duplikat -->
-            <div class="logo-slide flex">
-                <img src="{{asset('/assets/partners/healthy-mother-healthy-babies.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-                <img src="{{asset('/assets/partners/bill-melinda-gates.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-                <img src="{{asset('/assets/partners/Kementerian Kesehatan.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-                <!-- <img src="/assets/partners/lobar.jpeg" alt="" class="object-contain h-16 w-full"> -->
-                <!-- <img src="/assets/partners/loteng.jpg" alt="" class="object-contain h-16 w-full"> -->
-                <!-- <img src="/assets/partners/ntb.png" alt="" class="object-contain h-16 w-full"> -->
-                <img src="{{asset('/assets/partners/opensrp.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-                <img src="{{asset('/assets/partners/politeknik-semarang.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-                <img src="{{asset('/assets/partners/qualcomm.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-                <img src="{{asset('/assets/partners/the-lancet.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-                <img src="{{asset('/assets/partners/ucdavis.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-                <!-- <img src="/assets/partners/unicef.png" alt="" class="object-contain h-16 w-full"> -->
-                <img src="{{asset('/assets/partners/unram.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-                <img src="{{asset('/assets/partners/who.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-            </div>
+<!-- mitra -->
+<section class="overflow-hidden">
+    <div class="logos whitespace-nowrap bg-white flex py-7">
+        <div class="logo-slide flex">
+            <img src="{{asset('assets/partners/healthy-mother-healthy-babies.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+            <img src="{{asset('/assets/partners/bill-melinda-gates.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+            <img src="{{asset('/assets/partners/Kementerian Kesehatan.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+            <!-- <img src="/assets/partners/lobar.jpeg" alt="" class="object-contain h-16 w-full"> -->
+            <!-- <img src="/assets/partners/loteng.jpg" alt="" class="object-contain h-16 w-full"> -->
+            <!-- <img src="/assets/partners/ntb.png" alt="" class="object-contain h-16 w-full"> -->
+            <img src="{{asset('/assets/partners/opensrp.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+            <img src="{{asset('/assets/partners/politeknik-semarang.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+            <img src="{{asset('/assets/partners/qualcomm.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+            <img src="{{asset('/assets/partners/the-lancet.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+            <img src="{{asset('/assets/partners/ucdavis.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+            <!-- <img src="/assets/partners/unicef.png" alt="" class="object-contain h-16 w-full"> -->
+            <img src="{{asset('/assets/partners/unram.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+            <img src="{{asset('/assets/partners/who.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
         </div>
-    </section>
-    
-    <!-- visi misi -->
-    <section>
-        <div class="w-full h-[30rem] relative">
-            <div class="absolute bg-gray-900/50 h-full w-full flex items-center justify-center">
-                <!-- <div class="text-center">
-                    <p class="text-3xl md:text-6xl text-white mb-6">"With every newborn baby, a little sun rises"</p>
-                    <small class="text-2xl text-white">-Irmgard Erath</small>
-                </div> -->
-                <div class="w-full mx-auto text-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block w-8 h-8 text-gray-100 mb-8" viewBox="0 0 975.036 975.036">
-                        <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
-                    </svg>
-                    <p class="leading-relaxed text-3xl md:text-6xl text-white font-medium">With every newborn baby, a <span class="text-blue-600">little sun rises</span>.</p>
-                    <span class="inline-block h-1 w-10 rounded bg-blue-500 mt-8 mb-6"></span>
-                    <h2 class="text-gray-100 font-medium title-font tracking-wider text-xl">IRMGARD ERATH</h2>
-                    <p class="text-gray-300">Penulis</p>
-                </div>
-            </div>
-            <img src="{{asset('/assets/partners/1.jpg')}}" alt="" class="object-cover h-full w-full">
+        <!-- duplikat -->
+        <div class="logo-slide flex">
+            <img src="{{asset('/assets/partners/healthy-mother-healthy-babies.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+            <img src="{{asset('/assets/partners/bill-melinda-gates.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+            <img src="{{asset('/assets/partners/Kementerian Kesehatan.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+            <!-- <img src="/assets/partners/lobar.jpeg" alt="" class="object-contain h-16 w-full"> -->
+            <!-- <img src="/assets/partners/loteng.jpg" alt="" class="object-contain h-16 w-full"> -->
+            <!-- <img src="/assets/partners/ntb.png" alt="" class="object-contain h-16 w-full"> -->
+            <img src="{{asset('/assets/partners/opensrp.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+            <img src="{{asset('/assets/partners/politeknik-semarang.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+            <img src="{{asset('/assets/partners/qualcomm.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+            <img src="{{asset('/assets/partners/the-lancet.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+            <img src="{{asset('/assets/partners/ucdavis.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+            <!-- <img src="/assets/partners/unicef.png" alt="" class="object-contain h-16 w-full"> -->
+            <img src="{{asset('/assets/partners/unram.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+            <img src="{{asset('/assets/partners/who.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
         </div>
-    </section>
-    <section class="pb-24">
-        <div class="flex items-center bg-white justify-center flex-wrap md:flex-nowrap w-full gap-3 md:gap-20 -mt-12 md:-mt-16">
-            <div class="w-full mx-3 overflow-hidden bg-white rounded-lg shadow-xl md:w-96 z-20 transition duration-300 hover:scale-110 visi">
-                <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase text-2xl">Visi</h3>
-        
-                <div class="flex items-center flex-col px-4 py-4 bg-white">
-                    <span class="text-gray-800 mb-3">Improvement through health research and human development at the community level through participatory evidence-based decision making and sustainable action.</span>
-                    <hr class="w-full border border-gray-300 my-4">
-                    <a href="/about" class="text-blue-400">More</a>
-                </div>
-            </div>
-            <div class="w-full mx-3 overflow-hidden bg-white rounded-lg shadow-xl md:w-96 z-20 transition duration-300 hover:scale-110 misi">
-                <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase text-2xl">Misi</h3>
-        
-                <div class="flex items-center flex-col px-4 py-4 bg-white">
-                    <span class="text-gray-800 mb-3">Improvement through community-driven health development by enhancing participation, access to information, and capacity building to support evidence-based and sustainable decision making.</span>
-                    <hr class="w-full border border-gray-300 my-4">
-                    <a href="/about" class="text-blue-400">More</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end visi misi -->
-
-    <!-- galery -->
+    </div>
 </section>
 
+<!-- visi misi -->
+<section>
+    <div class="w-full h-[30rem] relative">
+        <div class="absolute bg-gray-900/50 h-full w-full flex items-center justify-center">
+            <!-- <div class="text-center">
+                <p class="text-3xl md:text-6xl text-white mb-6">"With every newborn baby, a little sun rises"</p>
+                <small class="text-2xl text-white">-Irmgard Erath</small>
+            </div> -->
+            <div class="w-full mx-auto text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block w-8 h-8 text-gray-100 mb-8" viewBox="0 0 975.036 975.036">
+                    <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+                </svg>
+                <p class="leading-relaxed text-3xl md:text-6xl text-white font-medium">With every newborn baby, a <span class="text-blue-600">little sun rises</span>.</p>
+                <span class="inline-block h-1 w-10 rounded bg-blue-600 mt-8 mb-6"></span>
+                <h2 class="text-gray-100 font-medium title-font tracking-wider text-xl">IRMGARD ERATH</h2>
+                <p class="text-gray-300">Penulis</p>
+            </div>
+        </div>
+        <img src="{{asset('/assets/partners/1.jpg')}}" alt="" class="object-cover h-full w-full bg-fixed">
+    </div>
+</section>
+
+<section class="bg-white pb-24">
+    <div class="flex items-center bg-white justify-center flex-wrap md:flex-nowrap w-full gap-3 md:gap-20 -mt-12 md:-mt-16">
+        <div class="w-full mx-3 overflow-hidden bg-white rounded-lg shadow-xl md:w-96 z-20 transition duration-400 hover:scale-110">
+            <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase text-2xl">Visi</h3>
+    
+            <div class="flex items-center flex-col px-4 py-4 bg-white">
+                <span class="text-gray-800 mb-3">Improvement through health research and human development at the community level through participatory evidence-based decision making and sustainable action.</span>
+                <hr class="w-full border border-gray-300 my-4">
+                <a href="#" class="text-blue-400">More</a>
+            </div>
+        </div>
+        <div class="w-full mx-3 overflow-hidden bg-white rounded-lg shadow-xl md:w-96 z-20 transition duration-400 hover:scale-110">
+            <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase text-2xl">Misi</h3>
+    
+            <div class="flex items-center flex-col px-4 py-4 bg-white">
+                <span class="text-gray-800 mb-3">Improvement through community-driven health development by enhancing participation, access to information, and capacity building to support evidence-based and sustainable decision making.</span>
+                <hr class="w-full border border-gray-300 my-4">
+                <a href="#" class="text-blue-400">More</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end visi misi -->
+
+<!-- galery -->
 <section class="bg-white">
     <div class="container py-24 mx-auto">
         <div class="flex flex-col text-center w-full mb-20">
@@ -307,6 +301,7 @@
     </div>
 </section>
 
+
 <!-- blog -->
 <section class="text-gray-600 body-font bg-gray-300">
     <div class="container px-5 py-24 mx-auto">
@@ -405,7 +400,5 @@
         </div>
     </div>
 </section>
-
-
 
 @endsection()

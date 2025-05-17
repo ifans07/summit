@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title')</title>
     @vite(['resources/css/app.css'], ['resources/js/app.js'], ['resources/js/main.js'])
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <style>
         .test-video video{
-            position: absolute; min-width: 100%; min-height: 100vh; width: auto; height: auto; object-fit: cover; z-index: -1; top: -130px;
+            position: absolute; min-width: 100%; min-height: 100%; width: auto; height: auto; object-fit: cover; z-index: -1; 
+            /* top: -130px; */
+            top: 0;
+            left: 0;
         }
 
         /* From Uiverse.io by elijahgummer */ 
@@ -102,56 +106,7 @@
             animation-play-state: paused;
         }
 
-        /* @keyframes galeri-1 {
-            from{
-                transform: translateX(0);
-            }
-            to{
-                transform: translateX(100%);
-            }
-        } */
-        @keyframes galeri-2 {
-            from{
-                transform: translateX(0);
-            }
-            to{
-                transform: translateX(-100%);
-            }
-        }
-        @keyframes galeri-3 {
-            from{
-                transform: translateX(0);
-            }
-            to{
-                transform: translateX(100%);
-            }
-        }
-        @keyframes galeri-4 {
-            from{
-                transform: translateX(0);
-            }
-            to{
-                transform: translateX(100%);
-            }
-        }
-
-        .wrap-galery{
-            /* width: max-content; */
-            /* height: ; */
-        }
-
-        /* .scrol-1{
-            animation: 10s galeri-1 infinite linear;
-        }
-        .scrol-2{
-            animation: 10s galeri-2 infinite linear;
-        }
-        .scrol-3{
-            animation: 10s galeri-3 infinite linear;
-        }
-        .scrol-4{
-            animation: 10s galeri-4 infinite linear;
-        } */
+        /* animate line svg */
         .path-line{
             stroke-width: 5;
             fill: none;
@@ -187,9 +142,27 @@
             }
         }
 
+        /* animate scroll Y */
+        @keyframes scrollY {
+            0%{
+                transform: translateY(0%)
+            }
+            100%{
+                transform: translateY(-100vh)
+            }
+        }
+
+        .animate-scrollY{
+            animation: scrollY 30s linear infinite;
+        }
+        .animate-scrollY img{
+            margin: 20px 0;
+        }
+
+
     </style>
 </head>
-<body class="overflow-x-hidden">
+<body class="overflow-x-hidden relative">
     
     @include('layouts.header')
 
@@ -201,10 +174,17 @@
 
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    {{-- <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+    <script>
+        feather.replace();
+    </script> --}}
+
     <script>
         document.addEventListener("DOMContentLoaded", function(){
-            console.log(window.innerWidth)
-            let lastScrollTop = 100;
+            // console.log(window.body.height)
+            let lastScrollTop = 0;
             let hederAtas = document.querySelector('.scroll-hidden')
             let navScroll = document.querySelector('.nav-scroll')
             
