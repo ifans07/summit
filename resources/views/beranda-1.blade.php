@@ -4,7 +4,7 @@
 @section('content')
 
 {{-- hero --}}
-<section>
+{{-- <section>
     <div class="w-full bg-center bg-cover h-[34rem] md:h-[38rem] relative overflow-hidden test-video">
         <!-- <div class="absolute -z-10"> -->
             <video src="{{ asset('assets/file.mp4') }}" autoplay loop muted playsinline loading="lazy"></video>
@@ -32,49 +32,210 @@
             </div>
         </div>
     </div>
+</section> --}}
+<section>
+    <div class="container mx-auto px-8 pb-20">
+        <div>
+            <div class="flex flex-col md:flex-row gap-4 md:gap-28 flex-wrap md:flex-nowrap md:justify-center md:items-end py-10 h-full">
+                <div class="md:w-1/2 lg:w-1/2 h-auto md:border-r-2 border-blue-900">
+                    <h1 class="text-4xl md:text-8xl font-extrabold text-left md:text-left text-gray-700 font-merriweather md:ml-20"><span class="text-blue-900">Newborn</span> New Hope</h1>
+                </div>
+                <div class="md:w-1/2 lg:w-1/2 h-auto">
+                    <p class="text-sm md:text-xl text-gray-700 leading-text mb-8 text-left md:mr-20">SID is committed to improving maternal and child health in Indonesia through participatory, evidence-based solutions rooted in real-world impact</p>
+                    <button class="py-2 px-12 font-medium bg-blue-900 text-white rounded-lg ml-auto">Learn more</button>
+                </div>
+            </div>
+        </div>
+        <div class="relative rounded-lg overflow-hidden">
+            {{-- <video src="{{ asset('assets/file.mp4') }}" autoplay loop muted playsinline loading="lazy" class="rounded-lg object-center w-full h-[38rem]"></video> --}}
+            <img src="{{asset('assets/about/about4.jpg')}}" class="rounded-lg object-cover w-full h-[20rem]" alt="">
+            {{-- <div class="absolute inset-0 bg-blue-100/60 bg-gradient-to-r from-blue-100 via-transparent to-blue-100 pointer-events-none w-full h-full"></div> --}}
+        </div>
+    </div>
 </section>
 
 <!-- mitra -->
 <section class="overflow-hidden">
-    <div class="logos whitespace-nowrap bg-white flex py-7">
-        <div class="logo-slide flex">
-            <img src="{{asset('assets/partners/healthy-mother-healthy-babies.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-            <img src="{{asset('/assets/partners/bill-melinda-gates.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-            <img src="{{asset('/assets/partners/Kementerian Kesehatan.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-            <!-- <img src="/assets/partners/lobar.jpeg" alt="" class="object-contain h-16 w-full"> -->
-            <!-- <img src="/assets/partners/loteng.jpg" alt="" class="object-contain h-16 w-full"> -->
-            <!-- <img src="/assets/partners/ntb.png" alt="" class="object-contain h-16 w-full"> -->
-            <img src="{{asset('/assets/partners/opensrp.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-            <img src="{{asset('/assets/partners/politeknik-semarang.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-            <img src="{{asset('/assets/partners/qualcomm.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-            <img src="{{asset('/assets/partners/the-lancet.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-            <img src="{{asset('/assets/partners/ucdavis.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-            <!-- <img src="/assets/partners/unicef.png" alt="" class="object-contain h-16 w-full"> -->
-            <img src="{{asset('/assets/partners/unram.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-            <img src="{{asset('/assets/partners/who.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+    <div class="container mx-auto py-28">
+        <h1 class="text-center text-2xl md:text-6xl text-gray-700 font-bold mb-8">Our <span class="text-blue-900">Partners</span></h1>
+        <div class="logos whitespace-nowrap bg-white flex py-7">
+            <div class="logo-slide flex">
+                <img src="{{asset('assets/partners/healthy-mother-healthy-babies.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/bill-melinda-gates.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/Kementerian Kesehatan.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <!-- <img src="/assets/partners/lobar.jpeg" alt="" class="object-contain h-16 w-full"> -->
+                <!-- <img src="/assets/partners/loteng.jpg" alt="" class="object-contain h-16 w-full"> -->
+                <!-- <img src="/assets/partners/ntb.png" alt="" class="object-contain h-16 w-full"> -->
+                <img src="{{asset('/assets/partners/opensrp.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/politeknik-semarang.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/qualcomm.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/the-lancet.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/ucdavis.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <!-- <img src="/assets/partners/unicef.png" alt="" class="object-contain h-16 w-full"> -->
+                <img src="{{asset('/assets/partners/unram.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/who.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+            </div>
+            <!-- duplikat -->
+            <div class="logo-slide flex">
+                <img src="{{asset('/assets/partners/healthy-mother-healthy-babies.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/bill-melinda-gates.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/Kementerian Kesehatan.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <!-- <img src="/assets/partners/lobar.jpeg" alt="" class="object-contain h-16 w-full"> -->
+                <!-- <img src="/assets/partners/loteng.jpg" alt="" class="object-contain h-16 w-full"> -->
+                <!-- <img src="/assets/partners/ntb.png" alt="" class="object-contain h-16 w-full"> -->
+                <img src="{{asset('/assets/partners/opensrp.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/politeknik-semarang.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/qualcomm.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/the-lancet.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/ucdavis.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <!-- <img src="/assets/partners/unicef.png" alt="" class="object-contain h-16 w-full"> -->
+                <img src="{{asset('/assets/partners/unram.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/who.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+            </div>
         </div>
-        <!-- duplikat -->
-        <div class="logo-slide flex">
-            <img src="{{asset('/assets/partners/healthy-mother-healthy-babies.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-            <img src="{{asset('/assets/partners/bill-melinda-gates.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-            <img src="{{asset('/assets/partners/Kementerian Kesehatan.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-            <!-- <img src="/assets/partners/lobar.jpeg" alt="" class="object-contain h-16 w-full"> -->
-            <!-- <img src="/assets/partners/loteng.jpg" alt="" class="object-contain h-16 w-full"> -->
-            <!-- <img src="/assets/partners/ntb.png" alt="" class="object-contain h-16 w-full"> -->
-            <img src="{{asset('/assets/partners/opensrp.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-            <img src="{{asset('/assets/partners/politeknik-semarang.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-            <img src="{{asset('/assets/partners/qualcomm.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-            <img src="{{asset('/assets/partners/the-lancet.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-            <img src="{{asset('/assets/partners/ucdavis.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-            <!-- <img src="/assets/partners/unicef.png" alt="" class="object-contain h-16 w-full"> -->
-            <img src="{{asset('/assets/partners/unram.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-            <img src="{{asset('/assets/partners/who.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+        <div class="logos whitespace-nowrap bg-white flex py-7">
+            <div class="logo-slide tengah flex">
+                <img src="{{asset('assets/partners/healthy-mother-healthy-babies.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/bill-melinda-gates.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/Kementerian Kesehatan.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <!-- <img src="/assets/partners/lobar.jpeg" alt="" class="object-contain h-16 w-full"> -->
+                <!-- <img src="/assets/partners/loteng.jpg" alt="" class="object-contain h-16 w-full"> -->
+                <!-- <img src="/assets/partners/ntb.png" alt="" class="object-contain h-16 w-full"> -->
+                <img src="{{asset('/assets/partners/opensrp.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/politeknik-semarang.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/qualcomm.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/the-lancet.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/ucdavis.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <!-- <img src="/assets/partners/unicef.png" alt="" class="object-contain h-16 w-full"> -->
+                <img src="{{asset('/assets/partners/unram.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/who.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+            </div>
+            <!-- duplikat -->
+            <div class="logo-slide tengah flex">
+                <img src="{{asset('/assets/partners/healthy-mother-healthy-babies.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/bill-melinda-gates.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/Kementerian Kesehatan.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <!-- <img src="/assets/partners/lobar.jpeg" alt="" class="object-contain h-16 w-full"> -->
+                <!-- <img src="/assets/partners/loteng.jpg" alt="" class="object-contain h-16 w-full"> -->
+                <!-- <img src="/assets/partners/ntb.png" alt="" class="object-contain h-16 w-full"> -->
+                <img src="{{asset('/assets/partners/opensrp.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/politeknik-semarang.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/qualcomm.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/the-lancet.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/ucdavis.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <!-- <img src="/assets/partners/unicef.png" alt="" class="object-contain h-16 w-full"> -->
+                <img src="{{asset('/assets/partners/unram.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/who.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+            </div>
+        </div>
+        <div class="logos whitespace-nowrap bg-white flex py-7">
+            <div class="logo-slide flex">
+                <img src="{{asset('assets/partners/healthy-mother-healthy-babies.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/bill-melinda-gates.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/Kementerian Kesehatan.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <!-- <img src="/assets/partners/lobar.jpeg" alt="" class="object-contain h-16 w-full"> -->
+                <!-- <img src="/assets/partners/loteng.jpg" alt="" class="object-contain h-16 w-full"> -->
+                <!-- <img src="/assets/partners/ntb.png" alt="" class="object-contain h-16 w-full"> -->
+                <img src="{{asset('/assets/partners/opensrp.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/politeknik-semarang.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/qualcomm.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/the-lancet.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/ucdavis.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <!-- <img src="/assets/partners/unicef.png" alt="" class="object-contain h-16 w-full"> -->
+                <img src="{{asset('/assets/partners/unram.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/who.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+            </div>
+            <!-- duplikat -->
+            <div class="logo-slide flex">
+                <img src="{{asset('/assets/partners/healthy-mother-healthy-babies.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/bill-melinda-gates.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/Kementerian Kesehatan.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <!-- <img src="/assets/partners/lobar.jpeg" alt="" class="object-contain h-16 w-full"> -->
+                <!-- <img src="/assets/partners/loteng.jpg" alt="" class="object-contain h-16 w-full"> -->
+                <!-- <img src="/assets/partners/ntb.png" alt="" class="object-contain h-16 w-full"> -->
+                <img src="{{asset('/assets/partners/opensrp.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/politeknik-semarang.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/qualcomm.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/the-lancet.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/ucdavis.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <!-- <img src="/assets/partners/unicef.png" alt="" class="object-contain h-16 w-full"> -->
+                <img src="{{asset('/assets/partners/unram.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/who.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
+
+{{-- visi misi --}}
+<section>
+    <div class="container mx-auto px-8 py-28">
+        <div class="flex flex-col md:flex-row gap-8">
+            <div class="md:w-3/5 relative rounded-lg">
+                <img src="{{asset('assets/about/about4.jpg')}}" class="object-cover rounded-lg" alt="">
+                <div class="absolute inset-0 text-white bg-gray-600/80 flex flex-col items-center justify-center rounded-lg px-4">
+                    <figure class="max-w-screen-md mx-auto text-center">
+                        <svg class="w-5 h-5 md:w-10 md:h-10 mx-auto mb-3 text-gray-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
+                            <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"/>
+                        </svg>
+                        <blockquote>
+                            <p class="text-xl md:text-4xl italic font-medium text-gray-900 dark:text-white">"With every newborn baby, a little sun rises."</p>
+                        </blockquote>
+                        <figcaption class="flex items-center justify-center mt-6 space-x-3 rtl:space-x-reverse">
+                            {{-- <img class="w-6 h-6 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="profile picture"> --}}
+                            <div class="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-500 dark:divide-gray-700">
+                                <cite class="pe-3 font-medium text-xs md:text-md text-gray-900 dark:text-white">IRMGARD ERATH</cite>
+                                <cite class="ps-3 text-xs md:text-sm text-gray-200">Penulis</cite>
+                            </div>
+                        </figcaption>
+                    </figure>
+                    {{-- <h2 class="text-white text-6xl text-center leading-normal">
+                        With every newborn baby, a little sun rises.
+                    </h2>
+                    <p>- IRMGARD ERATH -</p> --}}
+                </div>
+            </div>
+            <div class="md:w-2/5 flex gap-8 flex-col">
+                <div class="rounded-lg bg-gray-300 shadow p-3">
+                    <div class="flex items-center gap-8 mb-8">
+                        <div class="w-18 h-18 md:w-24 md:h-24 rounded-lg bg-blue-900 flex items-center justify-center text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-12 h-12">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
+                            </svg>
+                        </div>
+                        <h2 class="font-bold text-4xl text-gray-700">Visi</h2>
+                    </div>
+                    <p class="text-gray-700 text-md md:text-lg">Improvement through health research and human development at the community level through participatory evidence-based decision making and sustainable action.</p>
+                </div>
+                <div class="rounded-lg bg-gray-300 p-3">
+                    <div class="flex items-center gap-8 mb-8">
+                        <div class="w-18 h-18 md:w-24 md:h-24 rounded-lg bg-blue-900 flex items-center justify-center text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-12 h-12">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                            </svg>
+                        </div>
+                        <h2 class="font-bold text-4xl text-gray-700">Misi</h2>
+                    </div>
+                    <p class="text-gray-700 text-md md:text-lg">Improvement through community-driven health development by enhancing participation, access to information, and capacity building to support evidence-based and sustainable decision making.</p>
+                </div>
+                <a href="/about" class="block relative overflow-hidden px-12 py-2 border-2 border-blue-900 text-white bg-blue-900 hover:bg-blue-950 rounded-lg font-medium text-center">
+                    <span>Learn More</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container mx-auto px-8 py-28">
+        <div>
+            <iframe class="w-full h-[38rem]" src="https://www.youtube.com/embed/4XeQSZWzFgE?si=n_ojhilzB9TqRnDW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </div>
 </section>
 
 <!-- visi misi -->
-<section>
+{{-- <section>
     <div class="w-full h-[30rem] relative">
         <div class="absolute bg-gray-900/50 h-full w-full flex items-center justify-center">
             <!-- <div class="text-center">
@@ -93,9 +254,9 @@
         </div>
         <img src="{{asset('/assets/partners/1.jpg')}}" alt="" class="object-cover h-full w-full bg-fixed">
     </div>
-</section>
+</section> --}}
 
-<section class="bg-white pb-24">
+{{-- <section class="bg-white pb-24">
     <div class="flex items-center bg-white justify-center flex-wrap md:flex-nowrap w-full gap-3 md:gap-20 -mt-12 md:-mt-16">
         <div class="w-full mx-3 overflow-hidden bg-white rounded-lg shadow-xl md:w-96 z-20 transition duration-400 hover:scale-110">
             <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase text-2xl">Visi</h3>
@@ -116,7 +277,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}
 <!-- end visi misi -->
 
 <!-- galery -->

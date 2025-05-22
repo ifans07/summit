@@ -5,37 +5,34 @@
 
 
 {{-- hero --}}
-<section class="z-10" id="satu">
+<section class="relative z-10" id="satu">
     <div class="w-full bg-center bg-cover h-[34rem] md:h-[38rem] relative overflow-hidden test-video">
         <!-- <div class="absolute -z-10"> -->
             <video src="{{ asset('assets/file.mp4') }}" autoplay loop muted playsinline loading="lazy"></video>
         <!-- </div> -->
-        <div class="flex items-center w-full h-full bg-gray-900/70">
-            <div class="ml-20">
+        <div class="flex items-center w-full h-full bg-gray-900/80">
+            <div class="px-4 md:ml-20 relative z-10">
                 <h1 class="text-3xl font-bold lg:text-7xl mb-6 text-white text-zoom">Newborn New Hope</h1>
                 <p class="mb-6 text-base md:text-2xl text-gray-300 text-zoom-1">SID is committed to improving maternal and child health in <br> Indonesia through participatory, evidence-based <br> solutions rooted in real-world impact</p>
 
                 <!-- From Uiverse.io by elijahgummer --> 
-                <button class="group relative button-with-icon border border-blue-500 rounded-lg px-10 py-2.5">
-                    <div class="absolute w-full h-full bg-blue-500 transition- duration-300 -translate-x-[100%] group-hover:-translate-x-[0%]"></div>
-                    <svg
-                    class="icon"
-                    id="Play"
-                    viewBox="0 0 48 48"
-                    xmlns="http://www.w3.org/2000/svg"
-                    >
-                    <path
-                    class="color000000 svgShape"
-                    fill="#ffffff"
-                    d="M12 39c-.549 0-1.095-.15-1.578-.447A3.008 3.008 0 0 1 9 36V12c0-1.041.54-2.007 1.422-2.553a3.014 3.014 0 0 1 2.919-.132l24 12a3.003 3.003 0 0 1 0 5.37l-24 12c-.42.21-.885.315-1.341.315z"
-                    ></path>
-                </svg>
-                <span class="text">Learn More</span>
+                <button class="group relative button-with-icon border-2 border-gray-100 rounded-lg px-10 py-2.5 z-40">
+                    <div class="absolute w-full h-full bg-blue-900 transition- duration-300 -translate-x-[100%] group-hover:-translate-x-[0%]"></div>
+                    {{-- <svg class="icon" id="Play" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                        <path class="color000000 svgShape" fill="#ffffff" d="M12 39c-.549 0-1.095-.15-1.578-.447A3.008 3.008 0 0 1 9 36V12c0-1.041.54-2.007 1.422-2.553a3.014 3.014 0 0 1 2.919-.132l24 12a3.003 3.003 0 0 1 0 5.37l-24 12c-.42.21-.885.315-1.341.315z"></path>
+                    </svg> --}}
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="icon" id="Play">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>
+
+                    <span class="text">Learn More</span>
                 </button>
             </div>
         </div>
     </div>
+    <div class="absolute inset-0 bg-gradient-to-r from-gray-700 via-transparent to-gray-700 pointer-events-none z-0"></div>
 </section>
+
 
 
 <section class="relative z-20" id="tiga">

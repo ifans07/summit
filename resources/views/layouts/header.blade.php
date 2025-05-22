@@ -67,8 +67,8 @@
             </div>
         </div>
     </div>
-    <hr class="border border-gray-200">
-    <nav x-data="{ isOpen: false }" class="bg-white shadow nav-scroll relative">
+    <hr class="border border-gray-100">
+    <nav x-data="{ isOpen: false }" class="bg-white nav-scroll relative">
         <div class="container px-6 py-5 mx-auto relative">
             <div class="flex items-center justify-between">
                 <div class="flex items-center justify-between">
@@ -79,34 +79,43 @@
                 </div>
 
                 <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
-                <div x-cloak :class="[isOpen ? '-translate-x-0 opacity-100 ' : 'opacity-0 translate-x-full']" class="absolute h-auto inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white shadow-md lg:bg-transparent lg:dark:bg-transparent lg:shadow-none lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0 batas">
-                    <div class="-mx-4 lg:flex lg:items-center text-center">
-                        <a href="/" class="group relative block mx-6 text-gray-700 capitalize hover:text-blue-600 dark:hover:text-blue-400">
-                            <div class="group-hover:block group-hover:scale-x-150 rounded-lg transition duration-200 absolute w-full h-[3px] -bottom-1 {{ ($title == "Beranda") ? "scale-x-150" : "scale-x-0" }} bg-blue-500"></div>
-                            Home
+                <div x-cloak :class="[isOpen ? '-translate-x-0 opacity-100 ' : 'opacity-0 translate-x-full']" class="absolute top-0 h-screen md:h-auto inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white/90 shadow-md lg:bg-transparent lg:dark:bg-transparent lg:shadow-none lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0 batas">
+                    {{-- <div class="-mx-4 lg:flex lg:items-center text-center">
+                        <a href="/" class="group relative block mx-4 text-gray-700 capitalize hover:text-blue-600 dark:hover:text-blue-500 font-medium p-1 overflow-hidden">
+                            <div class="group-hover:block rounded-lg transition duration-200 absolute w-full h-[3px] bottom-0 transform {{ ($title == "Beranda") ? "-translate-x-[8%] font-bold text-blue-500" : "-translate-x-[108%]" }} group-hover:-translate-x-[8%] bg-blue-500"></div>
+                            <div class="flex items-center justify-center">
+                                Home
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4 ml-1">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                </svg>
+                            </div>
+                            <div class="hidden group-hover:block">
+                                <a href="" class="block">Programs</a>
+                                <a href="" class="block">Publications</a>
+                            </div>
                         </a>
                         <a href="{{ route('about') }}" class="group relative block mx-6 mt-4 text-gray-700 capitalize lg:mt-0 hover:text-blue-600">
                             <div class="group-hover:block group-hover:scale-x-150 rounded-lg transition duration-200 absolute w-full h-[3px] -bottom-1 {{ ($title == "About") ? "scale-x-150" : "scale-x-0" }} bg-blue-500"></div>
                             About
                         </a>
-                        <a href="/programs-publications" class="group relative mx-6 mt-4 text-gray-700 capitalize lg:mt-0 hover:text-blue-600 dark:hover:text-blue-400">
-                            <div class="group-hover:block group-hover:scale-x-125 rounded-lg transition duration-200 absolute w-full h-[3px] -bottom-1 {{ ($title == "Programs & Publications") ? "scale-x-125" : "scale-x-0" }} bg-blue-500"></div>
-                            <div class="flex items-center">
+                        <a href="/programs-publications" class="group mx-6 mt-4 text-gray-700 capitalize lg:mt-0 hover:text-blue-600 dark:hover:text-blue-400" id="dropdownHoverButton">
+                            <div class="group-hover:block group-hover:scale-x-125 rounded-lg transition duration-300 absolute w-full h-[3px] -bottom-1 {{ ($title == "Programs & Publications") ? "scale-x-125" : "scale-x-0" }} bg-blue-500"></div>
+                            <div class="flex items-center justify-center">
                                 Programs & Publications
-                                {{-- <i class="fa-solid fa-chevron-down text-gray-700"></i> --}}
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-4 w-4 ml-2">
+                                
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4 ml-1">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                                 </svg>
+                            </div>
+                            <div class="">
+                                <a href="" class="block">Programs</a>
+                                <a href="" class="block">Publications</a>
                             </div>
                         </a>
                         <a href="/news" class="group relative block mx-6 mt-4 text-gray-700 capitalize lg:mt-0 hover:text-blue-600 dark:hover:text-blue-400">
                             <div class="group-hover:block group-hover:scale-x-150 rounded-lg transition duration-200 absolute w-full h-[3px] -bottom-1 {{ ($title == "News") ? "scale-x-150" : "scale-x-0" }} bg-blue-500"></div>
                             News
                         </a>
-                        {{-- <a href="#" class="group relative block mx-4 mt-4 text-gray-700 capitalize lg:mt-0 hover:text-blue-600 dark:hover:text-blue-400">
-                            <div class="group-hover:block group-hover:scale-x-150 rounded-lg transition duration-200 absolute w-full h-[3px] -bottom-1 scale-x-0 bg-blue-500"></div>
-                            Programs
-                        </a> --}}
                         <a href="/events" class="group relative block mx-6 mt-4 text-gray-700 capitalize lg:mt-0 hover:text-blue-600 dark:hover:text-blue-400">
                             <div class="group-hover:block group-hover:scale-x-150 rounded-lg transition duration-200 absolute w-full h-[3px] -bottom-1 {{ ($title == "Events") ? "scale-x-150" : "scale-x-0" }} bg-blue-500"></div>
                             Events
@@ -123,11 +132,60 @@
                             <div></div>
                             #NGO
                         </a>
+                    </div> --}}
+                    <div class="flex flex-col md:flex-row justify-center h-auto gap-4 md:gap-0 py-16 md:py-0 relative">
+                        <div class="flex lg:hidden absolute right-0 top-0">
+                            <button x-cloak @click="isOpen = !isOpen" type="button" class="text-gray-500 hover:text-gray-600 focus:outline-none focus:text-gray-600" aria-label="toggle menu">
+                                <svg x-show="!isOpen" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+                                </svg>
+                        
+                                <svg x-show="isOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="px-8">
+                            <a href="/" class="{{($title == "Beranda")? "font-bold text-blue-900" : "font-medium text-gray-800 hover:text-[#10169f]"}}">Home</a>
+                        </div>
+                        <div class="px-8">
+                            <a href="/about" class="{{($title == "About")? "font-bold text-blue-900" : "font-medium text-gray-800 hover:text-[#10169f]"}}">About</a>
+                        </div>
+                        <div class="group px-8">
+                            <a href="/programs-publications" class="relative {{($title == "Programs & Publications")? "font-bold text-blue-900" : "font-medium text-gray-800 hover:text-[#10169f]"}}">
+                                <div class="flex items-center">
+                                    <span>P2</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4 ml-1">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                    </svg>
+                                </div>
+                                <div class="hidden py-2 group-hover:block md:absolute md:bg-white md:shadow-lg md:rounded-lg md:w-1/6 md:px-2 transition duration-1000">
+                                    <a href="/programs-publications" class="block py-2 px-8 md:px-2 hover:bg-gray-200 hover:text-gray-900">Programs</a>
+                                    <a href="/programs-publications" class="block py-2 px-8 md:px-2 hover:bg-gray-200 hover:text-gray-900">Publications</a>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="px-8">
+                            <a href="/news" class="{{($title == "News")? "font-bold text-blue-900" : "font-medium text-gray-800 hover:text-[#10169f]"}}">News</a>
+                        </div>
+                        <div class="px-8">
+                            <a href="/events" class="{{($title == "Events")? "font-bold text-blue-900" : "font-medium text-gray-800 hover:text-[#10169f]"}}">Events</a>
+                        </div>
+                        <div class="px-8">
+                            <a href="/contact" class="{{($title == "Contact")? "font-bold text-blue-900" : "font-medium text-gray-800 hover:text-[#10169f]"}}">Contact</a>
+                        </div>
+                        <div class="px-8">
+                            <a href="/careers" class="{{($title == "Careers")? "font-bold text-blue-900" : "font-medium text-gray-800 hover:text-[#10169f]"}}">Careers</a>
+                        </div>
+                        <div class="px-8">
+                            <a href="" class="bg-blue-900 rounded-lg w-12 px-12 py-2 text-center text-white font-medium flex justify-center md:hidden">#NGO</a>
+                        </div>
                     </div>
                 </div>
+                
                 <div class="flex">
-                    <button class="group px-8 py-2 md:px-8 md:py-1.5 border-2 border-blue-500 rounded-lg mr-2 hidden md:block font-medium text-gray-500 relative overflow-hidden">
-                        <div class="absolute w-full h-full bg-blue-500 top-0 left-0 translate-x-[-100%] group-hover:translate-x-[0%] transition duration-300 text-white flex items-center justify-center">#NGO</div>
+                    <button class="group px-8 py-2 md:px-8 md:py-1.5 border-2 border-blue-900 rounded-lg mr-2 hidden md:block font-medium text-gray-500 relative overflow-hidden cursor-pointer">
+                        <div class="absolute w-full h-full bg-blue-900 top-0 left-0 translate-x-[-100%] group-hover:translate-x-[0%] transition duration-300 text-white flex items-center justify-center pointer-events-none">#NGO</div>
                         <span class="z-20">#NGO</span>
                     </button>
                     <!-- Mobile menu button -->

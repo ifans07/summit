@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
         .test-video video{
             position: absolute; min-width: 100%; min-height: 100%; width: auto; height: auto; object-fit: cover; z-index: -1; 
             /* top: -130px; */
@@ -73,9 +74,9 @@
         }
 
         @media (max-width: 768px){
-            .batas{
-                top: 65px;
-            }
+            /* .batas{
+                top: 100px;
+            } */
             .test-video video{
                 top: 0;
             }
@@ -90,6 +91,15 @@
             }
         }
 
+        @keyframes slide-tengah {
+            from{
+                transform: translateX(-100%);
+            }
+            to{
+                transform: translateX(0);
+            }
+        }
+
         /* infinite scroll */
         .logos{
             width: max-content;
@@ -97,6 +107,9 @@
 
         .logo-slide{
             animation: 50s slide infinite linear;
+        }
+        .tengah{
+            animation: 50s slide-tengah infinite linear;
         }
         .logo-slide img{
             margin: 0 80px;
@@ -195,17 +208,19 @@
                 
                 if (currentScroll < lastScrollTop) {
                     // Scroll ke atas
-                    hederAtas.style.position = "relative"
+                    // hederAtas.style.position = "relative"
                     hederAtas.style.top = "0px"
                     navScroll.style.top = "0px"
                     hederAtas.style.transition = "top .1s linear"
                     navScroll.style.transition = "top .1s linear"
+                    navScroll.classList.remove('shadow')
                 } else {
                     // Scroll ke bawah
                     hederAtas.style.top = "-40px"
                     navScroll.style.top = "-50px"
                     hederAtas.style.transition = "top .1s linear"
                     navScroll.style.transition = "top .1s linear"
+                    navScroll.classList.add('shadow')
                 }
     
                 lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // untuk mencegah nilai negatif
@@ -214,5 +229,38 @@
 
         })
     </script>
+        <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const galleryColumns = document.querySelectorAll('.grid.grid-cols-2.md\\:grid-cols-4 > div');
+        let allImages = [];
+
+        // Ambil semua elemen gambar dan simpan
+        galleryColumns.forEach(col => {
+            const items = Array.from(col.querySelectorAll('.group'));
+            allImages.push(...items);
+        });
+
+        // Acak array gambar
+        function shuffle(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
+        const shuffledImages = shuffle(allImages);
+
+        // Kosongkan semua kolom
+        galleryColumns.forEach(col => col.innerHTML = '');
+
+        // Bagi gambar ke setiap kolom secara merata
+        let colIndex = 0;
+        shuffledImages.forEach(item => {
+            galleryColumns[colIndex].appendChild(item);
+            colIndex = (colIndex + 1) % galleryColumns.length;
+        });
+    });
+</script>
 </body>
 </html>

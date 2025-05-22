@@ -6,6 +6,14 @@ Route::get('/', function () {
     $title = "Beranda";
     return view('beranda', compact('title'));
 });
+Route::get('/v1', function () {
+    $title = "Beranda-v1";
+    return view('beranda-1', compact('title'));
+});
+Route::get('/v2', function () {
+    $title = "Beranda-v2";
+    return view('beranda-2', compact('title'));
+});
 Route::get('/about', function(){
     $title = "About";
     return view('about', compact('title'));

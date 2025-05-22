@@ -4,7 +4,7 @@
 @section('content')
 
 {{-- hero --}}
-<section>
+{{-- <section>
     <div class="w-full bg-center bg-cover h-[34rem] md:h-[38rem] relative overflow-hidden test-video">
         <!-- <div class="absolute -z-10"> -->
             <video src="{{ asset('assets/file.mp4') }}" autoplay loop muted playsinline loading="lazy"></video>
@@ -31,6 +31,88 @@
                 </button>
             </div>
         </div>
+    </div>
+</section> --}}
+{{-- hero baru carousel --}}
+<section>
+    <div id="default-carousel" class="relative w-full" data-carousel="slide">
+    <!-- Carousel wrapper -->
+        <div class="relative h-56 overflow-hidden rounded-lg md:h-[38rem]">
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out relative" data-carousel-item>
+                <video src="{{ asset('assets/file.mp4') }}" autoplay loop muted playsinline loading="lazy" class="absolute z-0"></video>
+                <div class="flex items-center w-full h-screen relative z-40">
+                    <div class="px-4 md:ml-20">
+                        <h1 class="text-3xl font-bold lg:text-7xl mb-6 text-white text-zoom">Newborn New Hope</h1>
+                        <p class="mb-6 text-base md:text-2xl text-gray-300">SID is committed to improving maternal and child health in <br> Indonesia through participatory, evidence-based <br> solutions rooted in real-world impact</p>
+
+                        <!-- From Uiverse.io by elijahgummer --> 
+                        <button class="group relative button-with-icon border border-gray-100 rounded-lg px-10 py-2.5">
+                            <div class="absolute w-full h-full bg-blue-900 transition- duration-300 -translate-x-[100%] group-hover:-translate-x-[0%]"></div>
+                            <svg class="icon" id="Play" viewBox="0 0 48 48" xmlns="http://www.w3.org/svg">
+                                <path class="color000000 svgShape" fill="#ffffff" d="M12 39c-.549 0-1.095-.15-1.578-.447A3.008 3.008 0 0 1 9 36V12c0-1.041.54-2.007 1.422-2.553a3.014 3.014 0 0 1 2.919-.132l24 12a3.003 3.003 0 0 1 0 5.37l-24 12c-.42.21-.885.315-1.341.315z"></path>
+                            </svg>
+                            <span class="text">Learn More</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-r from-gray-700 via-transparent to-gray-700 bg-gray-700/60 z-30"></div>
+                <div class="absolute inset-0 bg-gray-700/60 pointer-events-none z-30"></div>
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="{{asset('/assets/about/about4.jpg')}}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                <div class="absolute inset-0 bg-gradient-to-r from-gray-700 from-0% via-transparent to-gray-700 pointer-events-none z-30">Testing testing</div>
+                <div class="absolute inset-0 bg-gray-700/60 pointer-events-none z-30"></div>
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="{{asset('/assets/about/about3.jpg')}}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                <div class="absolute inset-0 bg-gradient-to-r from-gray-700 from-0% via-transparent to-gray-700 pointer-events-none z-30">Testing testing</div>
+                <div class="absolute inset-0 bg-gray-700/60 pointer-events-none z-30"></div>
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="{{asset('/assets/about/about5.jpg')}}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                <div class="absolute inset-0 bg-gradient-to-r from-gray-700 from-0% via-transparent to-gray-700 pointer-events-none z-30">Testing testing</div>
+                <div class="absolute inset-0 bg-gray-700/60 pointer-events-none z-30"></div>
+            </div>
+            <!-- Item 3 -->
+            {{-- <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="{{asset('/assets/partners/1.jpg')}}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="{{asset('/assets/partners/1.jpg')}}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div>
+            <!-- Item 5 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="{{asset('/assets/partners/1.jpg')}}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            </div> --}}
+        </div>
+        <!-- Slider indicators -->
+        {{-- <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+        </div> --}}
+        <!-- Slider controls -->
+        <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                </svg>
+                <span class="sr-only">Previous</span>
+            </span>
+        </button>
+        <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                </svg>
+                <span class="sr-only">Next</span>
+            </span>
+        </button>
     </div>
 </section>
 
