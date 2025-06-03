@@ -3,14 +3,27 @@
 @section('title', 'News')
 @section('content')
 
-<section class="w-full bg-gray-700 relative">
+
+<section>
+    <div class="container mx-auto px-8 py-28">
+        <div class="flex flex-col md:flex-row gap-8">
+            <div class="bg-blue-900 rounded-lg p-4 flex items-center justify-center">
+                <h1 class="text-white text-4xl uppercase font-extrabold">News</h1>
+            </div>
+            <div class="md:border-l-2 border-blue-900 md:pl-8">
+                <h1 class="text-4xl md:text-7xl font-medium font-merriweather">Professional insights and updates from our health foundation</h1>
+            </div>
+        </div>
+    </div>
+</section>
+{{-- <section class="w-full bg-gray-700 relative">
     <div class="container h-[20rem] bg-gray-700 w-full flex items-center justify-center relative mx-auto">
         <div class="text-center z-20">
             <h1 class="font-extrabold text-6xl md:text-9xl text-white z-50">News</h1>
             <p class="text-gray-200">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, dignissimos.</p>
         </div>
     </div>
-</section>
+</section> --}}
 
 {{-- recent post --}}
 <section class="bg-white">
@@ -29,27 +42,26 @@
 
         <div class="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
             <div>
-                <img class="object-cover object-center w-full h-64 rounded-lg lg:h-80" src="https://images.unsplash.com/photo-1624996379697-f01d168b1a52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="">
+                <img class="object-cover object-center w-full h-64 rounded-lg lg:h-80" src="{{asset('assets/news/popular.jpg')}}" alt="">
 
                 <div class="mt-8">
                     <span class="text-blue-500 uppercase">category</span>
 
                     <h1 class="mt-4 text-xl font-semibold text-gray-800">
-                        What do you want to know about UI
+                        Community based nutrition and public health intervention: Lesson Learnt from The Field
                     </h1>
 
                     <p class="mt-2 text-gray-500">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam est asperiores vel, ab animi
-                        recusandae nulla veritatis id tempore sapiente
+                        Summit Institute for Development with students in Faculty of Medicine Universitas Mataram Mataram, May 6th, 2025  – The Faculty of...
                     </p>
 
                     <div class="flex items-center justify-between mt-4">
                         <div>
                             <a href="#" class="text-lg font-medium text-gray-700 hover:underline hover:text-gray-500">
-                                John snow
+                                recruitment892
                             </a>
 
-                            <p class="text-sm text-gray-500">February 1, 2022</p>
+                            <p class="text-sm text-gray-500">May 14, 2025</p>
                         </div>
 
                         <a href="#" class="inline-block text-blue-500 underline hover:text-blue-400">Read more</a>
@@ -59,26 +71,25 @@
             </div>
 
             <div>
-                <img class="object-cover object-center w-full h-64 rounded-lg lg:h-80" src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="">
+                <img class="object-cover object-center w-full h-64 rounded-lg lg:h-80" src="{{asset('assets/news/koneksi.jpg')}}" alt="">
 
                 <div class="mt-8">
                     <span class="text-blue-500 uppercase">category</span>
 
                     <h1 class="mt-4 text-xl font-semibold text-gray-800">
-                        All the features you want to know</h1>
+                        KONEKSI (Kolaborasi Pengetahuan, Inovasi, dan Teknologi Australia dan</h1>
 
                     <p class="mt-2 text-gray-500">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam est asperiores vel, ab animi
-                        recusandae nulla veritatis id tempore sapiente
+                        Bali, May 3-5th 2025 - Summit Institute for Development (SID) was selected to attend a boot camp organized by KONEKSI-Partnership in...
                     </p>
 
                     <div class="flex items-center justify-between mt-4">
                         <div>
                             <a href="#" class="text-lg font-medium text-gray-700 hover:underline hover:text-gray-500">
-                                Arthur Melo
+                                recruitment892
                             </a>
 
-                            <p class="text-sm text-gray-500">February 6, 2022</p>
+                            <p class="text-sm text-gray-500">May 9, 2025</p>
                         </div>
 
                         <a href="#" class="inline-block text-blue-500 underline hover:text-blue-400">Read more</a>
@@ -88,27 +99,26 @@
             </div>
 
             <div>
-                <img class="object-cover object-center w-full h-64 rounded-lg lg:h-80" src="https://images.unsplash.com/photo-1597534458220-9fb4969f2df5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80" alt="">
+                <img class="object-cover object-center w-full h-64 rounded-lg lg:h-80" src="{{asset('assets/news/garut.webp')}}" alt="">
 
                 <div class="mt-8">
                     <span class="text-blue-500 uppercase">category</span>
 
                     <h1 class="mt-4 text-xl font-semibold text-gray-800">
-                        Which services you get from Meraki UI
+                        Gates Foundation Visit to Garut
                     </h1>
 
                     <p class="mt-2 text-gray-500">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam est asperiores vel, ab animi
-                        recusandae nulla veritatis id tempore sapiente
+                        Gates Foundation Visit to Garut: Appreciation for the Synergy of Puskesmas, Pustu, Posyandu, and the Health Office in Strengthening...
                     </p>
 
                     <div class="flex items-center justify-between mt-4">
                         <div>
                             <a href="#" class="text-lg font-medium text-gray-700 hover:underline hover:text-gray-500">
-                                Tom Hank
+                                lalanur
                             </a>
 
-                            <p class="text-sm text-gray-500">February 19, 2022</p>
+                            <p class="text-sm text-gray-500">April 29, 2025</p>
                         </div>
 
                         <a href="#" class="inline-block text-blue-500 underline hover:text-blue-400">Read more</a>
@@ -218,9 +228,9 @@
 </section> --}}
 
 {{-- populer --}}
-<section class="bg-blue-900">
-    <div class="container px-6 py-10 mx-auto">
-        <h2 class="text-6xl font-bold text-white py-8">Populer</h2>
+<section class="">
+    <div class="container px-6 py-28 mx-auto">
+        <h2 class="text-6xl font-bold py-8">Populer</h2>
         <div class="lg:flex lg:-mx-6">
             <div class="lg:w-3/5 lg:px-6">
                 {{-- <img class="object-cover object-center w-full h-80 xl:h-[28rem] rounded-xl" src="https://images.unsplash.com/photo-1624996379697-f01d168b1a52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt=""> --}}
@@ -229,7 +239,7 @@
                 <div class="w-full">
                     {{-- <p class="mt-6 text-sm text-gray-800 uppercase font-medium">Want to know</p> --}}
 
-                    <h1 class="max-w-3xl mt-4 text-4xl font-semibold leading-tight text-white hover:underline">
+                    <h1 class="max-w-3xl mt-4 text-4xl font-semibold leading-tight hover:underline">
                         Community based nutrition and public health intervention: Lesson Learnt from The Field
                     </h1>
 
@@ -247,55 +257,94 @@
             <div class="mt-8 lg:w-2/5 lg:mt-0 lg:px-6">
                 <div class="flex justify-between">
                     <div>
-                        <h3 class="text-gray-200 capitalize">Design instument</h3>
+                        <h3 class=" capitalize">AI</h3>
     
-                        <a href="#" class="block mt-2 font-medium text-white hover:underline hover:text-gray-300 ">
-                            How to raise $100k+ by using blox ui kit on your design
+                        <a href="#" class="block mt-2 font-medium hover:underline">
+                            KONEKSI (Kolaborasi Pengetahuan, Inovasi, dan Teknologi Australia dan
                         </a>
                     </div>
-                    <img class="object-cover object-center w-24 h-24 xl:h-24 rounded-xl" src="https://images.unsplash.com/photo-1624996379697-f01d168b1a52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="">
+                    <img class="object-cover object-center w-24 h-24 xl:h-24 rounded-xl" src="{{asset('assets/news/koneksi.jpg')}}" alt="">
                 </div>
 
                 <hr class="my-6 border-gray-300">
 
                 <div class="flex justify-between">
                     <div>
-                        <h3 class="text-gray-200 capitalize">UI Resource</h3>
+                        <h3 class="capitalize">Premium</h3>
     
-                        <a href="#" class="block mt-2 font-medium text-white hover:underline hover:text-gray-300">
-                            Should you creat UI Product by using Blox?
+                        <a href="#" class="block mt-2 font-medium hover:underline">
+                            Gates Foundation Visit to Garut
                         </a>
                     </div>
-                    <img class="object-cover object-center w-24 h-24 xl:h-24 rounded-xl" src="https://images.unsplash.com/photo-1624996379697-f01d168b1a52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="">
+                    <img class="object-cover object-center w-24 h-24 xl:h-24 rounded-xl" src="{{asset('assets/news/garut.webp')}}" alt="">
                 </div>
 
                 <hr class="my-6 border-gray-300">
 
                 <div class="flex justify-between">
                     <div>
-                        <h3 class="text-gray-200 capitalize">Premium Collection</h3>
+                        <h3 class="capitalize">Premium Collection</h3>
     
-                        <a href="#" class="block mt-2 font-medium text-white hover:underline hover:text-gray-300">
-                            Top 10 Blocks you can get on Blox's collection.
+                        <a href="#" class="block mt-2 font-medium hover:underline">
+                            CISDI Onsite Visit to SID: Strengthening Primary Health Care with Digital Innovation
                         </a>
                     </div>
-                    <img class="object-cover object-center w-24 h-24 xl:h-24 rounded-xl" src="https://images.unsplash.com/photo-1624996379697-f01d168b1a52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="">
+                    <img class="object-cover object-center w-24 h-24 xl:h-24 rounded-xl" src="{{asset('assets/news/cisdi.jpg')}}" alt="">
                 </div>
 
                 <hr class="my-6 border-gray-300">
 
                 <div class="flex justify-between">
                     <div>
-                        <h3 class="text-gray-200 capitalize">Premium kits</h3>
+                        <h3 class="capitalize">Premium kits</h3>
     
-                        <a href="#" class="block mt-2 font-medium text-white hover:underline hover:text-gray-300">
-                            Top 10 Ui kit you can get on Blox's collection.
+                        <a href="#" class="block mt-2 font-medium hover:underline">
+                            Indonesian Researchers Shine at International Pandemic Sciences Conference 2024
                         </a>
                     </div>
-                    <img class="object-cover object-center w-24 h-24 xl:h-24 rounded-xl" src="https://images.unsplash.com/photo-1624996379697-f01d168b1a52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="">
+                    <img class="object-cover object-center w-24 h-24 xl:h-24 rounded-xl" src="{{asset('assets/news/indo.jpg')}}" alt="">
                 </div>
             </div>
         </div>
+    </div>
+</section>
+
+<section class="">
+    <div class="relative overflow-hidden container mx-auto px-8 py-48 h-[30rem] flex items-center justify-center">
+        <div class="w-2/3 mx-auto relative z-10">
+            <div>
+                <h1 class="text-4xl font-bold text-center mb-2 text-gray-800">Keep Up with SID’s Impact on Maternal and Child Health</h1>
+                <p class="text-center text-lg mb-8 text-gray-700">Get the latest news from SID. Subscribe to receive the latest updates on maternal and child health initiatives across Indonesia — including research, programs, events, and news from the SID team.</p>
+            </div>
+            <div class="flex w-full justify-center items-end">
+                <div class="relative mr-4 lg:w-full xl:w-1/2 w-2/4">
+                    {{-- <label for="hero-field" class="leading-7 text-sm text-gray-600">Placeholder</label> --}}
+                    <input type="text" id="hero-field" name="hero-field" class="w-full bg-gray-50/40 bg-opacity-50 rounded border-2 border-blue-800 focus:ring-2 focus:ring-blue-900 focus:bg-transparent focus:border-blue-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+                <button class="inline-flex text-white bg-blue-900 py-2 px-6 border-2 border-blue-900  hover:bg-blue-950 rounded text-lg">Subscribe</button>
+            </div>
+        </div>
+        <div class="absolute inset-0 grid grid-cols-6 z-0 w-full h-full">
+            <img src="/assets/dokumentasi/1.jpg" class="h-[10rem] w-full" alt="">
+            <img src="/assets/dokumentasi/2.jpg" class="h-[10rem] w-full" alt="">
+            <img src="/assets/dokumentasi/3.jpg" class="h-[10rem] w-full" alt="">
+            <img src="/assets/dokumentasi/4.jpg" class="h-[10rem] w-full" alt="">
+            <img src="/assets/dokumentasi/5.jpg" class="h-[10rem] w-full" alt="">
+            <img src="/assets/dokumentasi/6.jpg" class="h-[10rem] w-full" alt="">
+            <img src="/assets/dokumentasi/7.jpg" class="h-[10rem] w-full" alt="">
+            <img src="/assets/dokumentasi/8.jpg" class="h-[10rem] w-full" alt="">
+            <img src="/assets/dokumentasi/9.jpg" class="h-[10rem] w-full" alt="">
+            <img src="/assets/dokumentasi/10.jpg" class="h-[10rem] w-full" alt="">
+            <img src="/assets/dokumentasi/11.jpg" class="h-[10rem] w-full" alt="">
+            <img src="/assets/dokumentasi/12.jpg" class="h-[10rem] w-full" alt="">
+            <img src="/assets/dokumentasi/13.jpg" class="h-[10rem] w-full" alt="">
+            <img src="/assets/dokumentasi/14.jpg" class="h-[10rem] w-full" alt="">
+            <img src="/assets/dokumentasi/15.jpg" class="h-[10rem] w-full" alt="">
+            <img src="/assets/dokumentasi/16.jpg" class="h-[10rem] w-full" alt="">
+            <img src="/assets/dokumentasi/17.jpg" class="h-[10rem] w-full" alt="">
+            <img src="/assets/dokumentasi/1.jpg" class="h-[10rem] w-full" alt="">
+        </div>
+        <div class="absolute inset-0 bg-gray-300/90"></div>
     </div>
 </section>
 

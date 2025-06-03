@@ -1,5 +1,5 @@
 <header class="sticky top-0 z-50">
-    <div class="py-1 flex justify-end bg-white scroll-hidden md:px-6">
+    <div class="py-1 flex justify-center md:justify-end bg-white scroll-hidden md:px-6">
         <div class="relative lg:mt-0 lg:mx-4">
             <input type="text" class="w-48 py-2 pl-4 pr-10 text-gray-700 placeholder-gray-600 bg-white border-b border-gray-600 lg:w-56 lg:border-transparent focus:outline-none focus:border-gray-600" placeholder="Search">
             <span class="absolute inset-y-0 right-0 flex items-center pl-3">
@@ -146,31 +146,42 @@
                             </button>
                         </div>
                         <div class="px-8">
-                            <a href="/" class="{{($title == "Beranda")? "font-bold text-blue-900" : "font-medium text-gray-800 hover:text-[#10169f]"}}">Home</a>
-                        </div>
-                        <div class="px-8">
-                            <a href="/about" class="{{($title == "About")? "font-bold text-blue-900" : "font-medium text-gray-800 hover:text-[#10169f]"}}">About</a>
+                            <a href="/v1" class="{{($title == "Beranda")? "font-bold text-blue-900" : "font-medium text-gray-800 hover:text-[#10169f]"}}">Home</a>
                         </div>
                         <div class="group px-8">
-                            <a href="/programs-publications" class="relative {{($title == "Programs & Publications")? "font-bold text-blue-900" : "font-medium text-gray-800 hover:text-[#10169f]"}}">
+                            <a href="#" class="{{($title == "About")? "font-bold text-blue-900" : "font-medium text-gray-800 hover:text-[#10169f]"}}">
                                 <div class="flex items-center">
-                                    <span>P2</span>
+                                    <span>About</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4 ml-1">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                                     </svg>
                                 </div>
-                                <div class="hidden py-2 group-hover:block md:absolute md:bg-white md:shadow-lg md:rounded-lg md:w-1/6 md:px-2 transition duration-1000">
-                                    <a href="/programs-publications" class="block py-2 px-8 md:px-2 hover:bg-gray-200 hover:text-gray-900">Programs</a>
-                                    <a href="/programs-publications" class="block py-2 px-8 md:px-2 hover:bg-gray-200 hover:text-gray-900">Publications</a>
+                                <div class="hidden py-2 group-hover:block md:absolute md:bg-white md:shadow-lg md:rounded-lg md:w-1/4 md:px-2 transition duration-1000">
+                                    <a href="/about/v0" class="block py-2 px-8 md:px-2 hover:bg-gray-300 hover:text-gray-900 rounded-lg">Our Story</a>
+                                    <a href="/about/speciality" class="block py-2 px-8 md:px-2 hover:bg-gray-300 hover:text-gray-900 rounded-lg">Our Speciality</a>
+                                    <a href="/about/leadership" class="block py-2 px-8 md:px-2 hover:bg-gray-300 hover:text-gray-900 rounded-lg">Leadership</a>
+                                    <a href="/about/our-team" class="block py-2 px-8 md:px-2 hover:bg-gray-300 hover:text-gray-900 rounded-lg">Our Team</a>
                                 </div>
                             </a>
                         </div>
-                        <div class="px-8">
-                            <a href="/news" class="{{($title == "News")? "font-bold text-blue-900" : "font-medium text-gray-800 hover:text-[#10169f]"}}">News</a>
+                        <div class="group px-8">
+                            <a href="#" class="relative {{($title == "Programs & Publications")? "font-bold text-blue-900" : "font-medium text-gray-800 hover:text-[#10169f]"}}">
+                                <div class="flex items-center">
+                                    <span>Our Work</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4 ml-1">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                    </svg>
+                                </div>
+                                <div class="hidden py-2 group-hover:block md:absolute md:bg-white md:shadow-lg md:rounded-lg md:w-1/4 md:px-2 transition duration-1000">
+                                    <a href="/programs-publications" class="block py-2 px-8 md:px-2 hover:bg-gray-300 hover:text-gray-900 rounded-lg">Programs</a>
+                                    <a href="/publications" class="block py-2 px-8 md:px-2 hover:bg-gray-300 hover:text-gray-900 rounded-lg">Publications</a>
+                                    <a href="/news" class="block py-2 px-8 md:px-2 hover:bg-gray-300 hover:text-gray-900 rounded-lg">News</a>
+                                    <a href="/events" class="block py-2 px-8 md:px-2 hover:bg-gray-300 hover:text-gray-900 rounded-lg">Events</a>
+                                    
+                                </div>
+                            </a>
                         </div>
-                        <div class="px-8">
-                            <a href="/events" class="{{($title == "Events")? "font-bold text-blue-900" : "font-medium text-gray-800 hover:text-[#10169f]"}}">Events</a>
-                        </div>
+                        
                         <div class="px-8">
                             <a href="/contact" class="{{($title == "Contact")? "font-bold text-blue-900" : "font-medium text-gray-800 hover:text-[#10169f]"}}">Contact</a>
                         </div>
@@ -178,16 +189,29 @@
                             <a href="/careers" class="{{($title == "Careers")? "font-bold text-blue-900" : "font-medium text-gray-800 hover:text-[#10169f]"}}">Careers</a>
                         </div>
                         <div class="px-8">
-                            <a href="" class="bg-blue-900 rounded-lg w-12 px-12 py-2 text-center text-white font-medium flex justify-center md:hidden">#NGO</a>
+                            <a href="" class="block md:hidden shadow-lg">
+                                <svg class="w-24" viewBox="0 0 3 2" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="3" height="1" fill="#FF0000" />
+                                    <rect y="1" width="3" height="1" fill="#FFFFFF" />
+                                </svg>
+                            </a>
+                            <a href="https://www.ngosource.org/about-equivalency-determination-on-file-badge" target="_blank" class="flex md:hidden">
+                                <img src="/assets/logo/ngosource.png" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
                 
                 <div class="flex">
-                    <button class="group px-8 py-2 md:px-8 md:py-1.5 border-2 border-blue-900 rounded-lg mr-2 hidden md:block font-medium text-gray-500 relative overflow-hidden cursor-pointer">
-                        <div class="absolute w-full h-full bg-blue-900 top-0 left-0 translate-x-[-100%] group-hover:translate-x-[0%] transition duration-300 text-white flex items-center justify-center pointer-events-none">#NGO</div>
-                        <span class="z-20">#NGO</span>
-                    </button>
+                    {{-- <a href="" class="shadow-lg">
+                        <svg class="w-24" viewBox="0 0 3 2" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="3" height="1" fill="#FF0000" />
+                            <rect y="1" width="3" height="1" fill="#FFFFFF" />
+                        </svg>
+                    </a> --}}
+                    <a href="https://www.ngosource.org/about-equivalency-determination-on-file-badge" target="_blank" class="hidden md:block">
+                        <img src="/assets/logo/ngosource.png" class="w-24" alt="">
+                    </a>
                     <!-- Mobile menu button -->
                     <div class="flex lg:hidden">
                         <button x-cloak @click="isOpen = !isOpen" type="button" class="text-gray-500 hover:text-gray-600 focus:outline-none focus:text-gray-600" aria-label="toggle menu">

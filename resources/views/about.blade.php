@@ -4,7 +4,7 @@
 @section('content')
 
 {{-- about hero --}}
-<section class="w-full z-20 relative overflow-hidden bg-gray-700">
+<section class="w-full z-20 relative overflow-hidden bg-gray-700 hidden">
     <div class="absolute z-10 left-[0%] md:left-[50%] top-0 md:-top-[30%] bg-gray-700/70">
         <img src="/assets/about/about3.jpg" class="inset-0 object-cover max-h-full max-w-full" alt="">
         <div class="absolute inset-0 bg-gradient-to-r from-gray-700 via-transparent to-gray-700 pointer-events-none"></div>
@@ -106,26 +106,27 @@
 </section> --}}
 
 {{-- why --}}
-<section class="bg-gray-300 relative pb-20 overflow-hidden">
+<section class="relative overflow-hidden">
     <div class="mx-auto max-w-screen-xl px-4 py-20 sm:px-6 lg:px-0">
-        <h2 class="text-4xl md:text-8xl font-bold text-gray-900 mb-16 text-right">
+        <h2 class="text-4xl md:text-8xl font-bold text-gray-900 mb-16 text-center">
             <div class="hidden md:hidden absolute uppercase text-gray-400 -left-[29%] -top-[6%] text-center text-[14rem]">history</div>
             <div class="hidden md:hidden absolute uppercase text-gray-400 -right-[33%] -top-[6%] text-center text-[14rem]">history</div>
             {{-- <span class="relative z-30 text-gray-700">How It All Began</span> --}}
-            <span class="relative z-30 text-gray-700">The Story Behind SID</span>
+            <span class="relative z-30 text-gray-700 font-merriweather">Our <span class="text-blue-900">Story</span></span>
         </h2>
         <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8">
             <div class="relative w-full h-full">
                 <div class="flex absolute top-[0] gap-8 left-0 transform -translate-x-[105%] z-10 opacity-30 md:opacity-100">
-                    <img src="https://images.unsplash.com/photo-1731690415686-e68f78e2b5bd?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="rounded" alt="">
-                    <img
-                    src="https://images.unsplash.com/photo-1731690415686-e68f78e2b5bd?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="rounded" alt="" />
+                    {{-- <img src="/assets/galery/12174a_18a2fca854e64eebb3ff19c7c9652705~mv2.jpg" class="rounded" alt="" class="object-conver w-full h-full">
+                    <img src="/assets/galery/12174a_18a2fca854e64eebb3ff19c7c9652705~mv2.jpg" class="rounded" alt="" class="object-conver w-full h-full" /> --}}
+                    <img src="https://images.unsplash.com/photo-1731690415686-e68f78e2b5bd?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="rounded" alt="" />
+                    <img src="https://images.unsplash.com/photo-1731690415686-e68f78e2b5bd?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="rounded" alt="" />
                 </div>
             </div>
             <div>
-                <div class="max-w-lg md:max-w-none z-20 bg-gray-300">
+                <div class="max-w-lg md:max-w-none z-20">
                     <p class="text-gray-800 text-sm md:text-lg">
-                        Yayasan Institut Pengembangan Suara Mitra or also known as the SUMMIT Institute of Development (SID) was legally established in 2007. The idea of forming a foundation came from several former Senior Management Team Members of the SUMMIT. The SUMMIT was a large scale randomized controlled trial conducted in Lombok, West Nusa Tenggara, Indonesia with the goal to reduce maternal and infant death in the context of routine prenatal care. The study enrolled nearly 42000 pregnant women and employed around 500 field staff from 2001-2004. The study showed that health can be improved by enhancing routine prenatal care with participatory approaches and evidence-based decisions. The enhancement can be achieved with the improvement of the quality of human resources. Therefore the SID was envisioned to achieve improvement in health and human development at the community level through participatory evidence-based decision making and sustainable action.
+                        Yayasan Institut Pengembangan Suara Mitra, also known as the SUMMIT Institute for Development (SID), was legally established in 2007. The idea of forming the foundation originated from several former members of the Senior Management Team of the SUMMIT. The SUMMIT was a large-scale randomized controlled trial conducted in Lombok, West Nusa Tenggara, Indonesia, with the goal of reducing maternal and infant mortality in the context of routine prenatal care. The study enrolled approximately 42,000 pregnant women and employed around 500 field staff between 2001 and 2004. The results demonstrated that health outcomes can be improved by enhancing routine prenatal care through participatory approaches and evidence-based decision-making. This enhancement can be achieved by improving the quality of human resources. Therefore, SID was envisioned to promote better health and human development at the community level through participatory, evidence-based decision-making and sustainable action.
                     </p>
                 </div>
             </div>
@@ -134,9 +135,9 @@
 </section>
 
 {{-- visi misi --}}
-<section class="relative bg-[#10169f]">
+<section class="relative bg-[#10169f] pb-20">
     
-    <div class="container relative mx-auto py-40 z-10">
+    <div class="container relative mx-auto py-40 z-10 h-auto">
         <div class="flex flex-wrap md:flex-nowrap gap-4 px-4">
             <div class="w-full md:w-1/2 h-auto flex justify-center flex-col md:px-12 relative">
                 <h1 class="text-6xl md:text-8xl font-bold text-gray-100 text-left z-30">Our Vision</h1>
@@ -160,69 +161,78 @@
                         <div class="bg-blue-600">Misi 4</div>
                     </div> --}}
                     <div class="grid w-full grid-cols-1 gap-4 xl:gap-4 md:grid-cols-2 md:pr-4">
-                        <div class="space-y-3 shadow-2xl p-3 rounded-lg bg-white">
-                            <div class="flex gap-4 items-center">
-                                <span class="inline-block p-3 text-white bg-[#10169f] rounded-lg">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
-                                    </svg>
-                                </span>
-                                
-                                <h1 class="text-xl font-semibold text-gray-700 capitalize">Every Voice Matters</h1>
-                            </div>
-
-
-                            <p class="text-gray-600">
-                                Improved participation of every member of the community in decision making, in forms of information, idea, suggestion or opinions.
-                            </p>
-                        </div>
-
-                        <div class="space-y-3 shadow-2xl p-3 rounded-lg bg-white">
-                            <div class="flex gap-4 items-center">
-                                <span class="inline-block p-3 text-white bg-[#10169f] rounded-lg">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 0 1-1.161.886l-.143.048a1.107 1.107 0 0 0-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 0 1-1.652.928l-.679-.906a1.125 1.125 0 0 0-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 0 0-8.862 12.872M12.75 3.031a9 9 0 0 1 6.69 14.036m0 0-.177-.529A2.25 2.25 0 0 0 17.128 15H16.5l-.324-.324a1.453 1.453 0 0 0-2.328.377l-.036.073a1.586 1.586 0 0 1-.982.816l-.99.282c-.55.157-.894.702-.8 1.267l.073.438c.08.474.49.821.97.821.846 0 1.598.542 1.865 1.345l.215.643m5.276-3.67a9.012 9.012 0 0 1-5.276 3.67m0 0a9 9 0 0 1-10.275-4.835M15.75 9c0 .896-.393 1.7-1.016 2.25" />
-                                    </svg>
+                        <div class="grid md:grid-rows-2 gap-4">
+                            <div class="relative space-y-3 shadow-2xl px-4 py-8 rounded-lg bg-white overflow-hidden h-auto">
+                                <div class="flex gap-4 items-center relative">
+                                    <img src="/assets/about/about4.jpg" class="object-cover pointer-events-none z-0 rounded-lg" alt="">
+                                {{-- <div class="absolute inset-0 bg-black/20 w-full h-full"></div> --}}
+                                    {{-- <span class="inline-block p-3 text-white bg-[#10169f] rounded-lg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
+                                        </svg>
+                                    </span> --}}
+                                    
+                                    {{-- <h1 class="text-xl font-semibold text-gray-700 capitalize">Every Voice Matters</h1> --}}
+                                </div>
+                                <p class="indent-5 first-letter:text-2xl">
+                                    Improved participation of every member of the community in decision making, in forms of information, idea, suggestion or opinions.
+                                </p>
     
-                                </span>
-                                <h1 class="text-xl font-semibold text-gray-700 capitalize">Accessible Care for All</h1>
+    
                             </div>
-
-
-                            <p class="text-gray-600">
-                                Improved access to information and health services.
-                            </p>
+    
+                            <div class="space-y-3 shadow-2xl px-4 py-8 rounded-lg bg-white">
+                                <div class="flex gap-4 items-center">
+                                    <img src="/assets/about/about4.jpg" class="inset-0 object-cover pointer-events-none z-0 rounded-lg" alt="">
+                                    {{-- <span class="inline-block p-3 text-white bg-[#10169f] rounded-lg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 0 1-1.161.886l-.143.048a1.107 1.107 0 0 0-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 0 1-1.652.928l-.679-.906a1.125 1.125 0 0 0-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 0 0-8.862 12.872M12.75 3.031a9 9 0 0 1 6.69 14.036m0 0-.177-.529A2.25 2.25 0 0 0 17.128 15H16.5l-.324-.324a1.453 1.453 0 0 0-2.328.377l-.036.073a1.586 1.586 0 0 1-.982.816l-.99.282c-.55.157-.894.702-.8 1.267l.073.438c.08.474.49.821.97.821.846 0 1.598.542 1.865 1.345l.215.643m5.276-3.67a9.012 9.012 0 0 1-5.276 3.67m0 0a9 9 0 0 1-10.275-4.835M15.75 9c0 .896-.393 1.7-1.016 2.25" />
+                                        </svg>
+        
+                                    </span>
+                                    <h1 class="text-xl font-semibold text-gray-700 capitalize">Accessible Care for All</h1> --}}
+                                </div>
+    
+    
+                                <p class="indent-5 first-letter:text-2xl">
+                                    Improved access to information and health services.
+                                </p>
+                            </div>
                         </div>
-
-                        <div class="space-y-3 shadow-2xl p-3 rounded-lg bg-white">
-                            <div class="flex items-center gap-4">
-                                <span class="inline-block p-3 text-white bg-[#10169f] rounded-lg">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z" />
-                                    </svg>
-                                </span>
-                                <h1 class="text-xl font-semibold text-gray-700 capitalize">Connected Communities & Informed Decisions</h1>
+                        
+                        <div class="grid grid-rows-2 gap-4 transform">
+                            <div class="space-y-3 shadow-2xl px-4 py-8 rounded-lg bg-white ">
+                                <div class="flex items-center gap-4">
+                                    <img src="/assets/about/about4.jpg" class="inset-0 object-cover pointer-events-none z-0 rounded-lg" alt="">
+                                    {{-- <span class="inline-block p-3 text-white bg-[#10169f] rounded-lg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z" />
+                                        </svg>
+                                    </span>
+                                    <h1 class="text-xl font-semibold text-gray-700 capitalize">Connected Communities & Informed Decisions</h1> --}}
+                                </div>
+    
+                                <p class="indent-5 first-letter:5xl">
+                                    To establish communication and information system at the community level to obtain evidence needed for decision-making processes.
+                                </p>
                             </div>
-
-                            <p class="text-gray-600">
-                                To establish communication and information system at the community level to obtain evidence needed for decision-making processes.
-                            </p>
-                        </div>
-
-                        <div class="space-y-3 shadow-2xl p-3 rounded-lg bg-white">
-                            <div class="flex items-center gap-4">
-                                <span class="inline-block p-3 text-white bg-[#10169f] rounded-lg">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
-                                    </svg>
-                                </span>
-                                <h1 class="text-xl font-semibold text-gray-700 capitalize">Empowering Change Makers</h1>
+    
+                            <div class="space-y-3 shadow-2xl px-4 py-8 rounded-lg bg-white">
+                                <div class="flex items-center gap-4">
+                                    <img src="/assets/about/about4.jpg" class="inset-0 object-cover pointer-events-none z-0 rounded-lg" alt="">
+                                    {{-- <span class="inline-block p-3 text-white bg-[#10169f] rounded-lg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
+                                        </svg>
+                                    </span>
+                                    <h1 class="text-xl font-semibold text-gray-700 capitalize">Empowering Change Makers</h1> --}}
+                                </div>
+    
+    
+                                <p class="indent-5 first-letter:5xl">
+                                    To develop human resource to become agents of change that will drive for better behavior at the community level.
+                                </p>
                             </div>
-
-
-                            <p class="text-gray-600">
-                                To develop human resource to become agents of change that will drive for better behavior at the community level.
-                            </p>
                         </div>
                     </div>
 
@@ -231,7 +241,7 @@
         </div>
     </div>
     {{-- <div class="absolute -bottom-[93%] md:-bottom-[64%] right-0 w-full h-full"> --}}
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="absolute -bottom-[0%] md:-bottom-[14%] left-0 z-0 pointer-events-none"><path fill="#ffffff" fill-opacity="1" d="M0,160L80,138.7C160,117,320,75,480,96C640,117,800,203,960,224C1120,245,1280,203,1360,181.3L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="absolute -bottom-[0%] md:-bottom-[5%] left-0 z-0 pointer-events-none"><path fill="#ffffff" fill-opacity="1" d="M0,160L80,138.7C160,117,320,75,480,96C640,117,800,203,960,224C1120,245,1280,203,1360,181.3L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
     {{-- </div> --}}
 </section>
 
@@ -336,7 +346,7 @@
         </div>
         <div class="container mx-auto text-right w-full mr-8 hidden md:block relative">
             <span class="absolute font-extrabold text-[14rem] -right-32 top-6 text-right text-gray-200 z-10 pointer-events-none">VALUES</span>
-            <h1 class="text-8xl font-extrabold z-30 relative">What Are Our Values?</h1>
+            <h1 class="text-8xl font-extrabold z-30 relative">Our<span class="text-blue-900"> Values</span></h1>
         </div>
     </div>
 </section>
@@ -351,9 +361,9 @@
     <div class="flex overflow-hidden" style="height: max-content">
         <h1 class="absolute lg:top-[2%] top-8 lg:left-[60%] left-[50%] transform -translate-x-1/2 lg:text-8xl text-2xl font-extrabold w-full md:w-auto text-white md:text-gray-700 text-center bg-[#10169f] md:bg-transparent md:text-left z-20">
             <span class="absolute font-extrabold text-[14rem] -right-24 top-6 text-right text-gray-200 z-0 hidden md:block">DO</span>
-            <span class="relative z-20">What Do We Do?</span>
+            <span class="relative z-20">What <span class="text-blue-900">Do</span> We <span class="text-blue-900">Do</span>?</span>
         </h1>
-        <div class="whitespace-nowrap animate-scrollY h-screen hidden md:block">
+        <div class="whitespace-nowrap animate-scrollY h-screen hidden md:block ml-8">
             <div class="w-[36rem]">
                 <img class="rounded-lg" src="/assets/galery/11-12174a_8ec3416906f741498a5761e4c1378d10~mv2.jpg" alt="">
                 <img class="rounded-lg" src="/assets/galery/11-12174a_8ec3416906f741498a5761e4c1378d10~mv2.jpg" alt="">

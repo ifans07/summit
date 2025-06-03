@@ -6,6 +6,7 @@
     <title>@yield('title')</title>
     @vite(['resources/css/app.css'], ['resources/js/app.js'], ['resources/js/main.js'])
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
@@ -80,9 +81,21 @@
             .test-video video{
                 top: 0;
             }
+            .swiper{
+                padding: 0px 0 !important;
+            }
         }
 
         @keyframes slide {
+            from{
+                transform: translateX(0);
+            }
+            to{
+                transform: translateX(-100%);
+            }
+        }
+
+        @keyframes slide-2 {
             from{
                 transform: translateX(0);
             }
@@ -108,10 +121,16 @@
         .logo-slide{
             animation: 50s slide infinite linear;
         }
+        .logo-slide-2{
+            animation: 50s slide-2 infinite linear;
+        }
         .tengah{
             animation: 50s slide-tengah infinite linear;
         }
         .logo-slide img{
+            margin: 0 80px;
+        }
+        .logo-slide-2 img{
             margin: 0 80px;
         }
         
@@ -172,27 +191,155 @@
             margin: 20px 0;
         }
 
+        /* swiper video */
+        .swiper-video .swiper-scrollbar {
+            position: absolute !important;
+            top: 0px !important;
+            width: 100% !important;
+            left: 0 !important;
+            /* height: 100% !important; */
+            bottom: auto !important;
+            background-color: #fff; /* background track */
+            height: 2px !important;
+            border-radius: 0px !important;
+        }
+        .swiper-video .swiper-scrollbar-drag {
+            background-color: #000; /* warna dragger */
+            border-radius: 0px !important;
+        }
+        .swiper-video{
+            padding: 72px 0 !important;
+            /* overflow: hidden !important; */
+        }
 
+        /* swiper news */
+        
     </style>
 </head>
 <body class="overflow-x-hidden relative">
     
-    @include('layouts.header')
+    @if($title == "Beranda-v3")
+        @include('layouts.header-1')
+    @else
+        @include('layouts.header')
+    @endif
 
     <main>
         @yield('content')
     </main>
 
     @include('layouts.footer')
-
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js" defer></script>
+    
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
-    {{-- <script src="https://unpkg.com/feather-icons"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    {{-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" defer></script>s --}}
 
-    <script>
-        feather.replace();
+    {{-- <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            gsap.registerPlugin(ScrollTrigger);
+            ScrollTrigger.create({
+                trigger: "#filter-section",
+                start: "top 100px", // bisa diubah sesuai kebutuhan
+                endTrigger: "#publication-section",
+                end: "bottom center",
+                pin: '#filter-section',
+                pinSpacing: false,
+                markers: true,
+                // onUpdate: self => {
+                onLeave: () => {
+                    gsap.set("#filter-section", { clearProps: "" }); // reset posisi
+                },
+                onLeaveBack: () => {
+                    gsap.set("#filter-section", { clearProps: "" }); // reset saat scroll balik ke atas
+                }
+            });
+        });
     </script> --}}
+    
+    <script>
+        function pauseAllYouTubeVideos() {
+        const iframes = document.querySelectorAll('.swiper-video iframe');
+
+        iframes.forEach(iframe => {
+            iframe.contentWindow.postMessage(
+                    JSON.stringify({
+                        event: 'command',
+                        func: 'pauseVideo',
+                        args: [],
+                    }),
+                    '*'
+                );
+            });
+        }
+
+        const swiper = new Swiper('.swiper-video', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            // pagination: {
+            //     el: '.swiper-pagination',
+            // },
+
+            // Navigation arrows
+            // navigation: {
+            //     nextEl: '.swiper-button-next',
+            //     prevEl: '.swiper-button-prev',
+            // },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                clickable: true
+            },
+            on: {
+                slideChange: (e) => {
+                    pauseAllYouTubeVideos();
+                }
+            }
+        });
+
+        // Event tombol kustom
+        document.getElementById('custom-prev').addEventListener('click', () => swiper.slidePrev());
+        document.getElementById('custom-next').addEventListener('click', () => swiper.slideNext());
+        document.getElementById('custom-prev-1').addEventListener('click', () => swiper.slidePrev());
+        document.getElementById('custom-next-1').addEventListener('click', () => swiper.slideNext());
+
+
+        // Swiper B: hanya blog/news, tidak perlu handler video
+        const swiperNews = new Swiper('.swiper-news', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            // If we need pagination
+            pagination: {
+                el: '.swiper-news .swiper-pagination',
+            },
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-news .swiper-button-next',
+                prevEl: '.swiper-news .swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-news .swiper-scrollbar',
+            },
+
+            // slidesPerView: 1,
+            // spaceBetween: 20,
+            breakpoints: {
+                768: { slidesPerView: 3 },
+                1024: { slidesPerView: 3 },
+            },
+            // autoHeight: true,
+        });
+    </script>
 
     <script>
         document.addEventListener("DOMContentLoaded", function(){
@@ -208,7 +355,7 @@
                 
                 if (currentScroll < lastScrollTop) {
                     // Scroll ke atas
-                    // hederAtas.style.position = "relative"
+                    hederAtas.style.position = "relative"
                     hederAtas.style.top = "0px"
                     navScroll.style.top = "0px"
                     hederAtas.style.transition = "top .1s linear"
@@ -229,38 +376,44 @@
 
         })
     </script>
-        <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const galleryColumns = document.querySelectorAll('.grid.grid-cols-2.md\\:grid-cols-4 > div');
-        let allImages = [];
 
-        // Ambil semua elemen gambar dan simpan
-        galleryColumns.forEach(col => {
-            const items = Array.from(col.querySelectorAll('.group'));
-            allImages.push(...items);
-        });
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+        const items = document.querySelectorAll('[data-carousel-item]');
+        const iframes = document.querySelectorAll('iframe');
 
-        // Acak array gambar
-        function shuffle(array) {
-            for (let i = array.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1));
-                [array[i], array[j]] = [array[j], array[i]];
+        let activeIndex = 0;
+
+        function showItem(index) {
+            items.forEach((item, i) => {
+                const iframe = item.querySelector('iframe');
+                if (i === index) {
+                item.classList.add('opacity-100', 'pointer-events-auto', 'z-10');
+                item.classList.remove('opacity-0', 'pointer-events-none', 'z-0');
+                } else {
+                item.classList.add('opacity-0', 'pointer-events-none', 'z-0');
+                item.classList.remove('opacity-100', 'pointer-events-auto', 'z-10');
+                // stop video
+                if (iframe) {
+                    const src = iframe.src;
+                    iframe.src = '';
+                    iframe.src = src;
+                }
+                }
+            });
+            activeIndex = index;
             }
-            return array;
-        }
 
-        const shuffledImages = shuffle(allImages);
+            // Contoh rotasi otomatis tiap 8 detik
+            setInterval(() => {
+            const nextIndex = (activeIndex + 1) % items.length;
+            showItem(nextIndex);
+            }, 8000);
 
-        // Kosongkan semua kolom
-        galleryColumns.forEach(col => col.innerHTML = '');
-
-        // Bagi gambar ke setiap kolom secara merata
-        let colIndex = 0;
-        shuffledImages.forEach(item => {
-            galleryColumns[colIndex].appendChild(item);
-            colIndex = (colIndex + 1) % galleryColumns.length;
+            // Inisialisasi awal
+            showItem(0);
         });
-    });
-</script>
+    </script>
+
 </body>
 </html>

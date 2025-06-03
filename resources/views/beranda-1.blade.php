@@ -4,51 +4,38 @@
 @section('content')
 
 {{-- hero --}}
-{{-- <section>
-    <div class="w-full bg-center bg-cover h-[34rem] md:h-[38rem] relative overflow-hidden test-video">
-        <!-- <div class="absolute -z-10"> -->
-            <video src="{{ asset('assets/file.mp4') }}" autoplay loop muted playsinline loading="lazy"></video>
-        <!-- </div> -->
-        <div class="flex items-center justify-center w-full h-full bg-gray-900/40">
-            <div class="text-center">
-                <h1 class="text-3xl font-semibold text-white lg:text-6xl mb-4">Improvement through <span class="text-blue-500">Health Research</span><br> and <br><span class="text-blue-500">Human Development</span></h1>
 
-                <!-- From Uiverse.io by elijahgummer --> 
-                <button class="button-with-icon bg-blue-600 rounded-lg px-10 py-2.5">
-                    <svg
-                    class="icon"
-                    id="Play"
-                    viewBox="0 0 48 48"
-                    xmlns="http://www.w3.org/2000/svg"
-                    >
-                    <path
-                    class="color000000 svgShape"
-                    fill="#ffffff"
-                    d="M12 39c-.549 0-1.095-.15-1.578-.447A3.008 3.008 0 0 1 9 36V12c0-1.041.54-2.007 1.422-2.553a3.014 3.014 0 0 1 2.919-.132l24 12a3.003 3.003 0 0 1 0 5.37l-24 12c-.42.21-.885.315-1.341.315z"
-                    ></path>
-                </svg>
-                <span class="text">Learn More</span>
-                </button>
-            </div>
-        </div>
-    </div>
-</section> --}}
 <section>
     <div class="container mx-auto px-8 pb-20">
         <div>
             <div class="flex flex-col md:flex-row gap-4 md:gap-28 flex-wrap md:flex-nowrap md:justify-center md:items-end py-10 h-full">
                 <div class="md:w-1/2 lg:w-1/2 h-auto md:border-r-2 border-blue-900">
-                    <h1 class="text-4xl md:text-8xl font-extrabold text-left md:text-left text-gray-700 font-merriweather md:ml-20"><span class="text-blue-900">Newborn</span> New Hope</h1>
+                    <h1 class="text-4xl md:text-8xl font-extrabold text-left md:text-left text-gray-700 font-merriweather md:ml-20"><span class="text-blue-900">Newborn</span> 
+                        {{-- <span>
+                            <svg width="300" height="200" viewBox="0 0 3 2" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="3" height="1" fill="#FF0000" />
+                                <rect y="1" width="3" height="1" fill="#FFFFFF" />
+                            </svg>
+                        </span>  --}}
+                    New Hope</h1>
                 </div>
                 <div class="md:w-1/2 lg:w-1/2 h-auto">
-                    <p class="text-sm md:text-xl text-gray-700 leading-text mb-8 text-left md:mr-20">SID is committed to improving maternal and child health in Indonesia through participatory, evidence-based solutions rooted in real-world impact</p>
-                    <button class="py-2 px-12 font-medium bg-blue-900 text-white rounded-lg ml-auto">Learn more</button>
+                    <p class="text-sm md:text-xl text-gray-700 leading-text mb-8 text-left md:mr-20">Yayasan Institut Pengembangan Suara Mitra or SUMMIT Institute for Development (SID) is committed to improving maternal and child health in <span class="bg-blue-900 rounded-lg text-white px-2">Indonesia <svg class="size-4 inline-block" viewBox="0 0 3 2" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="3" height="1" fill="#FF0000" />
+                                <rect y="1" width="3" height="1" fill="#FFFFFF" />
+                            </svg></span> through participatory, evidence-based solutions rooted in real-world impact</p>
+                    <button class="py-2 px-8 font-medium border-2 border-blue-900 bg-blue-900 text-white rounded-lg hover:bg-blue-950 flex items-center justify-center">
+                        <span class="mr-2">Discover more</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+                        </svg>
+                    </button>
                 </div>
             </div>
         </div>
         <div class="relative rounded-lg overflow-hidden">
             {{-- <video src="{{ asset('assets/file.mp4') }}" autoplay loop muted playsinline loading="lazy" class="rounded-lg object-center w-full h-[38rem]"></video> --}}
-            <img src="{{asset('assets/about/about4.jpg')}}" class="rounded-lg object-cover w-full h-[20rem]" alt="">
+            <img src="{{asset('assets/about/about4.jpg')}}" class="rounded-lg object-cover w-full h-[30rem]" alt="">
             {{-- <div class="absolute inset-0 bg-blue-100/60 bg-gradient-to-r from-blue-100 via-transparent to-blue-100 pointer-events-none w-full h-full"></div> --}}
         </div>
     </div>
@@ -56,8 +43,9 @@
 
 <!-- mitra -->
 <section class="overflow-hidden">
-    <div class="container mx-auto py-28">
-        <h1 class="text-center text-2xl md:text-6xl text-gray-700 font-bold mb-8">Our <span class="text-blue-900">Partners</span></h1>
+    <div class="container mx-auto pt-28 pb-28 relative">
+        
+        <h1 class="text-center text-2xl md:text-6xl text-gray-700 font-extrabold mb-8 font-merriweather">Our <span class="text-blue-900">Partners</span></h1>
         <div class="logos whitespace-nowrap bg-white flex py-7">
             <div class="logo-slide flex">
                 <img src="{{asset('assets/partners/healthy-mother-healthy-babies.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
@@ -66,10 +54,10 @@
                 <!-- <img src="/assets/partners/lobar.jpeg" alt="" class="object-contain h-16 w-full"> -->
                 <!-- <img src="/assets/partners/loteng.jpg" alt="" class="object-contain h-16 w-full"> -->
                 <!-- <img src="/assets/partners/ntb.png" alt="" class="object-contain h-16 w-full"> -->
-                <img src="{{asset('/assets/partners/opensrp.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/OpenSRP-logo.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
                 <img src="{{asset('/assets/partners/politeknik-semarang.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
                 <img src="{{asset('/assets/partners/qualcomm.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-                <img src="{{asset('/assets/partners/the-lancet.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/The_Lancet_logo.png')}}" alt="" class="object-contain w-32" loading="lazy">
                 <img src="{{asset('/assets/partners/ucdavis.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
                 <!-- <img src="/assets/partners/unicef.png" alt="" class="object-contain h-16 w-full"> -->
                 <img src="{{asset('/assets/partners/unram.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
@@ -83,10 +71,10 @@
                 <!-- <img src="/assets/partners/lobar.jpeg" alt="" class="object-contain h-16 w-full"> -->
                 <!-- <img src="/assets/partners/loteng.jpg" alt="" class="object-contain h-16 w-full"> -->
                 <!-- <img src="/assets/partners/ntb.png" alt="" class="object-contain h-16 w-full"> -->
-                <img src="{{asset('/assets/partners/opensrp.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/OpenSRP-logo.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
                 <img src="{{asset('/assets/partners/politeknik-semarang.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
                 <img src="{{asset('/assets/partners/qualcomm.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-                <img src="{{asset('/assets/partners/the-lancet.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/The_Lancet_logo.png')}}" alt="" class="object-contain w-32" loading="lazy">
                 <img src="{{asset('/assets/partners/ucdavis.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
                 <!-- <img src="/assets/partners/unicef.png" alt="" class="object-contain h-16 w-full"> -->
                 <img src="{{asset('/assets/partners/unram.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
@@ -129,69 +117,116 @@
             </div>
         </div>
         <div class="logos whitespace-nowrap bg-white flex py-7">
-            <div class="logo-slide flex">
+            <div class="logo-slide-2 flex">
                 <img src="{{asset('assets/partners/healthy-mother-healthy-babies.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-                <img src="{{asset('/assets/partners/bill-melinda-gates.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                {{-- <img src="{{asset('/assets/partners/bill-melinda-gates.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy"> --}}
+                <img src="/assets/partners/ntb.png" alt="" class="object-contain h-16 w-full">
                 <img src="{{asset('/assets/partners/Kementerian Kesehatan.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-                <!-- <img src="/assets/partners/lobar.jpeg" alt="" class="object-contain h-16 w-full"> -->
-                <!-- <img src="/assets/partners/loteng.jpg" alt="" class="object-contain h-16 w-full"> -->
-                <!-- <img src="/assets/partners/ntb.png" alt="" class="object-contain h-16 w-full"> -->
-                <img src="{{asset('/assets/partners/opensrp.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="/assets/partners/lobar.jpeg" alt="" class="object-contain h-16 w-full">
+                <img src="/assets/partners/loteng.jpg" alt="" class="object-contain h-16 w-full">
+                {{-- <img src="{{asset('/assets/partners/opensrp.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
                 <img src="{{asset('/assets/partners/politeknik-semarang.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
                 <img src="{{asset('/assets/partners/qualcomm.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
                 <img src="{{asset('/assets/partners/the-lancet.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-                <img src="{{asset('/assets/partners/ucdavis.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-                <!-- <img src="/assets/partners/unicef.png" alt="" class="object-contain h-16 w-full"> -->
+                <img src="{{asset('/assets/partners/ucdavis.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy"> --}}
+                <img src="/assets/partners/unicef-logo.png" alt="" class="object-contain h-16 w-full">
+                <img src="/assets/partners/lombok-timur.png" alt="" class="object-contain h-16 w-full">
                 <img src="{{asset('/assets/partners/unram.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
                 <img src="{{asset('/assets/partners/who.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="/assets/partners/lombok-utara.png" alt="" class="object-contain h-16 w-full">
             </div>
             <!-- duplikat -->
-            <div class="logo-slide flex">
+            <div class="logo-slide-2 flex">
                 <img src="{{asset('/assets/partners/healthy-mother-healthy-babies.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-                <img src="{{asset('/assets/partners/bill-melinda-gates.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                {{-- <img src="{{asset('/assets/partners/bill-melinda-gates.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy"> --}}
+                <img src="/assets/partners/ntb.png" alt="" class="object-contain h-16 w-full">
                 <img src="{{asset('/assets/partners/Kementerian Kesehatan.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-                <!-- <img src="/assets/partners/lobar.jpeg" alt="" class="object-contain h-16 w-full"> -->
-                <!-- <img src="/assets/partners/loteng.jpg" alt="" class="object-contain h-16 w-full"> -->
-                <!-- <img src="/assets/partners/ntb.png" alt="" class="object-contain h-16 w-full"> -->
-                <img src="{{asset('/assets/partners/opensrp.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="/assets/partners/lobar.jpeg" alt="" class="object-contain h-16 w-full">
+                <img src="/assets/partners/loteng.jpg" alt="" class="object-contain h-16 w-full">
+                {{-- <img src="{{asset('/assets/partners/opensrp.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
                 <img src="{{asset('/assets/partners/politeknik-semarang.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
                 <img src="{{asset('/assets/partners/qualcomm.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
                 <img src="{{asset('/assets/partners/the-lancet.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-                <img src="{{asset('/assets/partners/ucdavis.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-                <!-- <img src="/assets/partners/unicef.png" alt="" class="object-contain h-16 w-full"> -->
+                <img src="{{asset('/assets/partners/ucdavis.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy"> --}}
+                <img src="/assets/partners/unicef-logo.png" alt="" class="object-contain h-16 w-full">
+                <img src="/assets/partners/lombok-timur.png" alt="" class="object-contain h-16 w-full">
                 <img src="{{asset('/assets/partners/unram.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
                 <img src="{{asset('/assets/partners/who.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="/assets/partners/lombok-utara.png" alt="" class="object-contain h-16 w-full">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container mx-auto px-28 pt-20 pb-32">
+        <div>
+            <div class="rounded-4xl py-20 px-12 bg-gray-300">
+                <div class="flex justify-between">
+                    <div class="mb-12">
+                        <h1 class="text-5xl font-merriweather mb-4">SID Realtime</h1>
+                        <p>For the year ended December 31, 2024, Amount in U.S. dollars.</p>
+                    </div>
+                    <div>
+                        <a href="" class="flex font-medium underline underline-offset-8">
+                            More about a yayasan
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6 ml-2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <ul class="flex justify-around gap-12">
+                        <li class="flex flex-col text-center">
+                            <span class="text-6xl mb-4">2,167</span>
+                            <span>Safe Births</span>
+                        </li>
+                        <li class="flex flex-col text-center">
+                            <span class="text-6xl mb-4">2,167</span>
+                            <span>Active Pregnancies</span>
+                        </li>
+                        <li class="flex flex-col text-center">
+                            <span class="text-6xl mb-4">2,167</span>
+                            <span>ANC Visits</span>
+                        </li>
+                        <li class="flex flex-col text-center">
+                            <span class="text-6xl mb-4">2,167</span>
+                            <span>Field Cadres</span>
+                        </li>
+                        <li class="flex flex-col text-center">
+                            <span class="text-6xl mb-4">2,167</span>
+                            <span>Covered Areas</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
 {{-- visi misi --}}
-<section>
+{{-- <section>
     <div class="container mx-auto px-8 py-28">
+        <h1 class="text-7xl font-bold font-merriweather mb-8 w-full text-center"><span class="text-blue-900 mr-auto">Visi</span>, <span class="text-blue-900">Misi</span> & Quote</h1>
         <div class="flex flex-col md:flex-row gap-8">
             <div class="md:w-3/5 relative rounded-lg">
                 <img src="{{asset('assets/about/about4.jpg')}}" class="object-cover rounded-lg" alt="">
-                <div class="absolute inset-0 text-white bg-gray-600/80 flex flex-col items-center justify-center rounded-lg px-4">
+                <div class="absolute inset-0 text-white bg-gray-500/80 flex flex-col items-center justify-center rounded-lg px-4">
                     <figure class="max-w-screen-md mx-auto text-center">
                         <svg class="w-5 h-5 md:w-10 md:h-10 mx-auto mb-3 text-gray-200" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
                             <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"/>
                         </svg>
                         <blockquote>
-                            <p class="text-xl md:text-4xl italic font-medium text-gray-900 dark:text-white">"With every newborn baby, a little sun rises."</p>
+                            <p class="text-xl md:text-4xl italic font-medium text-gray-900 dark:text-white leading-20">"With every newborn baby, a <span class="text-blue-950">little sun rises</span>."</p>
                         </blockquote>
                         <figcaption class="flex items-center justify-center mt-6 space-x-3 rtl:space-x-reverse">
-                            {{-- <img class="w-6 h-6 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="profile picture"> --}}
                             <div class="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-500 dark:divide-gray-700">
                                 <cite class="pe-3 font-medium text-xs md:text-md text-gray-900 dark:text-white">IRMGARD ERATH</cite>
                                 <cite class="ps-3 text-xs md:text-sm text-gray-200">Penulis</cite>
                             </div>
                         </figcaption>
                     </figure>
-                    {{-- <h2 class="text-white text-6xl text-center leading-normal">
-                        With every newborn baby, a little sun rises.
-                    </h2>
-                    <p>- IRMGARD ERATH -</p> --}}
                 </div>
             </div>
             <div class="md:w-2/5 flex gap-8 flex-col">
@@ -218,142 +253,222 @@
                     </div>
                     <p class="text-gray-700 text-md md:text-lg">Improvement through community-driven health development by enhancing participation, access to information, and capacity building to support evidence-based and sustainable decision making.</p>
                 </div>
-                <a href="/about" class="block relative overflow-hidden px-12 py-2 border-2 border-blue-900 text-white bg-blue-900 hover:bg-blue-950 rounded-lg font-medium text-center">
+                <a href="/about" class="block px-12 py-2 border-2 border-blue-900 text-white bg-blue-900 hover:bg-blue-950 rounded-lg font-medium text-center">
                     <span>Learn More</span>
                 </a>
             </div>
         </div>
     </div>
-</section>
-
-<section>
-    <div class="container mx-auto px-8 py-28">
-        <div>
-            <iframe class="w-full h-[38rem]" src="https://www.youtube.com/embed/4XeQSZWzFgE?si=n_ojhilzB9TqRnDW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-    </div>
-</section>
-
-<!-- visi misi -->
-{{-- <section>
-    <div class="w-full h-[30rem] relative">
-        <div class="absolute bg-gray-900/50 h-full w-full flex items-center justify-center">
-            <!-- <div class="text-center">
-                <p class="text-3xl md:text-6xl text-white mb-6">"With every newborn baby, a little sun rises"</p>
-                <small class="text-2xl text-white">-Irmgard Erath</small>
-            </div> -->
-            <div class="w-full mx-auto text-center">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block w-8 h-8 text-gray-100 mb-8" viewBox="0 0 975.036 975.036">
-                    <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
-                </svg>
-                <p class="leading-relaxed text-3xl md:text-6xl text-white font-medium">With every newborn baby, a <span class="text-blue-600">little sun rises</span>.</p>
-                <span class="inline-block h-1 w-10 rounded bg-blue-600 mt-8 mb-6"></span>
-                <h2 class="text-gray-100 font-medium title-font tracking-wider text-xl">IRMGARD ERATH</h2>
-                <p class="text-gray-300">Penulis</p>
-            </div>
-        </div>
-        <img src="{{asset('/assets/partners/1.jpg')}}" alt="" class="object-cover h-full w-full bg-fixed">
-    </div>
 </section> --}}
 
-{{-- <section class="bg-white pb-24">
-    <div class="flex items-center bg-white justify-center flex-wrap md:flex-nowrap w-full gap-3 md:gap-20 -mt-12 md:-mt-16">
-        <div class="w-full mx-3 overflow-hidden bg-white rounded-lg shadow-xl md:w-96 z-20 transition duration-400 hover:scale-110">
-            <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase text-2xl">Visi</h3>
-    
-            <div class="flex items-center flex-col px-4 py-4 bg-white">
-                <span class="text-gray-800 mb-3">Improvement through health research and human development at the community level through participatory evidence-based decision making and sustainable action.</span>
-                <hr class="w-full border border-gray-300 my-4">
-                <a href="#" class="text-blue-400">More</a>
+{{-- video youtube --}}
+{{-- <section class="bg-blue-900">
+    <div class="container mx-auto px-8 md:px-24 py-28">
+        <div class="relative w-full">
+            <!-- Carousel wrapper -->
+            <div class="relative w-full h-screen overflow-hidden rounded-lg md:h-96">
+                <!-- Item 1 -->
+                <div class="absolute inset-0 transition-opacity duration-700 ease-in-out opacity-100 pointer-events-none" data-carousel-item="active">
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-8 absolute w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                        <div class="md:w-1/2">
+                            <iframe class="w-full h-96 rounded-lg" src="https://www.youtube.com/embed/4XeQSZWzFgE?si=Za6dTYwL6oHgZyxH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="md:w-1/2 bg-blue-900">
+                            <h1 class="text-4xl font-merriweather font-bold mb-8 text-center md:text-left text-white">OpenSRP Indonesia</h1>
+                            <p class="text-md md:text-lg text-gray-200 text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, molestias. Dolorum aspernatur repudiandae nesciunt dolorem aut soluta inventore aperiam ipsa, vero velit maxime porro, accusantium corporis doloremque libero. Asperiores officiis vitae dicta corporis eligendi labore molestias! Voluptate illum rerum, unde placeat cum debitis commodi quisquam reprehenderit officia doloribus distinctio exercitationem porro recusandae inventore a assumenda soluta nam accusantium officiis totam laborum deserunt aliquid beatae. Unde sed asperiores veniam repellendus eaque?</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0 pointer-events-none" data-carousel-item>
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-8 absolute w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                        <div class="md:w-1/2">
+                            <iframe class="w-full h-96 rounded-lg" src="https://www.youtube.com/embed/ZkF0CjhNfTw?si=Kb_klAdFUVyPBVTf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="md:w-1/2 bg-blue-900">
+                            <h1 class="text-4xl font-merriweather font-bold mb-8 text-center md:text-left text-white">BUNDA App</h1>
+                            <p class="text-md md:text-lg text-gray-200 text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, molestias. Dolorum aspernatur repudiandae nesciunt dolorem aut soluta inventore aperiam ipsa, vero velit maxime porro, accusantium corporis doloremque libero. Asperiores officiis vitae dicta corporis eligendi labore molestias! Voluptate illum rerum, unde placeat cum debitis commodi quisquam reprehenderit officia doloribus distinctio exercitationem porro recusandae inventore a assumenda soluta nam accusantium officiis totam laborum deserunt aliquid beatae. Unde sed asperiores veniam repellendus eaque?</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0 pointer-events-none" data-carousel-item>
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-8 absolute w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                        <div class="md:w-1/2">
+                            <iframe class="w-full h-96 rounded-lg" src="https://www.youtube.com/embed/0SRgNb1BDyo?si=71RoePgZb8YUe3Gc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="md:w-1/2 bg-blue-900">
+                            <h1 class="text-4xl font-merriweather font-bold mb-8 text-center md:text-left text-white">THRIVE OpenSRP Indonesia</h1>
+                            <p class="text-md md:text-lg text-gray-200 text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, molestias. Dolorum aspernatur repudiandae nesciunt dolorem aut soluta inventore aperiam ipsa, vero velit maxime porro, accusantium corporis doloremque libero. Asperiores officiis vitae dicta corporis eligendi labore molestias! Voluptate illum rerum, unde placeat cum debitis commodi quisquam reprehenderit officia doloribus distinctio exercitationem porro recusandae inventore a assumenda soluta nam accusantium officiis totam laborum deserunt aliquid beatae. Unde sed asperiores veniam repellendus eaque?</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0 pointer-events-none" data-carousel-item>
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-8 absolute w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                        <div class="md:w-1/2">
+                            <iframe class="w-full h-96 rounded-lg" src="https://www.youtube.com/embed/wCKTJIU-hD8?si=KAG5CbTI2mDg-70t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="md:w-1/2 bg-blue-900">
+                            <h1 class="text-4xl font-merriweather font-bold mb-8 text-center md:text-left text-white">MMS: Solusi Lengkap Ibu Hamil</h1>
+                            <p class="text-md md:text-lg text-gray-200 text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, molestias. Dolorum aspernatur repudiandae nesciunt dolorem aut soluta inventore aperiam ipsa, vero velit maxime porro, accusantium corporis doloremque libero. Asperiores officiis vitae dicta corporis eligendi labore molestias! Voluptate illum rerum, unde placeat cum debitis commodi quisquam reprehenderit officia doloribus distinctio exercitationem porro recusandae inventore a assumenda soluta nam accusantium officiis totam laborum deserunt aliquid beatae. Unde sed asperiores veniam repellendus eaque?</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 5 -->
+                <div class="absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0 pointer-events-none" data-carousel-item>
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-8 absolute w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                        <div class="md:w-1/2">
+                            <iframe class="w-full h-96 rounded-lg" src="https://www.youtube.com/embed/g4kHru3i3pY?si=MEUA7S6j9lVT3RYD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="md:w-1/2 bg-blue-900">
+                            <h1 class="text-4xl font-merriweather font-bold mb-8 text-center md:text-left text-white">CISDI Onsite Visit to SID</h1>
+                            <p class="text-md md:text-lg text-gray-200 text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, molestias. Dolorum aspernatur repudiandae nesciunt dolorem aut soluta inventore aperiam ipsa, vero velit maxime porro, accusantium corporis doloremque libero. Asperiores officiis vitae dicta corporis eligendi labore molestias! Voluptate illum rerum, unde placeat cum debitis commodi quisquam reprehenderit officia doloribus distinctio exercitationem porro recusandae inventore a assumenda soluta nam accusantium officiis totam laborum deserunt aliquid beatae. Unde sed asperiores veniam repellendus eaque?</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="w-full mx-3 overflow-hidden bg-white rounded-lg shadow-xl md:w-96 z-20 transition duration-400 hover:scale-110">
-            <h3 class="py-2 font-bold tracking-wide text-center text-gray-800 uppercase text-2xl">Misi</h3>
-    
-            <div class="flex items-center flex-col px-4 py-4 bg-white">
-                <span class="text-gray-800 mb-3">Improvement through community-driven health development by enhancing participation, access to information, and capacity building to support evidence-based and sustainable decision making.</span>
-                <hr class="w-full border border-gray-300 my-4">
-                <a href="#" class="text-blue-400">More</a>
+            <!-- Slider indicators -->
+            <div class="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse -bottom-10 left-1/2">
+                <button type="button" class="w-3 h-3 rounded-full bg-gray-200/50" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                <button type="button" class="w-3 h-3 rounded-full bg-gray-200/50" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                <button type="button" class="w-3 h-3 rounded-full bg-gray-200/50" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                <button type="button" class="w-3 h-3 rounded-full bg-gray-200/50" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                <button type="button" class="w-3 h-3 rounded-full bg-gray-200/50" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
             </div>
+            <!-- Slider controls -->
+            <button type="button" class="absolute top-[10%] md:top-0 start-0 transform -translate-x-8 md:-translate-x-16 z-30 flex items-center justify-center h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button" class="absolute top-[10%] md:top-0 end-0 transform translate-x-8 md:translate-x-16 z-30 flex items-center justify-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
         </div>
     </div>
 </section> --}}
-<!-- end visi misi -->
+<section class="flex items-center">
+    {{-- <hr class="border-2 border-black"> --}}
+    <div class="container mx-auto px-8">
+        <div class="relative w-full h-full swiper swiper-video border-t-2 border-black">
+
+            <!-- If we need navigation buttons -->
+            <div class="md:hidden flex items-start justify-between gap-20 relative z-20" style="transform: translateY(-65px)">
+                <button id="custom-prev-1" class="cursor-pointer text-black">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+                    </svg>
+                </button>
+                <button id="custom-next-1" class="cursor-pointer text-black">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="swiper-scrollbar"></div>
+
+            <!-- Carousel wrapper -->
+            <div class="relative w-full flex items-center rounded-lg swiper-wrapper">
+                <!-- Item 1 -->
+                <div class="swiper-slide">
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+                        <div class="md:w-1/2 h-auto mb-8 rounded-lg overflow-hidden">
+                            <iframe class="max-w-none w-full h-[20rem] md:h-[28rem]" src="https://www.youtube.com/embed/4XeQSZWzFgE?si=Za6dTYwL6oHgZyxH?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="md:w-1/2 h-auto">
+                            <h1 class="text-2xl md:text-4xl font-merriweather font-bold mb-8 text-center md:text-left text-gray-800">OpenSRP Indonesia</h1>
+                            <p class="text-md md:text-lg text-gray-700 text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, molestias. Dolorum aspernatur repudiandae nesciunt dolorem aut soluta inventore aperiam ipsa, vero velit maxime porro, accusantium corporis doloremque libero. Asperiores officiis vitae dicta corporis eligendi labore molestias! Voluptate illum rerum, unde placeat cum debitis commodi quisquam reprehenderit officia doloribus distinctio exercitationem porro recusandae inventore a assumenda soluta nam accusantium officiis totam laborum deserunt aliquid beatae. Unde sed asperiores veniam repellendus eaque?</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="swiper-slide">
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+                        <div class="md:w-1/2 h-auto mb-8 rounded-lg overflow-hidden">
+                            <iframe class="max-w-none w-full h-[20rem] md:h-[25rem]" src="https://www.youtube.com/embed/ZkF0CjhNfTw?si=Kb_klAdFUVyPBVTf?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="md:w-1/2 h-auto">
+                            <h1 class="text-2xl md:text-4xl font-merriweather font-bold mb-8 text-center md:text-left text-gray-800">BUNDA App</h1>
+                            <p class="text-md md:text-lg text-gray-700 text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, molestias. Dolorum aspernatur repudiandae nesciunt dolorem aut soluta inventore aperiam ipsa, vero velit maxime porro, accusantium corporis doloremque libero. Asperiores officiis vitae dicta corporis eligendi labore molestias! Voluptate illum rerum, unde placeat cum debitis commodi quisquam reprehenderit officia doloribus distinctio exercitationem porro recusandae inventore a assumenda soluta nam accusantium officiis totam laborum deserunt aliquid beatae. Unde sed asperiores veniam repellendus eaque?</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="swiper-slide">
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+                        <div class="md:w-1/2 h-auto mb-8 rounded-lg overflow-hidden">
+                            <iframe class="max-w-none w-full h-[20rem] md:h-[25rem]" src="https://www.youtube.com/embed/0SRgNb1BDyo?si=71RoePgZb8YUe3Gc?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="md:w-1/2 h-auto">
+                            <h1 class="text-2xl md:text-4xl font-merriweather font-bold mb-8 text-center md:text-left text-gray-800">THRIVE OpenSRP Indonesia</h1>
+                            <p class="text-md md:text-lg text-gray-700 text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, molestias. Dolorum aspernatur repudiandae nesciunt dolorem aut soluta inventore aperiam ipsa, vero velit maxime porro, accusantium corporis doloremque libero. Asperiores officiis vitae dicta corporis eligendi labore molestias! Voluptate illum rerum, unde placeat cum debitis commodi quisquam reprehenderit officia doloribus distinctio exercitationem porro recusandae inventore a assumenda soluta nam accusantium officiis totam laborum deserunt aliquid beatae. Unde sed asperiores veniam repellendus eaque?</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="swiper-slide">
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+                        <div class="md:w-1/2 h-auto mb-8 rounded-lg overflow-hidden">
+                            <iframe class="max-w-none w-full h-[20rem] md:h-[25rem]" src="https://www.youtube.com/embed/wCKTJIU-hD8?si=KAG5CbTI2mDg-70t?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="md:w-1/2 h-auto">
+                            <h1 class="text-2xl md:text-4xl font-merriweather font-bold mb-8 text-center md:text-left text-gray-800">MMS: Solusi Lengkap Ibu Hamil</h1>
+                            <p class="text-md md:text-lg text-gray-700 text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, molestias. Dolorum aspernatur repudiandae nesciunt dolorem aut soluta inventore aperiam ipsa, vero velit maxime porro, accusantium corporis doloremque libero. Asperiores officiis vitae dicta corporis eligendi labore molestias! Voluptate illum rerum, unde placeat cum debitis commodi quisquam reprehenderit officia doloribus distinctio exercitationem porro recusandae inventore a assumenda soluta nam accusantium officiis totam laborum deserunt aliquid beatae. Unde sed asperiores veniam repellendus eaque?</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 5 -->
+                {{-- <div class="absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0 pointer-events-none" data-carousel-item>
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-8 absolute w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                        <div class="md:w-1/2">
+                            <iframe class="w-full h-96 rounded-lg" src="https://www.youtube.com/embed/g4kHru3i3pY?si=MEUA7S6j9lVT3RYD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="md:w-1/2 bg-blue-900">
+                            <h1 class="text-4xl font-merriweather font-bold mb-8 text-center md:text-left text-white">CISDI Onsite Visit to SID</h1>
+                            <p class="text-md md:text-lg text-gray-200 text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, molestias. Dolorum aspernatur repudiandae nesciunt dolorem aut soluta inventore aperiam ipsa, vero velit maxime porro, accusantium corporis doloremque libero. Asperiores officiis vitae dicta corporis eligendi labore molestias! Voluptate illum rerum, unde placeat cum debitis commodi quisquam reprehenderit officia doloribus distinctio exercitationem porro recusandae inventore a assumenda soluta nam accusantium officiis totam laborum deserunt aliquid beatae. Unde sed asperiores veniam repellendus eaque?</p>
+                        </div>
+                    </div>
+                </div> --}}
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="hidden md:flex items-start justify-end gap-10 relative z-20 w" style="transform: translateY(-75px)">
+                <button id="custom-prev" class="cursor-pointer text-blue-900 border-2 border-blue-900 p-2 rounded-full hover:bg-blue-900 hover:text-white transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-8 h-8">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+                    </svg>
+                </button>
+                <button id="custom-next" class="cursor-pointer text-blue-900 border-2 border-blue-900 p-2 rounded-full hover:bg-blue-900 hover:text-white transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-8 h-8">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                    </svg>
+                </button>
+            </div>
+            {{-- <div class="border border-blue-900"></div> --}}
+        </div>
+    </div>
+</section>
+{{-- <hr class="border border-black mx-8"> --}}
+
 
 <!-- galery -->
-<section class="bg-white">
+{{-- <section class="bg-white">
     <div class="container py-24 mx-auto">
         <div class="flex flex-col text-center w-full mb-20">
             <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Dokumentasi Kegiatan Kami</h1>
             <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.</p>
         </div>
         <div class="wrap-galery mx-4">
-            <!-- <div class="grid grid-cols-2 md:grid-rows-8 gap-4"> -->
-            {{-- <div class="flex flex-col gap-4">
-                <div class="flex gap-4 whitespace-nowrap">
-                    <div class="grid grid-cols-3 gap-4 scrol-1" id="scrol-1">
-                        <div>
-                            <img class="h-auto max-w-full rounded-lg transition duration-500 hover:scale-110" src="{{asset('/assets/galery/11-12174a_8ec3416906f741498a5761e4c1378d10~mv2.jpg')}}" alt="">
-                        </div>
-                        <div>
-                            <img class="h-auto max-w-full rounded-lg" src="{{asset('/assets/galery/12-12174a_11efd114e08c436787086bba5930830c~mv2.jpg')}}" alt="">
-                        </div>
-                        <div>
-                            <img class="h-auto max-w-full rounded-lg" src="{{asset('/assets/galery/13-12174a_70d108379ad2466c96421465a1cfc6bd~mv2.jpg')}}" alt="">
-                        </div>
-                    </div>
-                    <div class="grid grid-cols-3 gap-4 scrol-1" id="scrol-1">
-                        <div>
-                            <img class="h-auto max-w-full rounded-lg transition duration-500 hover:scale-110" src="{{asset('/assets/galery/11-12174a_8ec3416906f741498a5761e4c1378d10~mv2.jpg')}}" alt="">
-                        </div>
-                        <div>
-                            <img class="h-auto max-w-full rounded-lg" src="{{asset('/assets/galery/12-12174a_11efd114e08c436787086bba5930830c~mv2.jpg')}}" alt="">
-                        </div>
-                        <div>
-                            <img class="h-auto max-w-full rounded-lg" src="{{asset('/assets/galery/13-12174a_70d108379ad2466c96421465a1cfc6bd~mv2.jpg')}}" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="grid grid-cols-3 gap-4 scrol-2" id="scrol-2">
-                        <div>
-                            <img class="h-auto max-w-full rounded-lg" src="{{asset('/assets/galery/1-12174a_1cbe4a01aab44d95a534e4f6ce3506d3~mv2.jpg')}}" alt="">
-                        </div>
-                        <div>
-                            <img class="h-auto max-w-full rounded-lg" src="{{asset('/assets/galery/2-12174a_36256ca9c0c54e33927f565a8cdae4a1~mv2.jpg')}}" alt="">
-                        </div>
-                        <div>
-                            <img class="h-auto max-w-full rounded-lg" src="{{asset('/assets/galery/3-12174a_11b67d0f6041442ba46a2b7586f51673~mv2.jpg')}}" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="grid grid-cols-3 gap-4 scrol-3" id="scrol-3">
-                        <div>
-                            <img class="h-auto max-w-full rounded-lg" src="{{asset('/assets/galery/4-12174a_8c82b979b2c646298a4691ee448bddff~mv2.jpg')}}" alt="">
-                        </div>
-                        <div>
-                            <img class="h-auto max-w-full rounded-lg" src="{{asset('/assets/galery/5-12174a_60c68ba4763349f982e6272e7503fe96~mv2.jpg')}}" alt="">
-                        </div>
-                        <div>
-                            <img class="h-auto max-w-full rounded-lg" src="/assets/galery/6-12174a_8c04425ca9ee40769b45e3ead8d28d0c~mv2.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="grid gap-4 grid-cols-3 scrol-4" id="scrol-4">
-                        <div>
-                            <img class="h-auto max-w-full rounded-lg" src="/assets/galery/7-12174a_69e962749961427c8bf47aca7b806ff5~mv2.jpg" alt="">
-                        </div>
-                        <div>
-                            <img class="h-auto max-w-full rounded-lg" src="/assets/galery/8-12174a_7dbe2d315d7d4b71b2c9585f9897bf80~mv2.jpg" alt="">
-                        </div>
-                        <div>
-                            <img class="h-auto max-w-full rounded-lg" src="/assets/galery/10-12174a_7344d87ada224ce9b353e2b1cd35d40c~mv2.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div> --}}
             <!-- duplikasi -->
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div class="">
@@ -460,104 +575,217 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}
+{{-- <section class="text-gray-600 body-font">
+<div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-20">
+    <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Master Cleanse Reliac Heirloom</h1>
+    <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.</p>
+    </div>
+    <div class="flex flex-wrap -m-4">
+    <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+        <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="/assets/galery/1-12174a_1cbe4a01aab44d95a534e4f6ce3506d3~mv2.jpg">
+        <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Shooting Stars</h1>
+            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+        </div>
+        </div>
+    </div>
+    <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+        <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="/assets/galery/2-12174a_36256ca9c0c54e33927f565a8cdae4a1~mv2.jpg">
+        <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The Catalyzer</h1>
+            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+        </div>
+        </div>
+    </div>
+    <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+        <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="/assets/galery/4-12174a_8c82b979b2c646298a4691ee448bddff~mv2.jpg">
+        <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The 400 Blows</h1>
+            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+        </div>
+        </div>
+    </div>
+    <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+        <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="/assets/galery/11-12174a_8ec3416906f741498a5761e4c1378d10~mv2.jpg">
+        <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Neptune</h1>
+            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+        </div>
+        </div>
+    </div>
+    <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+        <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="/assets/galery/12174a_953a231c58e5480f92ac5afc465538fd~mv2.jpg">
+        <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Holden Caulfield</h1>
+            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+        </div>
+        </div>
+    </div>
+    <div class="lg:w-1/3 sm:w-1/2 p-4">
+        <div class="flex relative">
+        <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="/assets/galery/23-12174a_87bc91aa6f074aa3b180b0b8457f499f~mv2.jpg">
+        <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+            <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+            <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Alper Kamu</h1>
+            <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+        </div>
+        </div>
+    </div>
+    </div>
+</div>
+</section> --}}
+
 
 
 <!-- blog -->
 <section class="text-gray-600 body-font bg-gray-300">
-    <div class="container px-5 py-24 mx-auto">
+    <div class="container px-8 py-24 mx-auto">
         <div class="flex flex-col text-center w-full mb-20">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Berita & Cerita</h1>
-            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.</p>
+            <h1 class="text-2xl md:text-6xl font-extrabold mb-4 text-blue-900 font-merriweather">News</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base md:text-xl text-gray-700">Insightful news from our ongoing health advocacy and programs</p>
         </div>
-        <div class="flex flex-wrap -m-4">
-        <div class="p-4 md:w-1/3">
-            <div class="h-full border-2 border-gray-200 shadow-2xs border-opacity-60 bg-white rounded-lg overflow-hidden">
-            <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="{{asset('/assets/galery/1-c77141_582e72a8037847749618686f49dd03b5~mv2.jpg')}}" alt="blog" loading="lazy">
-            <div class="p-6 bg-white">
-                <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
-                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">CISDI on site visit to SID: Strengthening Primary Health Care with Digital Innovation</h1>
-                <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-                <div class="flex items-center flex-wrap ">
-                <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 12h14"></path>
-                    <path d="M12 5l7 7-7 7"></path>
-                    </svg>
-                </a>
-                <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                    <circle cx="12" cy="12" r="3"></circle>
-                    </svg>1.2K
-                </span>
-                <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                    </svg>6
-                </span>
+        <div class="swiper swiper-news">
+            <div class="flex swiper-wrapper items-stretch">
+                <div class="p-4 md:w-1/3 swiper-slide h-full flex">
+                    <div class="h-full flex flex-col border-2 border-gray-200 shadow-2xs border-opacity-60 bg-white rounded-lg overflow-hidden">
+                    <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="{{asset('/assets/galery/1-c77141_582e72a8037847749618686f49dd03b5~mv2.jpg')}}" alt="blog" loading="lazy">
+                    <div class="p-6 bg-white">
+                        <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
+                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3 font-merriweather">CISDI on site visit to SID: Strengthening Primary Health Care with Digital Innovation</h1>
+                        <p class="leading-relaxed mb-3">CISDI and SID team collaborating The Summit Institute for Development (SID)  welcomed an onsite visit from the Center for Indonesia’s...</p>
+                        <div class="flex items-center flex-wrap ">
+                        <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14"></path>
+                            <path d="M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                        <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                            <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                            </svg>1.2K
+                        </span>
+                        <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                            <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                            <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                            </svg>6
+                        </span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/3 swiper-slide h-full flex">
+                    <div class="h-full flex flex-col border-2 border-gray-200 shadow-2xs border-opacity-60 bg-white rounded-lg overflow-hidden">
+                    <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="{{asset('/assets/galery/23-12174a_87bc91aa6f074aa3b180b0b8457f499f~mv2.jpg')}}" alt="blog" loading="lazy">
+                    <div class="p-6 bg-white">
+                        <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
+                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3 font-merriweather">Community based nutrition and public health intervention: Lesson Learnt from The Field</h1>
+                        <p class="leading-relaxed mb-3">Summit Institute for Development with students in Faculty of Medicine Universitas Mataram Mataram, May 6th, 2025  – The Faculty of...</p>
+                        <div class="flex items-center flex-wrap">
+                        <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14"></path>
+                            <path d="M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                        <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                            <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                            </svg>1.2K
+                        </span>
+                        <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                            <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                            <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                            </svg>6
+                        </span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/3 swiper-slide h-full flex">
+                    <div class="h-full flex flex-col border-2 border-gray-200 shadow-2xs border-opacity-60 bg-white rounded-lg overflow-hidden">
+                    <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="{{asset('/assets/galery/dan-gold-4_jhDO54BYg-unsplash.jpg')}}" alt="blog" loading="lazy">
+                    <div class="p-6 bg-white">
+                        <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
+                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3 font-merriweather">KONEKSI (Kolaborasi Pengetahuan, Inovasi, dan Teknologi Australia dan Indonesia)...</h1>
+                        <p class="leading-relaxed mb-3">Bali, May 3-5th 2025 - Summit Institute for Development (SID) was selected to attend a boot camp organized by KONEKSI-Partnership in...</p>
+                        <div class="flex items-center flex-wrap ">
+                        <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14"></path>
+                            <path d="M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                        <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                            <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                            </svg>1.2K
+                        </span>
+                        <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                            <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                            <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                            </svg>6
+                        </span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/3 swiper-slide h-full flex">
+                    <div class="h-full flex flex-col border-2 border-gray-200 shadow-2xs border-opacity-60 bg-white rounded-lg overflow-hidden">
+                    <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="{{asset('/assets/galery/dan-gold-4_jhDO54BYg-unsplash.jpg')}}" alt="blog" loading="lazy">
+                    <div class="p-6 bg-white">
+                        <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
+                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3 font-merriweather">KONEKSI (Kolaborasi Pengetahuan, Inovasi, dan Teknologi Australia dan Indonesia)...</h1>
+                        <p class="leading-relaxed mb-3">Bali, May 3-5th 2025 - Summit Institute for Development (SID) was selected to attend a boot camp organized by KONEKSI-Partnership in...</p>
+                        <div class="flex items-center flex-wrap ">
+                        <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14"></path>
+                            <path d="M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                        <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                            <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                            </svg>1.2K
+                        </span>
+                        <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                            <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                            <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                            </svg>6
+                        </span>
+                        </div>
+                    </div>
+                    </div>
                 </div>
             </div>
+            <div class="px-28">
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+    
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev hidden md:block"></div>
+                <div class="swiper-button-next hidden md:block"></div>
+    
+                <!-- If we need scrollbar -->
+                {{-- <div class="swiper-scrollbar"></div> --}}
             </div>
-        </div>
-        <div class="p-4 md:w-1/3">
-            <div class="h-full border-2 border-gray-200 shadow-2xs border-opacity-60 bg-white rounded-lg overflow-hidden">
-            <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="{{asset('/assets/galery/23-12174a_87bc91aa6f074aa3b180b0b8457f499f~mv2.jpg')}}" alt="blog" loading="lazy">
-            <div class="p-6 bg-white">
-                <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
-                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The 400 Blows</h1>
-                <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-                <div class="flex items-center flex-wrap">
-                <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 12h14"></path>
-                    <path d="M12 5l7 7-7 7"></path>
-                    </svg>
-                </a>
-                <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                    <circle cx="12" cy="12" r="3"></circle>
-                    </svg>1.2K
-                </span>
-                <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                    </svg>6
-                </span>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div class="p-4 md:w-1/3">
-            <div class="h-full border-2 border-gray-200 shadow-2xs border-opacity-60 bg-white rounded-lg overflow-hidden">
-            <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="{{asset('/assets/galery/dan-gold-4_jhDO54BYg-unsplash.jpg')}}" alt="blog" loading="lazy">
-            <div class="p-6 bg-white">
-                <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
-                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Shooting Stars</h1>
-                <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-                <div class="flex items-center flex-wrap ">
-                <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
-                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 12h14"></path>
-                    <path d="M12 5l7 7-7 7"></path>
-                    </svg>
-                </a>
-                <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                    <circle cx="12" cy="12" r="3"></circle>
-                    </svg>1.2K
-                </span>
-                <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                    </svg>6
-                </span>
-                </div>
-            </div>
-            </div>
-        </div>
         </div>
     </div>
 </section>
