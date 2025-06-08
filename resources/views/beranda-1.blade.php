@@ -8,9 +8,9 @@
 <section>
     <div class="container mx-auto px-8 pb-20">
         <div>
-            <div class="flex flex-col md:flex-row gap-4 md:gap-28 flex-wrap md:flex-nowrap md:justify-center md:items-end py-10 h-full">
-                <div class="md:w-1/2 lg:w-1/2 h-auto md:border-r-2 border-blue-900">
-                    <h1 class="text-4xl md:text-8xl font-extrabold text-left md:text-left text-gray-700 font-merriweather md:ml-20"><span class="text-blue-900">Newborn</span> 
+            <div class="flex flex-col md:flex-row gap-4 lg:gap-28 flex-wrap lg:flex-nowrap md:justify-center md:items-end py-10 h-full">
+                <div class="md:w-full lg:w-1/2 h-auto lg:border-r-2 border-blue-900 md:mb-8 lg:mb-0">
+                    <h1 class="text-4xl md:text-7xl lg:text-8xl font-extrabold text-left md:text-left text-gray-700 font-merriweather lg:ml-20"><span class="text-blue-900">Newborn</span> 
                         {{-- <span>
                             <svg width="300" height="200" viewBox="0 0 3 2" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="3" height="1" fill="#FF0000" />
@@ -19,17 +19,17 @@
                         </span>  --}}
                     New Hope</h1>
                 </div>
-                <div class="md:w-1/2 lg:w-1/2 h-auto">
-                    <p class="text-sm md:text-xl text-gray-700 leading-text mb-8 text-left md:mr-20">Yayasan Institut Pengembangan Suara Mitra or SUMMIT Institute for Development (SID) is committed to improving maternal and child health in <span class="bg-blue-900 rounded-lg text-white px-2">Indonesia <svg class="size-4 inline-block" viewBox="0 0 3 2" xmlns="http://www.w3.org/2000/svg">
+                <div class="md:w-full lg:w-1/2 h-auto">
+                    <p class="text-sm md:text-xl text-gray-700 leading-text mb-8 text-left lg:mr-20 font-inter">Yayasan Institut Pengembangan Suara Mitra or Summit Institute for Development (SID) is committed to improving maternal and child health in <span class="bg-blue-900 rounded-lg text-white px-2">Indonesia <svg class="size-4 inline-block" viewBox="0 0 3 2" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="3" height="1" fill="#FF0000" />
                                 <rect y="1" width="3" height="1" fill="#FFFFFF" />
                             </svg></span> through participatory, evidence-based solutions rooted in real-world impact</p>
-                    <button class="py-2 px-8 font-medium border-2 border-blue-900 bg-blue-900 text-white rounded-lg hover:bg-blue-950 flex items-center justify-center">
-                        <span class="mr-2">Discover more</span>
+                    <a href="/about/v0" class="py-2 px-8 font-medium border-2 border-blue-900 bg-blue-900 text-white rounded-lg hover:bg-blue-950 flex items-center justify-center w-3/4 md:w-1/3">
+                        <span class="mr-2 font-inter">Discover more</span>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
                         </svg>
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -45,7 +45,7 @@
 <section class="overflow-hidden">
     <div class="container mx-auto pt-28 pb-28 relative">
         
-        <h1 class="text-center text-2xl md:text-6xl text-gray-700 font-extrabold mb-8 font-merriweather">Our <span class="text-blue-900">Partners</span></h1>
+        <h1 class="text-center text-2xl md:text-6xl text-gray-700 font-extrabold mb-8 font-poppins">Our <span class="text-blue-900">Partners</span></h1>
         <div class="logos whitespace-nowrap bg-white flex py-7">
             <div class="logo-slide flex">
                 <img src="{{asset('assets/partners/healthy-mother-healthy-babies.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
@@ -57,7 +57,7 @@
                 <img src="{{asset('/assets/partners/OpenSRP-logo.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
                 <img src="{{asset('/assets/partners/politeknik-semarang.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
                 <img src="{{asset('/assets/partners/qualcomm.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-                <img src="{{asset('/assets/partners/The_Lancet_logo.png')}}" alt="" class="object-contain w-32" loading="lazy">
+                <img src="{{asset('/assets/partners/EJCN-logo.png')}}" alt="" class="object-contain w-32" loading="lazy">
                 <img src="{{asset('/assets/partners/ucdavis.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
                 <!-- <img src="/assets/partners/unicef.png" alt="" class="object-contain h-16 w-full"> -->
                 <img src="{{asset('/assets/partners/unram.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
@@ -74,7 +74,7 @@
                 <img src="{{asset('/assets/partners/OpenSRP-logo.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
                 <img src="{{asset('/assets/partners/politeknik-semarang.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
                 <img src="{{asset('/assets/partners/qualcomm.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-                <img src="{{asset('/assets/partners/The_Lancet_logo.png')}}" alt="" class="object-contain w-32" loading="lazy">
+                <img src="{{asset('/assets/partners/EJCN-logo.png')}}" alt="" class="object-contain w-32" loading="lazy">
                 <img src="{{asset('/assets/partners/ucdavis.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
                 <!-- <img src="/assets/partners/unicef.png" alt="" class="object-contain h-16 w-full"> -->
                 <img src="{{asset('/assets/partners/unram.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
@@ -92,10 +92,10 @@
                 <img src="{{asset('/assets/partners/opensrp.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
                 <img src="{{asset('/assets/partners/politeknik-semarang.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
                 <img src="{{asset('/assets/partners/qualcomm.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-                <img src="{{asset('/assets/partners/the-lancet.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/hl7-fhir.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
                 <img src="{{asset('/assets/partners/ucdavis.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
                 <!-- <img src="/assets/partners/unicef.png" alt="" class="object-contain h-16 w-full"> -->
-                <img src="{{asset('/assets/partners/unram.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/universitas-indonesia.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
                 <img src="{{asset('/assets/partners/who.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
             </div>
             <!-- duplikat -->
@@ -109,10 +109,10 @@
                 <img src="{{asset('/assets/partners/opensrp.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
                 <img src="{{asset('/assets/partners/politeknik-semarang.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
                 <img src="{{asset('/assets/partners/qualcomm.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
-                <img src="{{asset('/assets/partners/the-lancet.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/hl7-fhir.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
                 <img src="{{asset('/assets/partners/ucdavis.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
                 <!-- <img src="/assets/partners/unicef.png" alt="" class="object-contain h-16 w-full"> -->
-                <img src="{{asset('/assets/partners/unram.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
+                <img src="{{asset('/assets/partners/universitas-indonesia.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
                 <img src="{{asset('/assets/partners/who.png')}}" alt="" class="object-contain h-16 w-full" loading="lazy">
             </div>
         </div>
@@ -159,18 +159,21 @@
 </section>
 
 <section>
-    <div class="container mx-auto px-28 pt-20 pb-32">
+    <div class="container mx-auto lg:px-28 pt-20 pb-32">
         <div>
-            <div class="rounded-4xl py-20 px-12 bg-gray-300">
-                <div class="flex justify-between">
-                    <div class="mb-12">
-                        <h1 class="text-5xl font-merriweather mb-4">SID Realtime</h1>
-                        <p>For the year ended December 31, 2024, Amount in U.S. dollars.</p>
+            <div class="rounded-4xl py-20 px-8 md:px-12 bg-gray-300">
+                <div class="flex flex-col lg:flex-row lg:justify-between mb-12">
+                    <div class="lg:mb-16">
+                        <h1 class="text-2xl md:text-5xl font-merriweather mb-2 md:mb-4">SID Realtime</h1>
+                        <p class="font-inter">For the year ended December 31, 2024, Amount in U.S. dollars.</p>
                     </div>
                     <div>
-                        <a href="" class="flex font-medium underline underline-offset-8">
+                        <a href="" class="relative overflow-hidden flex font-medium font-inter underline underline-offset-8 py-2 group">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="hidden lg:block size-6 lg:-translate-x-8 group-hover:translate-x-48 transition duration-300 ease-in-out">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                            </svg>
                             More about a yayasan
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6 ml-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6 group-hover:translate-x-10 transition duration-300 ease-in-out">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                             </svg>
                         </a>
@@ -179,24 +182,24 @@
                 <div>
                     <ul class="flex justify-around gap-12">
                         <li class="flex flex-col text-center">
-                            <span class="text-6xl mb-4">2,167</span>
-                            <span>Safe Births</span>
+                            <span class="text-6xl mb-4 font-inter">2,167</span>
+                            <span class="font-inter">Safe Births</span>
                         </li>
                         <li class="flex flex-col text-center">
-                            <span class="text-6xl mb-4">2,167</span>
-                            <span>Active Pregnancies</span>
+                            <span class="text-6xl mb-4 font-inter">2,167</span>
+                            <span class="font-inter">Active Pregnancies</span>
                         </li>
                         <li class="flex flex-col text-center">
-                            <span class="text-6xl mb-4">2,167</span>
-                            <span>ANC Visits</span>
+                            <span class="text-6xl mb-4 font-inter">2,167</span>
+                            <span class="font-inter">ANC Visits</span>
                         </li>
                         <li class="flex flex-col text-center">
-                            <span class="text-6xl mb-4">2,167</span>
-                            <span>Field Cadres</span>
+                            <span class="text-6xl mb-4 font-inter">2,167</span>
+                            <span class="font-inter">Field Cadres</span>
                         </li>
                         <li class="flex flex-col text-center">
-                            <span class="text-6xl mb-4">2,167</span>
-                            <span>Covered Areas</span>
+                            <span class="text-6xl mb-4 font-inter">2,167</span>
+                            <span class="font-inter">Covered Areas</span>
                         </li>
                     </ul>
                 </div>
@@ -362,7 +365,7 @@
         <div class="relative w-full h-full swiper swiper-video border-t-2 border-black">
 
             <!-- If we need navigation buttons -->
-            <div class="md:hidden flex items-start justify-between gap-20 relative z-20" style="transform: translateY(-65px)">
+            <div class="lg:hidden flex items-start justify-between gap-20 relative z-20" style="transform: translateY(-65px)">
                 <button id="custom-prev-1" class="cursor-pointer text-black">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
@@ -381,49 +384,49 @@
             <div class="relative w-full flex items-center rounded-lg swiper-wrapper">
                 <!-- Item 1 -->
                 <div class="swiper-slide">
-                    <div class="flex flex-col md:flex-row items-center justify-center gap-8">
-                        <div class="md:w-1/2 h-auto mb-8 rounded-lg overflow-hidden">
+                    <div class="flex flex-col lg:flex-row items-center justify-center gap-8">
+                        <div class="md:w-full lg:w-1/2 h-auto mb-8 rounded-lg overflow-hidden">
                             <iframe class="max-w-none w-full h-[20rem] md:h-[28rem]" src="https://www.youtube.com/embed/4XeQSZWzFgE?si=Za6dTYwL6oHgZyxH?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
-                        <div class="md:w-1/2 h-auto">
-                            <h1 class="text-2xl md:text-4xl font-merriweather font-bold mb-8 text-center md:text-left text-gray-800">OpenSRP Indonesia</h1>
-                            <p class="text-md md:text-lg text-gray-700 text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, molestias. Dolorum aspernatur repudiandae nesciunt dolorem aut soluta inventore aperiam ipsa, vero velit maxime porro, accusantium corporis doloremque libero. Asperiores officiis vitae dicta corporis eligendi labore molestias! Voluptate illum rerum, unde placeat cum debitis commodi quisquam reprehenderit officia doloribus distinctio exercitationem porro recusandae inventore a assumenda soluta nam accusantium officiis totam laborum deserunt aliquid beatae. Unde sed asperiores veniam repellendus eaque?</p>
+                        <div class="lg:w-1/2 h-auto">
+                            <h1 class="text-2xl md:text-4xl font-poppins font-bold mb-8 text-center md:text-left text-gray-800">OpenSRP Indonesia</h1>
+                            <p class="text-md md:text-lg text-gray-700 text-justify font-inter">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, molestias. Dolorum aspernatur repudiandae nesciunt dolorem aut soluta inventore aperiam ipsa, vero velit maxime porro, accusantium corporis doloremque libero. Asperiores officiis vitae dicta corporis eligendi labore molestias! Voluptate illum rerum, unde placeat cum debitis commodi quisquam reprehenderit officia doloribus distinctio exercitationem porro recusandae inventore a assumenda soluta nam accusantium officiis totam laborum deserunt aliquid beatae. Unde sed asperiores veniam repellendus eaque?</p>
                         </div>
                     </div>
                 </div>
                 <!-- Item 2 -->
                 <div class="swiper-slide">
-                    <div class="flex flex-col md:flex-row items-center justify-center gap-8">
-                        <div class="md:w-1/2 h-auto mb-8 rounded-lg overflow-hidden">
+                    <div class="flex flex-col lg:flex-row items-center justify-center gap-8">
+                        <div class="md:w-full lg:w-1/2 h-auto mb-8 rounded-lg overflow-hidden">
                             <iframe class="max-w-none w-full h-[20rem] md:h-[25rem]" src="https://www.youtube.com/embed/ZkF0CjhNfTw?si=Kb_klAdFUVyPBVTf?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
-                        <div class="md:w-1/2 h-auto">
-                            <h1 class="text-2xl md:text-4xl font-merriweather font-bold mb-8 text-center md:text-left text-gray-800">BUNDA App</h1>
-                            <p class="text-md md:text-lg text-gray-700 text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, molestias. Dolorum aspernatur repudiandae nesciunt dolorem aut soluta inventore aperiam ipsa, vero velit maxime porro, accusantium corporis doloremque libero. Asperiores officiis vitae dicta corporis eligendi labore molestias! Voluptate illum rerum, unde placeat cum debitis commodi quisquam reprehenderit officia doloribus distinctio exercitationem porro recusandae inventore a assumenda soluta nam accusantium officiis totam laborum deserunt aliquid beatae. Unde sed asperiores veniam repellendus eaque?</p>
+                        <div class="lg:w-1/2 h-auto">
+                            <h1 class="text-2xl md:text-4xl font-poppins font-bold mb-8 text-center md:text-left text-gray-800">BUNDA App</h1>
+                            <p class="text-md md:text-lg text-gray-700 text-justify font-inter">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, molestias. Dolorum aspernatur repudiandae nesciunt dolorem aut soluta inventore aperiam ipsa, vero velit maxime porro, accusantium corporis doloremque libero. Asperiores officiis vitae dicta corporis eligendi labore molestias! Voluptate illum rerum, unde placeat cum debitis commodi quisquam reprehenderit officia doloribus distinctio exercitationem porro recusandae inventore a assumenda soluta nam accusantium officiis totam laborum deserunt aliquid beatae. Unde sed asperiores veniam repellendus eaque?</p>
                         </div>
                     </div>
                 </div>
                 <!-- Item 3 -->
                 <div class="swiper-slide">
-                    <div class="flex flex-col md:flex-row items-center justify-center gap-8">
-                        <div class="md:w-1/2 h-auto mb-8 rounded-lg overflow-hidden">
+                    <div class="flex flex-col lg:flex-row items-center justify-center gap-8">
+                        <div class="md:w-full lg:w-1/2 h-auto mb-8 rounded-lg overflow-hidden">
                             <iframe class="max-w-none w-full h-[20rem] md:h-[25rem]" src="https://www.youtube.com/embed/0SRgNb1BDyo?si=71RoePgZb8YUe3Gc?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
-                        <div class="md:w-1/2 h-auto">
-                            <h1 class="text-2xl md:text-4xl font-merriweather font-bold mb-8 text-center md:text-left text-gray-800">THRIVE OpenSRP Indonesia</h1>
-                            <p class="text-md md:text-lg text-gray-700 text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, molestias. Dolorum aspernatur repudiandae nesciunt dolorem aut soluta inventore aperiam ipsa, vero velit maxime porro, accusantium corporis doloremque libero. Asperiores officiis vitae dicta corporis eligendi labore molestias! Voluptate illum rerum, unde placeat cum debitis commodi quisquam reprehenderit officia doloribus distinctio exercitationem porro recusandae inventore a assumenda soluta nam accusantium officiis totam laborum deserunt aliquid beatae. Unde sed asperiores veniam repellendus eaque?</p>
+                        <div class="lg:w-1/2 h-auto">
+                            <h1 class="text-2xl md:text-4xl font-poppins font-bold mb-8 text-center md:text-left text-gray-800">THRIVE OpenSRP Indonesia</h1>
+                            <p class="text-md md:text-lg text-gray-700 text-justify font-inter">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, molestias. Dolorum aspernatur repudiandae nesciunt dolorem aut soluta inventore aperiam ipsa, vero velit maxime porro, accusantium corporis doloremque libero. Asperiores officiis vitae dicta corporis eligendi labore molestias! Voluptate illum rerum, unde placeat cum debitis commodi quisquam reprehenderit officia doloribus distinctio exercitationem porro recusandae inventore a assumenda soluta nam accusantium officiis totam laborum deserunt aliquid beatae. Unde sed asperiores veniam repellendus eaque?</p>
                         </div>
                     </div>
                 </div>
                 <!-- Item 4 -->
                 <div class="swiper-slide">
-                    <div class="flex flex-col md:flex-row items-center justify-center gap-8">
-                        <div class="md:w-1/2 h-auto mb-8 rounded-lg overflow-hidden">
+                    <div class="flex flex-col lg:flex-row items-center justify-center gap-8">
+                        <div class="md:w-full lg:w-1/2 h-auto mb-8 rounded-lg overflow-hidden">
                             <iframe class="max-w-none w-full h-[20rem] md:h-[25rem]" src="https://www.youtube.com/embed/wCKTJIU-hD8?si=KAG5CbTI2mDg-70t?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
-                        <div class="md:w-1/2 h-auto">
-                            <h1 class="text-2xl md:text-4xl font-merriweather font-bold mb-8 text-center md:text-left text-gray-800">MMS: Solusi Lengkap Ibu Hamil</h1>
-                            <p class="text-md md:text-lg text-gray-700 text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, molestias. Dolorum aspernatur repudiandae nesciunt dolorem aut soluta inventore aperiam ipsa, vero velit maxime porro, accusantium corporis doloremque libero. Asperiores officiis vitae dicta corporis eligendi labore molestias! Voluptate illum rerum, unde placeat cum debitis commodi quisquam reprehenderit officia doloribus distinctio exercitationem porro recusandae inventore a assumenda soluta nam accusantium officiis totam laborum deserunt aliquid beatae. Unde sed asperiores veniam repellendus eaque?</p>
+                        <div class="lg:w-1/2 h-auto">
+                            <h1 class="text-2xl md:text-4xl font-poppins font-bold mb-8 text-center md:text-left text-gray-800">MMS: Solusi Lengkap Ibu Hamil</h1>
+                            <p class="text-md md:text-lg text-gray-700 text-justify font-inter">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, molestias. Dolorum aspernatur repudiandae nesciunt dolorem aut soluta inventore aperiam ipsa, vero velit maxime porro, accusantium corporis doloremque libero. Asperiores officiis vitae dicta corporis eligendi labore molestias! Voluptate illum rerum, unde placeat cum debitis commodi quisquam reprehenderit officia doloribus distinctio exercitationem porro recusandae inventore a assumenda soluta nam accusantium officiis totam laborum deserunt aliquid beatae. Unde sed asperiores veniam repellendus eaque?</p>
                         </div>
                     </div>
                 </div>
@@ -442,7 +445,7 @@
             </div>
 
             <!-- If we need navigation buttons -->
-            <div class="hidden md:flex items-start justify-end gap-10 relative z-20 w" style="transform: translateY(-75px)">
+            <div class="hidden lg:flex items-start justify-end gap-10 relative z-20 w" style="transform: translateY(-75px)">
                 <button id="custom-prev" class="cursor-pointer text-blue-900 border-2 border-blue-900 p-2 rounded-full hover:bg-blue-900 hover:text-white transition duration-300">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-8 h-8">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
@@ -651,22 +654,34 @@
 
 <!-- blog -->
 <section class="text-gray-600 body-font bg-gray-300">
-    <div class="container px-8 py-24 mx-auto">
+    <div class="container px-4 py-24 mx-auto">
         <div class="flex flex-col text-center w-full mb-20">
-            <h1 class="text-2xl md:text-6xl font-extrabold mb-4 text-blue-900 font-merriweather">News</h1>
-            <p class="lg:w-2/3 mx-auto leading-relaxed text-base md:text-xl text-gray-700">Insightful news from our ongoing health advocacy and programs</p>
+            <h1 class="text-2xl md:text-6xl font-extrabold mb-4 text-blue-900 font-poppins">News</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base md:text-xl text-gray-700 font-inter">Insightful news from our ongoing health advocacy and programs</p>
         </div>
         <div class="swiper swiper-news">
+            <div class="flex justify-between md:justify-end gap-4 px-6">
+                <button id="news-prev" class="cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-8 h-8 text-blue-900">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+                    </svg>
+                </button>
+                <button id="news-next" class="cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-8 h-8 text-blue-900">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>
+                </button>
+            </div>
             <div class="flex swiper-wrapper items-stretch">
                 <div class="p-4 md:w-1/3 swiper-slide h-full flex">
                     <div class="h-full flex flex-col border-2 border-gray-200 shadow-2xs border-opacity-60 bg-white rounded-lg overflow-hidden">
                     <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="{{asset('/assets/galery/1-c77141_582e72a8037847749618686f49dd03b5~mv2.jpg')}}" alt="blog" loading="lazy">
                     <div class="p-6 bg-white">
                         <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
-                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3 font-merriweather">CISDI on site visit to SID: Strengthening Primary Health Care with Digital Innovation</h1>
-                        <p class="leading-relaxed mb-3">CISDI and SID team collaborating The Summit Institute for Development (SID)  welcomed an onsite visit from the Center for Indonesia’s...</p>
+                        <h1 class="title-font text-md md:text-lg font-medium text-gray-900 mb-3 font-poppins">CISDI on site visit to SID: Strengthening Primary Health Care with Digital Innovation</h1>
+                        <p class="leading-relaxed text-xs md:text-base mb-3 font-inter">CISDI and SID team collaborating The Summit Institute for Development (SID)  welcomed an onsite visit from the Center for Indonesia’s...</p>
                         <div class="flex items-center flex-wrap ">
-                        <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                        <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Read More
                             <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M5 12h14"></path>
                             <path d="M12 5l7 7-7 7"></path>
@@ -692,10 +707,10 @@
                     <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="{{asset('/assets/galery/23-12174a_87bc91aa6f074aa3b180b0b8457f499f~mv2.jpg')}}" alt="blog" loading="lazy">
                     <div class="p-6 bg-white">
                         <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
-                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3 font-merriweather">Community based nutrition and public health intervention: Lesson Learnt from The Field</h1>
-                        <p class="leading-relaxed mb-3">Summit Institute for Development with students in Faculty of Medicine Universitas Mataram Mataram, May 6th, 2025  – The Faculty of...</p>
+                        <h1 class="title-font text-md md:text-lg font-medium text-gray-900 mb-3 font-poppins">Community based nutrition and public health intervention: Lesson Learnt from...</h1>
+                        <p class="leading-relaxed mb-3 text-xs md:text-base font-inter">Summit Institute for Development with students in Faculty of Medicine Universitas Mataram Mataram, May 6th, 2025  – The Faculty of...</p>
                         <div class="flex items-center flex-wrap">
-                        <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                        <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Read More
                             <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M5 12h14"></path>
                             <path d="M12 5l7 7-7 7"></path>
@@ -721,10 +736,10 @@
                     <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="{{asset('/assets/galery/dan-gold-4_jhDO54BYg-unsplash.jpg')}}" alt="blog" loading="lazy">
                     <div class="p-6 bg-white">
                         <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
-                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3 font-merriweather">KONEKSI (Kolaborasi Pengetahuan, Inovasi, dan Teknologi Australia dan Indonesia)...</h1>
-                        <p class="leading-relaxed mb-3">Bali, May 3-5th 2025 - Summit Institute for Development (SID) was selected to attend a boot camp organized by KONEKSI-Partnership in...</p>
+                        <h1 class="title-font text-md md:text-lg font-medium text-gray-900 mb-3 font-poppins">KONEKSI (Kolaborasi Pengetahuan, Inovasi, dan Teknologi Australia dan Indonesia)...</h1>
+                        <p class="leading-relaxed text-xs md:text-base mb-3 font-inter">Bali, May 3-5th 2025 - Summit Institute for Development (SID) was selected to attend a boot camp organized by KONEKSI-Partnership in...</p>
                         <div class="flex items-center flex-wrap ">
-                        <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                        <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Read More
                             <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M5 12h14"></path>
                             <path d="M12 5l7 7-7 7"></path>
@@ -750,10 +765,10 @@
                     <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="{{asset('/assets/galery/dan-gold-4_jhDO54BYg-unsplash.jpg')}}" alt="blog" loading="lazy">
                     <div class="p-6 bg-white">
                         <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
-                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3 font-merriweather">KONEKSI (Kolaborasi Pengetahuan, Inovasi, dan Teknologi Australia dan Indonesia)...</h1>
-                        <p class="leading-relaxed mb-3">Bali, May 3-5th 2025 - Summit Institute for Development (SID) was selected to attend a boot camp organized by KONEKSI-Partnership in...</p>
+                        <h1 class="title-font text-md md:text-lg font-medium text-gray-900 mb-3 font-poppins">KONEKSI (Kolaborasi Pengetahuan, Inovasi, dan Teknologi Australia dan Indonesia)...</h1>
+                        <p class="leading-relaxed text-xs md:text-base mb-3 font-inter">Bali, May 3-5th 2025 - Summit Institute for Development (SID) was selected to attend a boot camp organized by KONEKSI-Partnership in...</p>
                         <div class="flex items-center flex-wrap ">
-                        <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                        <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Read More
                             <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M5 12h14"></path>
                             <path d="M12 5l7 7-7 7"></path>
@@ -775,13 +790,13 @@
                     </div>
                 </div>
             </div>
-            <div class="px-28">
+            <div class="">
                 <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
     
                 <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev hidden md:block"></div>
-                <div class="swiper-button-next hidden md:block"></div>
+                {{-- <div class="swiper-button-prev hidden md:block"></div>
+                <div class="swiper-button-next hidden md:block"></div> --}}
     
                 <!-- If we need scrollbar -->
                 {{-- <div class="swiper-scrollbar"></div> --}}

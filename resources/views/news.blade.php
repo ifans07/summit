@@ -6,12 +6,12 @@
 
 <section>
     <div class="container mx-auto px-8 py-28">
-        <div class="flex flex-col md:flex-row gap-8">
-            <div class="bg-blue-900 rounded-lg p-4 flex items-center justify-center">
-                <h1 class="text-white text-4xl uppercase font-extrabold">News</h1>
+        <div class="flex flex-col lg:flex-row gap-8">
+            <div class="bg-blue-900 md:order-2 lg:order-1 rounded-lg p-4 flex items-center justify-center">
+                <h1 class="text-white text-4xl uppercase font-extrabold font-poppins">News</h1>
             </div>
-            <div class="md:border-l-2 border-blue-900 md:pl-8">
-                <h1 class="text-4xl md:text-7xl font-medium font-merriweather">Professional insights and updates from our health foundation</h1>
+            <div class="md:order-1 lg:order-2 md:border-l-2 border-blue-900 md:pl-8">
+                <h1 class="text-4xl md:text-5xl lg:text-7xl font-medium font-poppins">Professional insights and updates from our health foundation</h1>
             </div>
         </div>
     </div>
@@ -29,7 +29,7 @@
 <section class="bg-white">
     <div class="container px-6 py-10 mx-auto">
         <div class="flex items-center justify-between">
-            <h1 class="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl">recent posts </h1>
+            <h1 class="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl font-poppins">recent posts </h1>
 
             <button class="focus:outline-none">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-600 transition-colors duration-300 transform hover:text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -45,13 +45,13 @@
                 <img class="object-cover object-center w-full h-64 rounded-lg lg:h-80" src="{{asset('assets/news/popular.jpg')}}" alt="">
 
                 <div class="mt-8">
-                    <span class="text-blue-500 uppercase">category</span>
+                    <span class="text-blue-500 uppercase">Human development</span>
 
-                    <h1 class="mt-4 text-xl font-semibold text-gray-800">
+                    <h1 class="mt-4 text-xl font-semibold text-gray-800 font-poppins">
                         Community based nutrition and public health intervention: Lesson Learnt from The Field
                     </h1>
 
-                    <p class="mt-2 text-gray-500">
+                    <p class="mt-2 text-gray-500 font-inter">
                         Summit Institute for Development with students in Faculty of Medicine Universitas Mataram Mataram, May 6th, 2025  – The Faculty of...
                     </p>
 
@@ -74,12 +74,12 @@
                 <img class="object-cover object-center w-full h-64 rounded-lg lg:h-80" src="{{asset('assets/news/koneksi.jpg')}}" alt="">
 
                 <div class="mt-8">
-                    <span class="text-blue-500 uppercase">category</span>
+                    <span class="text-blue-500 uppercase">Project</span>
 
-                    <h1 class="mt-4 text-xl font-semibold text-gray-800">
+                    <h1 class="mt-4 text-xl font-semibold text-gray-800 font-poppins">
                         KONEKSI (Kolaborasi Pengetahuan, Inovasi, dan Teknologi Australia dan</h1>
 
-                    <p class="mt-2 text-gray-500">
+                    <p class="mt-2 text-gray-500 font-inter">
                         Bali, May 3-5th 2025 - Summit Institute for Development (SID) was selected to attend a boot camp organized by KONEKSI-Partnership in...
                     </p>
 
@@ -102,13 +102,13 @@
                 <img class="object-cover object-center w-full h-64 rounded-lg lg:h-80" src="{{asset('assets/news/garut.webp')}}" alt="">
 
                 <div class="mt-8">
-                    <span class="text-blue-500 uppercase">category</span>
+                    <span class="text-blue-500 uppercase">visit</span>
 
-                    <h1 class="mt-4 text-xl font-semibold text-gray-800">
+                    <h1 class="mt-4 text-xl font-semibold text-gray-800 font-poppins">
                         Gates Foundation Visit to Garut
                     </h1>
 
-                    <p class="mt-2 text-gray-500">
+                    <p class="mt-2 text-gray-500 font-inter">
                         Gates Foundation Visit to Garut: Appreciation for the Synergy of Puskesmas, Pustu, Posyandu, and the Health Office in Strengthening...
                     </p>
 
@@ -230,7 +230,7 @@
 {{-- populer --}}
 <section class="">
     <div class="container px-6 py-28 mx-auto">
-        <h2 class="text-6xl font-bold py-8">Populer</h2>
+        <h2 class="text-6xl font-bold py-8 font-poppins">Populer</h2>
         <div class="lg:flex lg:-mx-6">
             <div class="lg:w-3/5 lg:px-6">
                 {{-- <img class="object-cover object-center w-full h-80 xl:h-[28rem] rounded-xl" src="https://images.unsplash.com/photo-1624996379697-f01d168b1a52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt=""> --}}
@@ -239,7 +239,7 @@
                 <div class="w-full">
                     {{-- <p class="mt-6 text-sm text-gray-800 uppercase font-medium">Want to know</p> --}}
 
-                    <h1 class="max-w-3xl mt-4 text-4xl font-semibold leading-tight hover:underline">
+                    <h1 class="max-w-3xl mt-4 text-4xl font-semibold leading-tight hover:underline font-poppins">
                         Community based nutrition and public health intervention: Lesson Learnt from The Field
                     </h1>
 
@@ -257,9 +257,9 @@
             <div class="mt-8 lg:w-2/5 lg:mt-0 lg:px-6">
                 <div class="flex justify-between">
                     <div>
-                        <h3 class=" capitalize">AI</h3>
+                        <h3 class=" capitalize">Project</h3>
     
-                        <a href="#" class="block mt-2 font-medium hover:underline">
+                        <a href="#" class="block mt-2 font-medium hover:underline font-poppins">
                             KONEKSI (Kolaborasi Pengetahuan, Inovasi, dan Teknologi Australia dan
                         </a>
                     </div>
@@ -270,9 +270,9 @@
 
                 <div class="flex justify-between">
                     <div>
-                        <h3 class="capitalize">Premium</h3>
+                        <h3 class="capitalize">Visit</h3>
     
-                        <a href="#" class="block mt-2 font-medium hover:underline">
+                        <a href="#" class="block mt-2 font-medium hover:underline font-poppins">
                             Gates Foundation Visit to Garut
                         </a>
                     </div>
@@ -283,9 +283,9 @@
 
                 <div class="flex justify-between">
                     <div>
-                        <h3 class="capitalize">Premium Collection</h3>
+                        <h3 class="capitalize">Visit</h3>
     
-                        <a href="#" class="block mt-2 font-medium hover:underline">
+                        <a href="#" class="block mt-2 font-medium hover:underline font-poppins">
                             CISDI Onsite Visit to SID: Strengthening Primary Health Care with Digital Innovation
                         </a>
                     </div>
@@ -296,9 +296,9 @@
 
                 <div class="flex justify-between">
                     <div>
-                        <h3 class="capitalize">Premium kits</h3>
+                        <h3 class="capitalize">Competition</h3>
     
-                        <a href="#" class="block mt-2 font-medium hover:underline">
+                        <a href="#" class="block mt-2 font-medium hover:underline font-poppins">
                             Indonesian Researchers Shine at International Pandemic Sciences Conference 2024
                         </a>
                     </div>
@@ -313,15 +313,19 @@
     <div class="relative overflow-hidden container mx-auto px-8 py-48 h-[30rem] flex items-center justify-center">
         <div class="w-2/3 mx-auto relative z-10">
             <div>
-                <h1 class="text-4xl font-bold text-center mb-2 text-gray-800">Keep Up with SID’s Impact on Maternal and Child Health</h1>
-                <p class="text-center text-lg mb-8 text-gray-700">Get the latest news from SID. Subscribe to receive the latest updates on maternal and child health initiatives across Indonesia — including research, programs, events, and news from the SID team.</p>
+                <h1 class="text-4xl font-bold text-center mb-2 text-gray-800 font-poppins">Keep Up with SID’s Impact on Maternal and Child Health</h1>
+                <p class="text-center text-lg mb-8 text-gray-700 font-inter">Get the latest news from SID. Subscribe to receive the latest updates on maternal and child health initiatives across Indonesia — including research, programs, events, and news from the SID team.</p>
             </div>
             <div class="flex w-full justify-center items-end">
-                <div class="relative mr-4 lg:w-full xl:w-1/2 w-2/4">
-                    {{-- <label for="hero-field" class="leading-7 text-sm text-gray-600">Placeholder</label> --}}
-                    <input type="text" id="hero-field" name="hero-field" class="w-full bg-gray-50/40 bg-opacity-50 rounded border-2 border-blue-800 focus:ring-2 focus:ring-blue-900 focus:bg-transparent focus:border-blue-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                </div>
-                <button class="inline-flex text-white bg-blue-900 py-2 px-6 border-2 border-blue-900  hover:bg-blue-950 rounded text-lg">Subscribe</button>
+                <form id="subscribe-form" class="flex w-full justify-center items-end">
+                    @csrf
+                    <div class="relative mr-4 lg:w-full xl:w-1/2 w-2/4">
+                        {{-- <label for="hero-field" class="leading-7 text-sm text-gray-600">Placeholder</label> --}}
+                        <input type="email" id="email" name="hero-field" class="w-full bg-gray-50/40 bg-opacity-50 rounded border-2 border-blue-800 focus:ring-2 focus:ring-blue-900 focus:bg-transparent focus:border-blue-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required placeholder="Type your email here">
+                    </div>
+                    <button class="inline-flex text-white bg-blue-900 py-2 px-6 border-2 border-blue-900  hover:bg-blue-950 rounded text-lg font-medium font-poppins" type="submit">Subscribe</button>
+                </form>
+                <div id="message"></div>
             </div>
         </div>
         <div class="absolute inset-0 grid grid-cols-6 z-0 w-full h-full">
@@ -347,5 +351,43 @@
         <div class="absolute inset-0 bg-gray-300/90"></div>
     </div>
 </section>
+
+<script>
+    const form = document.getElementById('subscribe-form');
+    const message = document.getElementById('message');
+
+    form.addEventListener('submit', async function (e) {
+        e.preventDefault(); // Hindari reload halaman
+
+        const email = document.getElementById('email').value;
+
+        try {
+        const response = await fetch('http://127.0.0.1:8000/api/subscribers/store', {
+            method: 'POST',
+            headers: {
+            'Content-Type': 'application/json',
+            // 'Accept': 'application/json' (opsional, tapi bisa ditambahkan)
+            },
+            body: JSON.stringify({ email })
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+            message.innerText = '🎉 Successfully subscribed!';
+            message.style.color = 'green';
+            form.reset();
+        } else {
+            message.innerText = data.message || '❌ Subscription failed.';
+            message.style.color = 'red';
+        }
+
+        } catch (error) {
+        message.innerText = '⚠️ Network error.';
+        message.style.color = 'orange';
+        console.error(error);
+        }
+    });
+</script>
 
 @endsection

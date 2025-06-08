@@ -7,6 +7,7 @@
     @vite(['resources/css/app.css'], ['resources/js/app.js'], ['resources/js/main.js'])
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
@@ -213,7 +214,11 @@
         }
 
         /* swiper news */
-        
+        .swiper-news .swiper-pagination{
+            transform: translateY(30px) !important;
+            z-index: 99999 !important;
+        }
+
     </style>
 </head>
 <body class="overflow-x-hidden relative">
@@ -234,7 +239,11 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
+    <script>
+        AOS.init();
+    </script>
     {{-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" defer></script>s --}}
 
@@ -334,11 +343,14 @@
             // slidesPerView: 1,
             // spaceBetween: 20,
             breakpoints: {
-                768: { slidesPerView: 3 },
+                768: { slidesPerView: 2 },
                 1024: { slidesPerView: 3 },
             },
             // autoHeight: true,
         });
+
+        document.getElementById('news-prev').addEventListener('click', () => swiperNews.slidePrev());
+        document.getElementById('news-next').addEventListener('click', () => swiperNews.slideNext());
     </script>
 
     <script>

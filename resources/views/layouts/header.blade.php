@@ -1,5 +1,5 @@
 <header class="sticky top-0 z-50">
-    <div class="py-1 flex justify-center md:justify-end bg-white scroll-hidden md:px-6">
+    <div class="py-1 flex justify-center lg:justify-end bg-white scroll-hidden md:px-6">
         <div class="relative lg:mt-0 lg:mx-4">
             <input type="text" class="w-48 py-2 pl-4 pr-10 text-gray-700 placeholder-gray-600 bg-white border-b border-gray-600 lg:w-56 lg:border-transparent focus:outline-none focus:border-gray-600" placeholder="Search">
             <span class="absolute inset-y-0 right-0 flex items-center pl-3">
@@ -33,7 +33,7 @@
         </a> --}}
 
         <div class="flex items-center md:order-2 space-x-1 md:space-x-0">
-            <button type="button" data-dropdown-toggle="language-dropdown-menu" class="inline-flex items-center justify-center px-4 py-2 text-sm text-gray-900 rounded-lg cursor-pointer hover:bg-gray-100">
+            <button type="button" data-dropdown-toggle="language-dropdown-menu" class="inline-flex items-center justify-center px-4 py-2 text-sm text-gray-900 rounded-lg cursor-pointer hover:bg-gray-100 font-poppins">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 rounded-full me-1">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802" />
                 </svg>
@@ -41,7 +41,7 @@
             </button>
             <!-- Dropdown -->
             <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow-lg" id="language-dropdown-menu">
-                <ul class="py-2 font-medium" role="none">
+                <ul class="py-2 font-medium font-poppins" role="none">
                 <li>
                     <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200" role="menuitem">
                     <div class="inline-flex items-center">
@@ -73,13 +73,13 @@
             <div class="flex items-center justify-between">
                 <div class="flex items-center justify-between">
                     <a href="#" class="mx-auto ">
-                        <img class="h-auto w-24" src="{{ asset('assets/Logo-SUmmit-FIX.png') }}" alt="">
+                        <img class="h-auto w-36" src="{{ asset('assets/Logo-SUmmit-FIX.png') }}" alt="">
                     </a>
 
                 </div>
 
                 <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
-                <div x-cloak :class="[isOpen ? '-translate-x-0 opacity-100 ' : 'opacity-0 translate-x-full']" class="absolute top-0 h-screen md:h-auto inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white/90 shadow-md lg:bg-transparent lg:dark:bg-transparent lg:shadow-none lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0 batas">
+                <div x-cloak :class="[isOpen ? '-translate-x-0 opacity-100 ' : 'opacity-0 translate-x-full']" class="absolute top-0 h-screen lg:h-auto inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white/90 shadow-md lg:bg-transparent lg:dark:bg-transparent lg:shadow-none lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0 batas">
                     {{-- <div class="-mx-4 lg:flex lg:items-center text-center">
                         <a href="/" class="group relative block mx-4 text-gray-700 capitalize hover:text-blue-600 dark:hover:text-blue-500 font-medium p-1 overflow-hidden">
                             <div class="group-hover:block rounded-lg transition duration-200 absolute w-full h-[3px] bottom-0 transform {{ ($title == "Beranda") ? "-translate-x-[8%] font-bold text-blue-500" : "-translate-x-[108%]" }} group-hover:-translate-x-[8%] bg-blue-500"></div>
@@ -133,7 +133,7 @@
                             #NGO
                         </a>
                     </div> --}}
-                    <div class="flex flex-col md:flex-row justify-center h-auto gap-4 md:gap-0 py-16 md:py-0 relative">
+                    <div class="flex flex-col lg:flex-row justify-center h-auto gap-4 lg:gap-0 py-16 lg:py-0 relative">
                         <div class="flex lg:hidden absolute right-0 top-0">
                             <button x-cloak @click="isOpen = !isOpen" type="button" class="text-gray-500 hover:text-gray-600 focus:outline-none focus:text-gray-600" aria-label="toggle menu">
                                 <svg x-show="!isOpen" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
@@ -146,57 +146,57 @@
                             </button>
                         </div>
                         <div class="px-8">
-                            <a href="/v1" class="{{($title == "Beranda")? "font-bold text-blue-900" : "font-medium text-gray-800 hover:text-[#10169f]"}}">Home</a>
+                            <a href="/v1" class="font-poppins text-xl {{($title == "Beranda-v1")? "font-bold text-blue-900" : "font-medium text-gray-800 hover:text-[#10169f]"}}">Home</a>
                         </div>
                         <div class="group px-8">
-                            <a href="#" class="{{($title == "About")? "font-bold text-blue-900" : "font-medium text-gray-800 hover:text-[#10169f]"}}">
+                            <a href="#" class="font-poppins text-xl {{($title == "About")? "font-bold text-blue-900" : "font-medium text-gray-800 hover:text-[#10169f]"}}">
                                 <div class="flex items-center">
                                     <span>About</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4 ml-1">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                                     </svg>
                                 </div>
-                                <div class="hidden py-2 group-hover:block md:absolute md:bg-white md:shadow-lg md:rounded-lg md:w-1/4 md:px-2 transition duration-1000">
-                                    <a href="/about/v0" class="block py-2 px-8 md:px-2 hover:bg-gray-300 hover:text-gray-900 rounded-lg">Our Story</a>
-                                    <a href="/about/speciality" class="block py-2 px-8 md:px-2 hover:bg-gray-300 hover:text-gray-900 rounded-lg">Our Speciality</a>
-                                    <a href="/about/leadership" class="block py-2 px-8 md:px-2 hover:bg-gray-300 hover:text-gray-900 rounded-lg">Leadership</a>
-                                    <a href="/about/our-team" class="block py-2 px-8 md:px-2 hover:bg-gray-300 hover:text-gray-900 rounded-lg">Our Team</a>
+                                <div class="hidden font-poppins text-lg py-2 group-hover:block md:block lg:hidden lg:absolute lg:bg-white lg:shadow-lg lg:rounded-lg lg:w-1/4 lg:px-2 transition duration-1000">
+                                    <a href="/about/v0" class="block py-2 px-8 lg:px-2 hover:bg-gray-300 hover:text-gray-900 rounded-lg font-poppins">Our Story</a>
+                                    <a href="/about/speciality" class="block py-2 px-8 lg:px-2 hover:bg-gray-300 hover:text-gray-900 rounded-lg font-poppins">Our Speciality</a>
+                                    <a href="/about/leadership" class="block py-2 px-8 lg:px-2 hover:bg-gray-300 hover:text-gray-900 rounded-lg font-poppins">Leadership</a>
+                                    <a href="/about/our-team" class="block py-2 px-8 lg:px-2 hover:bg-gray-300 hover:text-gray-900 rounded-lg font-poppins">Our Team</a>
                                 </div>
                             </a>
                         </div>
                         <div class="group px-8">
-                            <a href="#" class="relative {{($title == "Programs & Publications")? "font-bold text-blue-900" : "font-medium text-gray-800 hover:text-[#10169f]"}}">
+                            <a href="#" class="relative font-poppins text-xl {{($title == "Programs & Publications")? "font-bold text-blue-900" : "font-medium text-gray-800 hover:text-[#10169f]"}}">
                                 <div class="flex items-center">
                                     <span>Our Work</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-4 w-4 ml-1">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                                     </svg>
                                 </div>
-                                <div class="hidden py-2 group-hover:block md:absolute md:bg-white md:shadow-lg md:rounded-lg md:w-1/4 md:px-2 transition duration-1000">
-                                    <a href="/programs-publications" class="block py-2 px-8 md:px-2 hover:bg-gray-300 hover:text-gray-900 rounded-lg">Programs</a>
-                                    <a href="/publications" class="block py-2 px-8 md:px-2 hover:bg-gray-300 hover:text-gray-900 rounded-lg">Publications</a>
-                                    <a href="/news" class="block py-2 px-8 md:px-2 hover:bg-gray-300 hover:text-gray-900 rounded-lg">News</a>
-                                    <a href="/events" class="block py-2 px-8 md:px-2 hover:bg-gray-300 hover:text-gray-900 rounded-lg">Events</a>
+                                <div class="hidden font-poppins text-lg py-2 group-hover:block md:block lg:hidden lg:absolute lg:bg-white lg:shadow-lg lg:rounded-lg lg:w-1/4 lg:px-2 transition duration-1000">
+                                    <a href="/programs-publications" class="block py-2 px-8 lg:px-2 hover:bg-gray-300 hover:text-gray-900 rounded-lg font-poppins">Programs</a>
+                                    <a href="/publications" class="block py-2 px-8 lg:px-2 hover:bg-gray-300 hover:text-gray-900 rounded-lg font-poppins">Publications</a>
+                                    <a href="/news" class="block py-2 px-8 lg:px-2 hover:bg-gray-300 hover:text-gray-900 rounded-lg font-poppins">News</a>
+                                    <a href="/events" class="block py-2 px-8 lg:px-2 hover:bg-gray-300 hover:text-gray-900 rounded-lg font-poppins">Events</a>
                                     
                                 </div>
                             </a>
                         </div>
                         
                         <div class="px-8">
-                            <a href="/contact" class="{{($title == "Contact")? "font-bold text-blue-900" : "font-medium text-gray-800 hover:text-[#10169f]"}}">Contact</a>
+                            <a href="/contact" class="font-poppins text-xl {{($title == "Contact")? "font-bold text-blue-900" : "font-medium text-gray-800 hover:text-[#10169f]"}}">Contact</a>
                         </div>
                         <div class="px-8">
-                            <a href="/careers" class="{{($title == "Careers")? "font-bold text-blue-900" : "font-medium text-gray-800 hover:text-[#10169f]"}}">Careers</a>
+                            <a href="/careers" class="font-poppins text-xl {{($title == "Careers")? "font-bold text-blue-900" : "font-medium text-gray-800 hover:text-[#10169f]"}}">Careers</a>
                         </div>
-                        <div class="px-8">
-                            <a href="" class="block md:hidden shadow-lg">
+                        <div class="px-7">
+                            <a href="" class="hidden md:hidden shadow-lg">
                                 <svg class="w-24" viewBox="0 0 3 2" xmlns="http://www.w3.org/2000/svg">
                                     <rect width="3" height="1" fill="#FF0000" />
                                     <rect y="1" width="3" height="1" fill="#FFFFFF" />
                                 </svg>
                             </a>
-                            <a href="https://www.ngosource.org/about-equivalency-determination-on-file-badge" target="_blank" class="flex md:hidden">
-                                <img src="/assets/logo/ngosource.png" alt="">
+                            <a href="https://www.ngosource.org/about-equivalency-determination-on-file-badge" target="_blank" class="flex lg:hidden text-center">
+                                <img src="/assets/logo/ngosource.png" class="w-full" alt="">
                             </a>
                         </div>
                     </div>
@@ -209,8 +209,8 @@
                             <rect y="1" width="3" height="1" fill="#FFFFFF" />
                         </svg>
                     </a> --}}
-                    <a href="https://www.ngosource.org/about-equivalency-determination-on-file-badge" target="_blank" class="hidden md:block">
-                        <img src="/assets/logo/ngosource.png" class="w-24" alt="">
+                    <a href="https://www.ngosource.org/about-equivalency-determination-on-file-badge" target="_blank" class="hidden lg:block">
+                        <img src="/assets/logo/ngosource.png" class="w-36" alt="">
                     </a>
                     <!-- Mobile menu button -->
                     <div class="flex lg:hidden">
@@ -228,32 +228,4 @@
             </div>
         </div>
     </nav>
-
-    {{-- <div class="w-full bg-center bg-cover h-[34rem] md:h-[38rem] relative overflow-hidden test-video">
-        <!-- <div class="absolute -z-10"> -->
-            <video src="{{ asset('assets/file.mp4') }}" autoplay loop muted playsinline></video>
-        <!-- </div> -->
-        <div class="flex items-center justify-center w-full h-full bg-gray-900/50">
-            <div class="text-center">
-                <h1 class="text-3xl font-semibold text-white lg:text-6xl mb-4">Improvement through <span class="text-blue-500">Health Research</span><br> and <br><span class="text-blue-500">Human Development</span></h1>
-
-                <!-- From Uiverse.io by elijahgummer --> 
-                <button class="button-with-icon bg-blue-600 rounded-lg px-10 py-2.5">
-                    <svg
-                    class="icon"
-                    id="Play"
-                    viewBox="0 0 48 48"
-                    xmlns="http://www.w3.org/2000/svg"
-                    >
-                    <path
-                    class="color000000 svgShape"
-                    fill="#ffffff"
-                    d="M12 39c-.549 0-1.095-.15-1.578-.447A3.008 3.008 0 0 1 9 36V12c0-1.041.54-2.007 1.422-2.553a3.014 3.014 0 0 1 2.919-.132l24 12a3.003 3.003 0 0 1 0 5.37l-24 12c-.42.21-.885.315-1.341.315z"
-                    ></path>
-                </svg>
-                <span class="text">Learn More</span>
-                </button>
-            </div>
-        </div>
-    </div> --}}
 </header>

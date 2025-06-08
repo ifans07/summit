@@ -7,23 +7,23 @@
 
     <section>
         <div class="container mx-auto px-8 py-28">
-            <div class="flex flex-col md:flex-row justify-center gap-8">
-                <div class="bg-blue-900 rounded-lg p-4 flex flex-col text-white">
-                    <h1 class="text-white text-4xl uppercase font-extrabold mb-4 font-merriweather">Programs</h1>
+            <div class="flex flex-col lg:flex-row justify-center gap-8">
+                <div class="bg-blue-900 md:order-2 lg:order-1 rounded-lg p-4 flex flex-col text-white">
+                    <h1 class="text-white text-4xl uppercase font-extrabold mb-4 font-poppins">Programs</h1>
                     <ul class="text-left ml-4">
                         <li class="mb-4">
-                            <a @click="tab = 'active-programs'" href="#" class="hover:underline transition duration-300 ease-in-out" :class="tab === 'active-programs' ? 'underline ml-2' : ''">Active Programs</a>
+                            <a @click="tab = 'active-programs'" href="#" class="hover:underline transition duration-300 ease-in-out font-inter" :class="tab === 'active-programs' ? 'underline ml-2' : ''">Active Programs</a>
                         </li>
                         <li class="mb-4">
-                            <a @click="tab = 'past-programs'" href="#" class="hover:underline transition duration-300 ease-in-out" :class="tab === 'past-programs' ? 'underline ml-2' : ''">Past Programs</a>
+                            <a @click="tab = 'past-programs'" href="#" class="hover:underline transition duration-300 ease-in-out font-inter" :class="tab === 'past-programs' ? 'underline ml-2' : ''">Past Programs</a>
                         </li>
                         {{-- <li class="mb-4">
                             <a href="#" class="hover:underline transition duration-300 ease-in-out">Our Speciality</a>
                         </li> --}}
                     </ul>
                 </div>
-                <div class="">
-                    <h1 class="text-4xl md:text-7xl font-medium font-merriweather leading-24">Together, we grow stronger families through health programs</h1>
+                <div class="md:order-1 lg:order-1">
+                    <h1 class="text-4xl md:text-5xl lg:text-7xl font-medium font-poppins md:text-center lg:text-left">Together, we grow stronger families through health programs</h1>
                 </div>
             </div>
         </div>
@@ -39,15 +39,15 @@
                     <div class="mt-6 lg:w-3/5 lg:mt-0 lg:mx-6">
                         <p class="text-sm text-blue-900 uppercase border-2 border-blue-900 inline-block px-4 py-1 rounded-lg">category</p>
 
-                        <a href="/programs/dojo" class="block mt-4 text-4xl font-medium text-gray-700 hover:underline font-merriweather">
+                        <a href="/programs/dojo" class="block mt-4 text-4xl font-medium text-gray-700 hover:underline font-poppins">
                             Genomics and Science DOJO Tournament
                         </a>
 
-                        <p class="mt-3 text-sm text-gray-500 md:text-lg pr-6">
+                        <p class="mt-3 text-sm text-gray-500 md:text-lg pr-6 font-inter">
                             This event marks a significant milestone for the advancement of genomics and science in Indonesia, and we are honoured to support our Indonesian scientists.
                         </p>
 
-                        <a href="#" class="inline-block mt-2 text-blue-500 underline hover:text-blue-400">Learn more</a>
+                        <a href="#" class="inline-block mt-2 text-blue-500 underline hover:text-blue-400">Read more</a>
 
                     </div>
                 </div>
@@ -135,15 +135,15 @@
                     <div class="mt-6 lg:w-3/5 lg:mt-0 lg:mx-6 ">
                         <p class="text-sm text-blue-900 uppercase inline-block rounded-lg px-4 py-1 border-2 border-blue-900">category</p>
 
-                        <a href="#" class="block mt-4 text-4xl font-medium text-gray-700 hover:underline font-merriweather">
+                        <a href="#" class="block mt-4 text-4xl font-medium text-gray-700 hover:underline font-poppins">
                             SUMMIT 10 Year (S10Y) Study
                         </a>
 
-                        <p class="mt-3 text-sm text-gray-500 md:text-lg pr-6">
+                        <p class="mt-3 text-sm text-gray-500 md:text-lg pr-6 font-inter">
                             This study is a continuation of the Supplementation with Multiple Micronutrients Intervention Trial (SUMMIT), which was implemented by the Summit Institute of Development 10 years ago.
                         </p>
 
-                        <a href="#" class="inline-block mt-2 text-blue-500 underline hover:text-blue-400">Learn more</a>
+                        <a href="#" class="inline-block mt-2 text-blue-500 underline hover:text-blue-400">Read more</a>
 
                     </div>
                 </div>
@@ -158,15 +158,15 @@
                     <div class="mt-6 lg:w-3/5 lg:mt-0 lg:mx-6 ">
                         <p class="text-sm text-blue-900 uppercase inline-block rounded-lg px-4 py-1 border-2 border-blue-900">category</p>
 
-                        <a href="#" class="block mt-4 text-4xl font-medium text-gray-700 hover:underline font-merriweather">
+                        <a href="#" class="block mt-4 text-4xl font-medium text-gray-700 hover:underline font-poppins">
                             Covneo and PregVax
                         </a>
 
-                        <p class="mt-3 text-sm text-gray-500 md:text-lg pr-6">
+                        <p class="mt-3 text-sm text-gray-500 md:text-lg pr-6 font-inter">
                             SARS-CoV-2 in pregnant women is at risk of causing poor pregnancy outcomes, including low birth weight, miscarriage, stillbirth, increased perinatal and neonatal morbidity, admission to an intensive care unit for infants or a neonatal intensive care unit (NICU), and mortality was observed in newborns born to women with severe symptoms during pregnancy[1-4].
                         </p>
 
-                        <a href="#" class="inline-block mt-2 text-blue-500 underline hover:text-blue-400">Learn more</a>
+                        <a href="#" class="inline-block mt-2 text-blue-500 underline hover:text-blue-400">Read more</a>
 
                     </div>
                 </div>
@@ -181,15 +181,15 @@
                     <div class="mt-6 lg:w-3/5 lg:mt-0 lg:mx-6 ">
                         <p class="text-sm text-blue-500 uppercase inline-block rounded-lg px-4 py-1 border-2 border-blue-900">category</p>
 
-                        <a href="#" class="block mt-4 text-4xl font-medium text-gray-700 hover:underline font-merriweather">
+                        <a href="#" class="block mt-4 text-4xl font-medium text-gray-700 hover:underline font-poppins">
                             The Golden Generation Program
                         </a>
 
-                        <p class="mt-3 text-sm text-gray-500 md:text-lg pr-6">
+                        <p class="mt-3 text-sm text-gray-500 md:text-lg pr-6 font-inter">
                             Summit Institute of Development (SID) has proposed a Golden Generation Program (GGP) to support optimal child development.
                         </p>
 
-                        <a href="#" class="inline-block mt-2 text-blue-500 underline hover:text-blue-400">Learn more</a>
+                        <a href="#" class="inline-block mt-2 text-blue-500 underline hover:text-blue-400">Read more</a>
 
                     </div>
                 </div>
@@ -204,18 +204,18 @@
                     <div class="mt-6 lg:w-3/5 lg:mt-0 lg:mx-6 text-right">
                         <p class="text-sm text-gray-300 uppercase">category</p>
 
-                        <a href="#" class="block mt-4 text-4xl font-medium text-gray-100 hover:underline">
+                        <a href="#" class="block mt-4 text-4xl font-medium text-gray-100 hover:underline font-poppins">
                             Covneo and PregVax
                         </a>
 
-                        <p class="mt-3 text-sm text-gray-200 md:text-lg pl-6">
+                        <p class="mt-3 text-sm text-gray-200 md:text-lg pl-6 font-inter">
                             SARS-CoV-2 in pregnant women is at risk of causing poor pregnancy outcomes, including low birth weight, miscarriage, stillbirth, increased perinatal and neonatal morbidity, admission to an intensive care unit for infants or a neonatal intensive care unit (NICU), and mortality was observed in newborns born to women with severe symptoms during pregnancy[1-4].
                         </p>
 
-                        <a href="#" class="inline-block mt-2 text-white underline hover:text-gray-300">Learn more</a>
+                        <a href="#" class="inline-block mt-2 text-white underline hover:text-gray-300">Read more</a>
 
                     </div>
-                    <img class="object-cover w-full lg:mx-6 lg:w-2/5 rounded-xl h-72" src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"alt="">
+                    <img class="object-cover w-full lg:mx-6 lg:w-2/5 rounded-xl h-72" src="/assets/dokumentasi/11.jpg"alt="">
                 </div>
 
             </div>
@@ -226,18 +226,18 @@
                     <div class="mt-6 lg:w-3/5 lg:mt-0 lg:mx-6 text-right">
                         <p class="text-sm text-gray-300 uppercase">category</p>
 
-                        <a href="#" class="block mt-4 text-4xl font-medium text-gray-100 hover:underline font-inter">
+                        <a href="#" class="block mt-4 text-4xl font-medium text-gray-100 hover:underline font-poppins">
                             The Golden Generation Program
                         </a>
 
-                        <p class="mt-3 text-sm text-gray-200 md:text-lg pl-6">
+                        <p class="mt-3 text-sm text-gray-200 md:text-lg pl-6 font-inter">
                             Summit Institute of Development (SID) has proposed a Golden Generation Program (GGP) to support optimal child development.
                         </p>
 
-                        <a href="#" class="inline-block mt-2 text-white underline hover:text-gray-300">Learn more</a>
+                        <a href="#" class="inline-block mt-2 text-white underline hover:text-gray-300">Read more</a>
 
                     </div>
-                    <img class="object-cover w-full lg:mx-6 lg:w-2/5 rounded-xl h-72" src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"alt="">
+                    <img class="object-cover w-full lg:mx-6 lg:w-2/5 rounded-xl h-72" src="/assets/dokumentasi/16.jpg"alt="">
                 </div>
 
             </div>

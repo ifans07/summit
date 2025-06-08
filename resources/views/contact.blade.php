@@ -12,12 +12,12 @@
     </div>
 </section> --}}
 
-<section class="relative bg-blue-900 md:h-[38rem]">
+<section class="relative bg-blue-900 lg:h-[40rem]">
     <div class="container px-6 py-24 mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 h-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 h-auto">
             <div class="h-auto md:ml-28 mb-12">
                 <div class="mb-8">
-                    <h1 class="mt-2 text-2xl font-bold text-white md:text-6xl">Connect With Us</h1>
+                    <h1 class="mt-2 text-2xl font-bold text-white md:text-6xl font-poppins">Connect With Us</h1>
                 </div>
                 
                 <div class="grid grid-cols-1 gap-12 mt-4 lg:grid-cols-2">
@@ -31,8 +31,8 @@
                                 </span>
                             </div>
                             <div class="text-white">
-                                <h2 class="text-base md:text-2xl font-medium text-white">Email</h2>
-                                <p class="mt-2 text-sm">human-resource@sid-indonesia.org</p>
+                                <h2 class="text-base md:text-2xl font-medium text-white font-poppins">Email</h2>
+                                <p class="mt-2 text-sm font-inter">secretariat@sid-indonesia.org</p>
                             </div>
                         </div>
         
@@ -47,8 +47,8 @@
                             </div>
                             
                             <div class="text-white">
-                                <h2 class="text-base md:text-2xl font-medium">Office</h2>
-                                <p class="mt-2 text-sm"><a href="https://maps.app.goo.gl/DyLmSNaYW2k33HDr8" target="_blank">Jl. Sultan Hasanuddin no. 137B</a></p>
+                                <h2 class="text-base md:text-2xl font-medium font-poppins">Office</h2>
+                                <p class="mt-2 text-sm font-inter" id="office"><a href="https://maps.app.goo.gl/DyLmSNaYW2k33HDr8" target="_blank">Jl. Sultan Hasanuddin No.137B, Lingkungan Karang Jero, Karang Taliwang, Kec. Cakranegara, Kota Mataram, Nusa Tenggara Bar. 83238</a></p>
                             </div>
                         </div>
         
@@ -62,15 +62,30 @@
                             </div>
                             
                             <div class="text-white">
-                                <h2 class="text-base md:text-2xl font-medium">Phone</h2>
-                                <p class="mt-2 text-sm">+62(370)-644347</p>
+                                <h2 class="text-base md:text-2xl font-medium font-poppins">Phone</h2>
+                                <p class="mt-2 text-sm font-inter">+62 822-6614-9130</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="rounded-lg border-2 border-gray-300 h-auto">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.172255652105!2d116.12724737477512!3d-8.579430791465002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcdc0a6c3a43905%3A0x5e1c833f1ff4023a!2sSummit%20Institute%20Of%20Development!5e0!3m2!1sid!2sid!4v1747531501884!5m2!1sid!2sid" class="w-full h-full" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="h-auto" x-data="{ tab: 'lombok' }">
+                <div class="mb-4">
+                    <ul class="text-white font-medium">
+                        <li @click="tab = 'lombok'" class="hover:border-b-4 border-white inline-block px-3" :class="tab === 'lombok' ? 'border-b-4 border-white' : ''" id="lombok">Lombok</li>
+                        <li @click="tab = 'garut'" class="hover:border-b-4 border-white inline-block px-3" :class="tab === 'garut' ? 'border-b-4 border-white' : ''" id="garut">Garut</li>
+                        <li @click="tab = 'jakarta'" class="hover:border-b-4 border-white inline-block px-3" :class="tab === 'jakarta' ? 'border-b-4 border-white' : ''" id="jakarta">Jakarta</li>
+                    </ul>
+                </div>
+                <div x-show="tab === 'lombok'" class="rounded-lg border-2 border-gray-300 md:h-[20rem] lg:h-full">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.172255652105!2d116.12724737477512!3d-8.579430791465002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcdc0a6c3a43905%3A0x5e1c833f1ff4023a!2sSummit%20Institute%20Of%20Development!5e0!3m2!1sid!2sid!4v1747531501884!5m2!1sid!2sid" class="w-full h-full" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div x-show="tab === 'garut'" class="rounded-lg border-2 border-gray-300 md:h-[20rem] lg:h-full">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15842.811511890337!2d107.6037426724032!3d-6.926075536669526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6272ac519cd%3A0xab0b37ae6219dd22!2sKantor%20Summit!5e0!3m2!1sid!2sid!4v1749376466602!5m2!1sid!2sid" class="w-full h-full" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div x-show="tab === 'jakarta'" class="rounded-lg border-2 border-gray-300 md:h-[20rem] lg:h-full">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15866.072191355419!2d106.82785724381596!3d-6.195168900678889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f43e35e53099%3A0x3e389ed39c2f9bb4!2sKec.%20Menteng%2C%20Kota%20Jakarta%20Pusat%2C%20Daerah%20Khusus%20Ibukota%20Jakarta!5e0!3m2!1sid!2sid!4v1749376542891!5m2!1sid!2sid" class="w-full h-full" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </div>
     </div>
@@ -82,5 +97,32 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.172255652105!2d116.12724737477512!3d-8.579430791465002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcdc0a6c3a43905%3A0x5e1c833f1ff4023a!2sSummit%20Institute%20Of%20Development!5e0!3m2!1sid!2sid!4v1747531501884!5m2!1sid!2sid" class="w-full h-full" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 </section> --}}
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            let lombok = document.getElementById('lombok')
+            let garut = document.getElementById('garut')
+            let jakarta = document.getElementById('jakarta')
+            let office = document.getElementById('office')
+        
+            lombok.addEventListener('click', function(){
+                office.innerHTML = `
+                    <a href="https://maps.app.goo.gl/DyLmSNaYW2k33HDr8" target="_blank">Jl. Sultan Hasanuddin No.137B, Lingkungan Karang Jero, Karang Taliwang, Kec. Cakranegara, Kota Mataram, Nusa Tenggara Bar. 83238</a>
+                `
+            })
+        
+            garut.addEventListener('click', function(){
+                office.innerHTML = `
+                    <a href="https://maps.app.goo.gl/osSeNguXovfHFWwR7" target="_blank">Jl. Otto Iskandar Dinata No.347, Karanganyar, Kec. Astanaanyar, Kota Bandung, Jawa Barat 40241</a>
+                `
+            })
+        
+            jakarta.addEventListener('click', function(){
+                office.innerHTML = `
+                    <a href="https://maps.app.goo.gl/AVQrgpicpQktzEBS7" target="_blank">Kec. Menteng, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta</a>
+                `
+            })
+        })
+    </script>
 
 @endsection

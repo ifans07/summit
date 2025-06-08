@@ -5,12 +5,12 @@
 
 <section>
     <div class="container mx-auto px-8 py-28">
-        <div class="flex flex-col md:flex-row justify-center gap-8">
-            <div class="bg-blue-900 rounded-lg p-4 flex items-center justify-center">
-                <h1 class="text-white text-4xl uppercase font-extrabold">Our Team</h1>
+        <div class="flex flex-col lg:flex-row justify-center gap-8">
+            <div class="bg-blue-900 md:order-2 lg:order-1 rounded-lg p-4 flex items-center justify-center">
+                <h1 class="text-white text-4xl uppercase font-extrabold font-poppins">Our Team</h1>
             </div>
-            <div class="md:border-l-2 border-blue-900 md:pl-8">
-                <h1 class="text-4xl md:text-7xl font-medium font-merriweather text-center md:text-left">Meet Our Team</h1>
+            <div class="md:order-1 lg:order-2 lg:border-l-2 border-blue-900 lg:pl-8">
+                <h1 class="text-4xl md:text-7xl font-medium font-poppins text-center md:text-center lg:text-left">Meet Our Team</h1>
             </div>
         </div>
     </div>
@@ -21,7 +21,7 @@
     <div class="container mx-auto px-8 py-28">
         <div>
             <div class="mb-8">
-                <h1 class="text-4xl font-extrabold uppercase font-merriweather mb-8 text-center">Data Center Team</h1>
+                <h1 class="text-4xl font-extrabold uppercase font-poppins mb-8 text-center">Data Center Team</h1>
             </div>
             <div class="flex flex-wrap justify-center relative z-10">
                 <div class="p-4 lg:w-1/4 md:w-1/2">

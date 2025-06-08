@@ -7,6 +7,11 @@ use Illuminate\Support\Facades\Route;
 
 class AppServiceProvider extends ServiceProvider
 {
+    protected $listen = [
+        \App\Events\NewsCreated::class => [
+            \App\Listeners\SendNewsNotification::class,
+        ],
+    ];
     /**
      * Register any application services.
      */

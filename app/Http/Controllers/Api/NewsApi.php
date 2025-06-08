@@ -8,6 +8,7 @@ use App\Models\News;
 use Illuminate\Support\Facades\Validator;
 
 use App\Http\Resources\NewsResource;
+use App\Events\NewsCreated;
 
 class NewsApi extends Controller
 {
@@ -41,6 +42,7 @@ class NewsApi extends Controller
         }
 
         $news = News::create($validator->validated());
+        event(new NewsCreated($news));
         return (new NewsResource($news))->response()->setStatusCode(201);
     }
 

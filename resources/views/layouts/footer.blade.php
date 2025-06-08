@@ -43,10 +43,10 @@
                             </svg>
                         </div>
                         <div class="hidden group-hover:block md:block">
-                            <a href="#" class="block mt-2 text-sm text-gray-600 hover:underline">Our Story</a>
-                            <a href="#" class="block mt-2 text-sm text-gray-600 hover:underline">Our Speciality</a>
-                            <a href="#" class="block mt-2 text-sm text-gray-600 hover:underline">Leadership</a>
-                            <a href="#" class="block mt-2 text-sm text-gray-600 hover:underline">Our Team</a>
+                            <a href="/about/v0" class="block mt-2 text-sm text-gray-600 hover:underline">Our Story</a>
+                            <a href="/about/speciality" class="block mt-2 text-sm text-gray-600 hover:underline">Our Speciality</a>
+                            <a href="/about/leadership" class="block mt-2 text-sm text-gray-600 hover:underline">Leadership</a>
+                            <a href="/about/our-team" class="block mt-2 text-sm text-gray-600 hover:underline">Our Team</a>
                         </div>
                     </div>
 
@@ -58,10 +58,10 @@
                             </svg>
                         </div>
                         <div class="hidden group-hover:block md:block">
-                            <a href="#" class="block mt-2 text-sm text-gray-600 hover:underline">Programs</a>
-                            <a href="#" class="block mt-2 text-sm text-gray-600 hover:underline">Publications</a>
-                            <a href="#" class="block mt-2 text-sm text-gray-600 hover:underline">News</a>
-                            <a href="#" class="block mt-2 text-sm text-gray-600 hover:underline">Events</a>
+                            <a href="/programs-publications" class="block mt-2 text-sm text-gray-600 hover:underline">Programs</a>
+                            <a href="/publications" class="block mt-2 text-sm text-gray-600 hover:underline">Publications</a>
+                            <a href="/news" class="block mt-2 text-sm text-gray-600 hover:underline">News</a>
+                            <a href="/news" class="block mt-2 text-sm text-gray-600 hover:underline">Events</a>
                         </div>
                     </div>
 
@@ -73,9 +73,9 @@
                             </svg>
                         </div>
                         <div class="hidden group-hover:block md:block">
-                            <a href="#" class="block mt-2 text-sm text-gray-600 hover:underline">Genomics Science DOJO</a>
-                            <a href="#" class="block mt-2 text-sm text-gray-600 hover:underline">Covneo & PregVax</a>
-                            <a href="#" class="block mt-2 text-sm text-gray-600 hover:underline">SUMMIT 10 Year (S10Y) Study</a>
+                            <a href="/programs/dojo" class="block mt-2 text-sm text-gray-600 hover:underline">Genomics Science DOJO</a>
+                            <a href="/programs/dojo" class="block mt-2 text-sm text-gray-600 hover:underline">Covneo & PregVax</a>
+                            <a href="/programs/dojo" class="block mt-2 text-sm text-gray-600 hover:underline">SUMMIT 10 Year (S10Y) Study</a>
                         </div>
                     </div>
 

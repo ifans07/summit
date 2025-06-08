@@ -5,12 +5,12 @@
 
 <section>
     <div class="container mx-auto px-8 py-28">
-        <div class="flex flex-col md:flex-row gap-8">
-            <div class="bg-blue-900 rounded-lg p-4 flex items-center justify-center">
-                <h1 class="text-white text-4xl uppercase font-extrabold">Publications</h1>
+        <div class="flex flex-col lg:flex-row gap-8">
+            <div class="bg-blue-900 md:order-2 lg:order-1 rounded-lg p-4 flex items-center justify-center">
+                <h1 class="text-white text-4xl uppercase font-extrabold font-poppins">Publications</h1>
             </div>
-            <div class="md:border-l-2 border-blue-900 md:pl-8">
-                <h1 class="text-4xl md:text-7xl font-medium font-merriweather text-center md:text-left">Our scientific contributions to maternal and child healthcare knowledge</h1>
+            <div class="md:order-1 lg:order-2 md:border-l-2 border-blue-900 md:pl-8">
+                <h1 class="text-4xl md:text-5xl lg:text-7xl font-medium font-poppins text-center md:text-left">Our scientific contributions to maternal and child healthcare knowledge</h1>
             </div>
         </div>
     </div>
@@ -88,74 +88,74 @@
                 <div class="flex flex-col gap-8">
                     <div class="hover:border border-dashed border-blue-900 rounded-lg p-4">
                         <div class="mb-4">
-                            <h1 class="text-lg md:text-2xl font-medium">Maternal Multiple Micronutrient Supplementation Stabilizes Mitochondrial DNA Copy Number in Pregnant Women in Lombok, Indonesia. J Nutr. 2019;149(8):1309-1316. doi:10.1093/jn/nxz064</h1>
-                            <p class="text-gray-600 text-xs md:text-sm">Priliani L, Prado EL, Restuadi R, Waturangi DE, Shankar AH, Malik SG.</p>
+                            <h1 class="text-lg md:text-2xl font-medium font-poppins">Maternal Multiple Micronutrient Supplementation Stabilizes Mitochondrial DNA Copy Number in Pregnant Women in Lombok, Indonesia. J Nutr. 2019;149(8):1309-1316. doi:10.1093/jn/nxz064</h1>
+                            <p class="text-gray-600 text-xs md:text-sm font-inter">Priliani L, Prado EL, Restuadi R, Waturangi DE, Shankar AH, Malik SG.</p>
                         </div>
-                        <div class="flex flex-wrap gap-4">
+                        <div class="flex flex-wrap gap-4 font-poppins">
                             <div class="flex gap-1 flex-wrap">
                                 <span class="px-4 py-1 border border-black rounded-xl font-medium text-xs md:text-sm">MMS</span>
                                 <span class="px-4 py-1 border border-black rounded-xl font-medium text-xs md:text-sm">Ibu & Anak</span>
                                 <span class="px-4 py-1 border border-black rounded-xl font-medium text-xs md:text-sm">Ibu & Anak</span>
                                 <span class="px-4 py-1 border border-black rounded-xl font-medium text-xs md:text-sm">Ibu & Anak</span>
                             </div>
-                            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6686057/" class="text-blue-900 text-sm md:text-base">Download</a>
+                            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6686057/" class="text-blue-500 text-sm md:text-base">Download</a>
                         </div>
                     </div>
                     <div class="hover:border border-dashed border-blue-900 rounded-lg p-4">
                         <div class="mb-4">
-                            <h1 class="text-lg md:text-2xl font-medium">Maternal biomarker patterns for metabolism and inflammation in pregnancy are influenced by multiple micronutrient supplementation and associated with child biomarker patterns and nutritional status at 9-12 years of age. PLoS One. 2020 Aug 7;15(8):e0216848. doi: 10.1371/journal.pone.0216848. eCollection 2020.</h1>
-                            <p class="text-gray-600 text-xs md:text-sm mb-2">Priliani, L., Oktavianthi, S., Prado, E. L., Malik, S. G., Shankar, A. H.</p>
+                            <h1 class="text-lg md:text-2xl font-medium font-poppins">Maternal biomarker patterns for metabolism and inflammation in pregnancy are influenced by multiple micronutrient supplementation and associated with child biomarker patterns and nutritional status at 9-12 years of age. PLoS One. 2020 Aug 7;15(8):e0216848. doi: 10.1371/journal.pone.0216848. eCollection 2020.</h1>
+                            <p class="text-gray-600 text-xs md:text-sm mb-2 font-inter">Priliani, L., Oktavianthi, S., Prado, E. L., Malik, S. G., Shankar, A. H.</p>
                         </div>
-                        <div class="flex flex-wrap gap-4">
+                        <div class="flex flex-wrap gap-4 font-poppins">
                             <div class="flex gap-1 flex-wrap">
                                 <span class="px-4 py-1 border border-black rounded-xl font-medium text-xs md:text-sm">MMS</span>
                                 <span class="px-4 py-1 border border-black rounded-xl font-medium text-xs md:text-sm">Ibu & Anak</span>
                             </div>
-                            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6686057/" class="text-blue-900 text-sm md:text-base">Download</a>
+                            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6686057/" class="text-blue-500 text-sm md:text-base">Download</a>
                         </div>
                     </div>
                     <div class="hover:border border-dashed border-blue-900 rounded-lg p-4">
                         <div class="mb-4">
-                            <h1 class="text-lg md:text-2xl font-medium">Assessing the effect of the Expanding Maternal and Neonatal Survival program on improving stabilization and referral for maternal and newborn complications in Indonesia. Int J Gynaecol Obstet. 2019 Feb;144 Suppl 1:30-41. doi: 10.1002/ijgo.12733.</h1>
-                            <p class="text-gray-600 text-xs md:text-sm mb-2">Pedrana, A., Qomariyah, S. N., Tholandi, M., Wijayanto, B., Gandawidjaja, T., Amelia, D.,  Apriatni, M., Sudirman, S., Zazri A., Sethi, R., Emerson, M., Ahmed, S.</p>
+                            <h1 class="text-lg md:text-2xl font-medium font-poppins">Assessing the effect of the Expanding Maternal and Neonatal Survival program on improving stabilization and referral for maternal and newborn complications in Indonesia. Int J Gynaecol Obstet. 2019 Feb;144 Suppl 1:30-41. doi: 10.1002/ijgo.12733.</h1>
+                            <p class="text-gray-600 text-xs md:text-sm mb-2 font-inter">Pedrana, A., Qomariyah, S. N., Tholandi, M., Wijayanto, B., Gandawidjaja, T., Amelia, D.,  Apriatni, M., Sudirman, S., Zazri A., Sethi, R., Emerson, M., Ahmed, S.</p>
                         </div>
-                        <div class="flex flex-wrap gap-4">
+                        <div class="flex flex-wrap gap-4 font-poppins">
                             <div class="flex gap-1 flex-wrap">
                                 <span class="px-4 py-1 border border-black rounded-xl font-medium text-xs md:text-sm">MMS</span>
                                 <span class="px-4 py-1 border border-black rounded-xl font-medium text-xs md:text-sm">Ibu & Anak</span>
                             </div>
                             <div>
-                                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6686057/" class="text-blue-900 text-sm md:text-base">Download</a>
+                                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6686057/" class="text-blue-500 text-sm md:text-base">Download</a>
                             </div>
                         </div>
                     </div>
                     <div class="hover:border border-dashed border-blue-900 rounded-lg p-4">
                         <div class="mb-4">
-                            <h1 class="text-lg md:text-2xl font-medium">The effect of Expanding Maternal and Neonatal Survival interventions on improving the coverage of labor monitoring and complication prevention practices in hospitals in Indonesia: A difference-in-difference analysis. Int J Gynaecol Obstet. 2019 Feb;144 Suppl 1:21-29.</h1>
-                            <p class="text-gray-600 text-xs md:text-sm mb-2">Tholandi M, Sethi R, Pedrana A, Qomariyah SN, Amelia D, Kaslam P, Sudirman S, Apriatni MS, Rahmanto A, Emerson M, Ahmed S.</p>
+                            <h1 class="text-lg md:text-2xl font-medium font-poppins">The effect of Expanding Maternal and Neonatal Survival interventions on improving the coverage of labor monitoring and complication prevention practices in hospitals in Indonesia: A difference-in-difference analysis. Int J Gynaecol Obstet. 2019 Feb;144 Suppl 1:21-29.</h1>
+                            <p class="text-gray-600 text-xs md:text-sm mb-2 font-inter">Tholandi M, Sethi R, Pedrana A, Qomariyah SN, Amelia D, Kaslam P, Sudirman S, Apriatni MS, Rahmanto A, Emerson M, Ahmed S.</p>
                         </div>
-                        <div class="flex flex-wrap gap-4">
+                        <div class="flex flex-wrap gap-4 font-poppins">
                             <div class="flex gap-1 flex-wrap">
                                 <span class="px-4 py-1 border border-black rounded-xl font-medium text-xs md:text-sm">MMS</span>
                                 <span class="px-4 py-1 border border-black rounded-xl font-medium text-xs md:text-sm">Ibu & Anak</span>
                             </div>
                             <div>
-                                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6686057/" class="text-blue-900 text-sm md:text-base">Download</a>
+                                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6686057/" class="text-blue-500 text-sm md:text-base">Download</a>
                             </div>
                         </div>
                     </div>
                     <div class="hover:border border-dashed border-blue-900 rounded-lg p-4">
                         <div class="mb-4">
-                            <h1 class="text-lg md:text-2xl font-medium">Modifiers of the effect of maternal multiple micronutrient supplementation on stillbirth, birth outcomes, and infant mortality: a meta-analysis of individual patient data from 17 randomised trials in low-income and middle-income countries. Lancet Glob Health. 2017 Nov;5(11):e1090-e1100. doi: 10.1016/S2214-109X(17)30371-6. PMID: 29025632.</h1>
-                            <p class="text-gray-600 text-xs md:text-sm mb-2">Smith ER, Shankar AH, Wu LS, Aboud S, Adu-Afarwuah S, Ali H, Agustina R, Arifeen S, Ashorn P, Bhutta ZA, Christian P, Devakumar D, Dewey KG, Friis H, Gomo E, Gupta P, Kæstel P, Kolsteren P, Lanou H, Maleta K, Mamadoultaibou A, Msamanga G, Osrin D, Persson LÅ, Ramakrishnan U, Rivera JA, Rizvi A, Sachdev HPS, Urassa W, West KP Jr, Zagre N, Zeng L, Zhu Z, Fawzi WW, Sudfeld CR.</p>
+                            <h1 class="text-lg md:text-2xl font-medium font-poppins">Modifiers of the effect of maternal multiple micronutrient supplementation on stillbirth, birth outcomes, and infant mortality: a meta-analysis of individual patient data from 17 randomised trials in low-income and middle-income countries. Lancet Glob Health. 2017 Nov;5(11):e1090-e1100. doi: 10.1016/S2214-109X(17)30371-6. PMID: 29025632.</h1>
+                            <p class="text-gray-600 text-xs md:text-sm mb-2 font-inter">Smith ER, Shankar AH, Wu LS, Aboud S, Adu-Afarwuah S, Ali H, Agustina R, Arifeen S, Ashorn P, Bhutta ZA, Christian P, Devakumar D, Dewey KG, Friis H, Gomo E, Gupta P, Kæstel P, Kolsteren P, Lanou H, Maleta K, Mamadoultaibou A, Msamanga G, Osrin D, Persson LÅ, Ramakrishnan U, Rivera JA, Rizvi A, Sachdev HPS, Urassa W, West KP Jr, Zagre N, Zeng L, Zhu Z, Fawzi WW, Sudfeld CR.</p>
                         </div>
-                        <div class="flex flex-wrap gap-4">
+                        <div class="flex flex-wrap gap-4 font-poppins">
                             <div class="flex gap-1 flex-wrap">
                                 <span class="px-4 py-1 border border-black rounded-xl font-medium text-xs md:text-sm">MMS</span>
                                 <span class="px-4 py-1 border border-black rounded-xl font-medium text-xs md:text-sm">Ibu & Anak</span>
                             </div>
                             <div>
-                                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6686057/" class="text-blue-900 text-sm md:text-base">Download</a>
+                                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6686057/" class="text-blue-500 text-sm md:text-base">Download</a>
                             </div>
                         </div>
                     </div>
